@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Students Marks with Information with Image Spriting
+		</title>
+		<style type="text/css">
+			th,h3,table,img,td,tr{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-left: 1px solid;
+				border-right: 1px solid;
+			}	
+			
+			h3{
+				text-align: center;
+				margin: 5px;
+				padding: 5px;
+			}
+			table{
+				width: 100%;
+			}
+			.image_border{
+				width: 170px;
+			}
+			.serial_border{
+				width: 30px;
+			}
+			.img_container{
+				border: 1px solid;
+				width: 150px;
+				height: 120px;
+				background-image: url("http://localhost:8081/july/july_6/images/image_spriting.jpg");
+			}
+			.emp1{
+				background-position: -2px 0px;
+			}
+			.emp2{
+				background-position: -168px 0px;
+			}
+			.emp3{
+				background-position: -330px 0px;
+			}
+			.emp4{
+				background-position: -505px 0px;
+			}
+			.emp5{
+				background-position: -676px -6px;
+			}
+			.emp6{
+				background-position: -3px -194px;
+			}
+			.emp7{
+				background-position: -172px -207px;
+			}
+			.emp8{
+				background-position: -338px -212px;
+			}
+			.emp9{
+				background-position: -517px -226px;
+			}
+			.emp10{
+				background-position: -686px -219px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Student Details
+		</h3>
+		<table cellpadding="5" cellspacing="5">
+			<thead>
+				<tr>
+					<th class="serial_border">S.No</th>
+					<th>Name</th>
+					<th class="image_border">Student Image</th>
+					<th>Location</th>
+					<th>Class</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>
+						<div class="img_container emp1"></div>
+					</td>
+					<td>Hyderabad</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>90</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>70</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Bhanu</td>
+					<td>
+						<div class="img_container emp2"></div>	
+					</td>
+					<td>Vijayawada</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>97</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>61</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>79</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>3</td>
+					<td>Prakash</td>
+					<td>
+						<div class="img_container emp3"></div>	
+					</td>
+					<td>Tenali</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>53</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>81</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>55</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Lakshmi</td>
+					<td>
+						<div class="img_container emp4"></div>	
+					</td>
+					<td>Vizag</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>103</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>72</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>91</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td>Venkatesh</td>
+					<td>
+						<div class="img_container emp5"></div>	
+					</td>
+					<td>Guntur</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>110</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>83</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>6</td>
+					<td>Ravindra</td>
+					<td>
+						<div class="img_container emp6"></div>	
+					</td>
+					<td>Ongole</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>79</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>55</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>93</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>7</td>
+					<td>Bhargav Sai</td>
+					<td>
+						<div class="img_container emp7"></div>	
+					</td>
+					<td>Tirupathi</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>71</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>77</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>8</td>
+					<td>Vamsi</td>
+					<td>
+						<div class="img_container emp8"></div>	
+					</td>
+					<td>Chennai</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>96</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>56</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>88</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>9</td>
+					<td>Pradeep</td>
+					<td>
+						<div class="img_container emp9"></div>	
+					</td>
+					<td>Rajamundry</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>102</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>65</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>10</td>
+					<td>Geetha Madhuri</td>
+					<td>
+						<div class="img_container emp10"></div>	
+					</td>
+					<td>Bangalore</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>99</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>72</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>68</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
