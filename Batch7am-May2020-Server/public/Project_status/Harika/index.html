@@ -4,7 +4,9 @@
 		<title>
 			Login Page
 		</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/loginApp.css">
+		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 	<body>
 		<div class="Header">
@@ -21,17 +23,20 @@
 				<h2>Login Here</h2>
 			<div>
 				<p>User name</p>
-				<input type="text" name="" placeholder="Enter Username">
+				<input type="text" placeholder="Enter Username" id="uname" onkeypress="return validateUname(event)">
+				<div class="unameError error">
+					*User name is mandatory
+				</div>
 
 				<p>Password</p>
-				<input type="Password" name="" placeholder="Enter Password">
-
-				<div class="pwd">
-				<input type="checkbox">Show Password
+				<input type="password" placeholder="Enter Password" class="password" id="upwd" onkeypress="return validatePwd(event)">
+				<i class="show fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+				<div class="upwdError error">
+					*Password is mandatory
 				</div>
 
 				<div>
-				<input type="submit" name="" value="Login">
+				<input type="submit" value="Login" onclick="readData()">
 				</div>
 
 				<a href="" style="margin-left: 100px">Sign Up</a> <br>

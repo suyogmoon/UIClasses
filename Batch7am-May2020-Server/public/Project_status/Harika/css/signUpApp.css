@@ -39,19 +39,19 @@ img{
 
 .SignUpBox{
 	width: 320px;
-	height: 400px;
+	height: 420px;
 	color: #000;
-	top: 24%;
+	top: 23%;
 	left: 38%;
 	background: black;
 	position: absolute;
-	padding: 70px 30px;
+	padding: 90px 30px;
 	box-sizing: border-box;
 }
 
 .avatar{
-	width: 85px;
-	height: 85px;
+	width: 75px;
+	height: 75px;
 	margin-left: 28%;
 	position: absolute;
 	border: none;
@@ -62,8 +62,9 @@ img{
 h2{
 	color: #fb2525;
 	padding: 0 0 5px;
-	margin-top: -20px;
-	margin-left: 5px;
+	margin-top: -39px;
+	margin-left: 30%;
+	position: absolute;
 	text-align: center;
 	font-size: 22px;
 }
@@ -87,6 +88,7 @@ h2{
 	border: none;
 	outline: none;
 	height: 30px;
+	margin-top: 15px;
 	background: #fb2525;
 	color: #fff;
 	font-size: 15px;
@@ -108,3 +110,22 @@ h2{
 	margin-top: 475px;
 	padding: 25px;
 }
+
+.error{
+	color: red;
+	font-size: 15px;
+	margin-top: -15px;
+}
+
+.unameError, .upwdError, .RepwdError, .UnumError, .MailIdError, .pwdmatch {
+	display: none;
+}
+
+.fa{
+	font-size: 20px;
+	color: #ccc;
+	position: absolute;
+	left: 83%;
+	bottom: 63%; 
+}
+

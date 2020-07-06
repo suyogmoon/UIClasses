@@ -96,6 +96,7 @@ h2{
 	outline: none;
 	width: 100%;
 	margin-bottom: 15px;
+	margin-top: 10px;
 	height: 30px;
 	background: #fb2525;
 	color: #fff;
@@ -105,13 +106,6 @@ h2{
 
 .loginBox input[type="submit"]:hover{
 	cursor: pointer;
-}
-
-.pwd{
-	margin-bottom: 15px;
-	text-align: center;
-	color: #ccc;
-	font-size: 14px;
 }
 
 .loginBox a{
@@ -137,4 +131,35 @@ h2{
 	color: #fb2525;
 	margin-top: 475px;
 	padding: 25px;
+}
+
+.unameError, .upwdError{
+	display: none;
+}
+
+.error{
+	color: red;
+	font-size: 15px;
+	margin-top: -10px;
+
+}
+
+/*.show, .hide{
+	position: absolute;
+	right: 30px;
+	top:51.8%;
+	font-size: 20px;
+	color: yellow; 
+}
+
+.hide{
+	display: none;
+}*/
+
+.fa{
+	font-size: 20px;
+	color: #ccc;
+	position: absolute;
+	left: 83%;
+	bottom: 43%; 
 }

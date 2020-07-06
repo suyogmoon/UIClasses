@@ -5,6 +5,8 @@
 			Forgot Pwd Page
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/Fpwd.css">
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/popupemail.js"></script>
 	</head>
 	<body>
 		<div class="Header">
@@ -16,17 +18,30 @@
 				</marquee>
 			</div>
 		</div>
+		<div class="maskBlock"></div>
 		<div class="FpwdBox">
+			<div class="maskBlock"></div>
+			<div class="popupContainer">
+				<div class="pHeader">
+					Attention!
+					<span class="CloseBtn" onclick="closeDialog()">
+						X
+					</span>
+				</div>
+				<div class="DialogContainer">
+					Enter your Email-id
+				</div>
+			</div>
 			<div>
-				Email ID:<input type="text" name="">
+				Email ID:<input type="text" id="eMailId" onkeypress="return validateEmail(event)">
+				<div class="error" id="mailerror"></div>
 
-				<input type="submit" name="" value="Done">
-
+				<input type="submit"value="Done" onclick="readData()">
 			</div>
 		</div>
 
 		<div class="Footer">
 			@CopyRights2020
 		</div>
-	</body>
+		</body>
 </html>

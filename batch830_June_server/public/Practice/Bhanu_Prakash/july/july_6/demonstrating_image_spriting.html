@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating without Image Spriting.
+		</title>
+		<style type="text/css">
+			.details{
+				border: 2px solid;
+				background: orange;
+				margin: 10px;
+				padding: 10px;
+			}
+			.img_container{
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				background-image: url("http://localhost:8081/july/july_6/images/image_spriting_employee.png");
+			}
+			.emp2{
+				background-position: -214px -178px
+			}
+			.emp3{
+				background-position: -426px -7px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="details">
+				<div>Name:Bhanu</div>
+				<div>Gender:Male</div>
+				<div>Age:20</div>
+				<div class="img_container emp1"></div>
+			</li>
+
+			<li class="details">
+				<div>Name:Sita</div>
+				<div>Gender:Female</div>
+				<div>Age:25</div>
+				<div class="img_container emp2"></div>
+			</li>
+
+			<li class="details">
+				<div>Name:Prakash</div>
+				<div>Gender:Male</div>
+				<div>Age:30</div>
+				<div class="img_container emp3"></div>
+			</li>
+		</ul>
+	</body>
+</html>
