@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
   var data = {
     "pdata": [
       {
@@ -35,14 +35,22 @@ router.get('/', function(req, res, next) {
         "price": 120,
         "manu": "Samsung",
         "imagePath": "https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612"
+      },
+      {
+        "name": "PEN",
+        "price": 145,
+        "manu": "Samsung",
+        "imagePath": "https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612"
       }
     ]
   };
 
   data = JSON.stringify(data);
+
+  data = "parseProductData(" + data + ")";
   setTimeout(function(){
     res.send(data);
-  }, 5000)
+  }, 5000);
   
 });
 

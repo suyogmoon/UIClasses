@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demostrating Block Level Elements
+		</title>
+		<style type="text/css">
+			.container{
+				border:2px solid;
+				width: 300px;
+				height:400px;
+				background: yellow;
+			}
+
+			.subblock{
+				border:1px solid;
+				width:200px;
+				height:300px;
+				background:blue;
+				color:white;
+			}
+
+			p{
+				background: pink;
+				width:100px;
+			}
+
+			.child{
+				background: red;
+				color: white;
+			}
+
+			.item{
+				background: green;
+				width: 300px;
+				height:500px;
+				color:white;
+			}
+
+			a{
+				background: blue;
+				width:400;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		1. item 1
+		2. item 2 {Without DIV TAG / Blockline both items comes in same line}
+
+		<div class="container">
+			3. item 3 {Container}
+
+			<div class="subblock">
+				Width can be adjusted for Blockline
+			</div>
+		
+			<div class="child">
+			This DIV takes the size of parent container
+			</div>
+
+		</div>
+
+		<div class="child">TEST</div>
+
+		item 1
+		item 2
+		item 3
+
+		<span class="item">item 4; Size can't be adjusted for Inline. It occupies the width of the content it is holding</span>
+
+		item 5
+		item 6
+
+		"a" is an example of Inline. 
+
+		<a href="abc.com">abc</a>
+		<a href="amazon.com">amazon</a>
+		<a href="google.com">Google</a>
+
+	</body>
+</html>

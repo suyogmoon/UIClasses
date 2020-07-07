@@ -1,0 +1,56 @@
+{
+    "edata":[
+        {
+            "imagePath" : "http://dep-solutions.com/images/avatar.png",
+            "empName":"Mehul kapadni",
+            "empAge": 29,
+            "empGender":"Male",
+            "empDepartment": "Analytics",
+            "empBasicSalary": "60000",
+            "empPF": "",
+            "empHRA": "",
+            "empTotalSalary": 0,
+            "empPackage": "",
+            "empTax": ""
+        },
+        {
+            "imagePath" : "https://png.pngtree.com/element_our/png/20181206/female-avatar-vector-icon-png_262142.jpg",
+            "empName":"Swapnali Tupe",
+            "empAge": 29,
+            "empGender":"Female",
+            "empDepartment": "HR",
+            "empBasicSalary": "80000",
+            "empPF": "",
+            "empHRA": "",
+            "empTotalSalary": 0,
+            "empPackage": "",
+            "empTax": ""
+        },
+        {
+            "imagePath" : "https://png.pngtree.com/element_our/png/20181206/female-avatar-vector-icon-png_262142.jpg",
+            "empName":"Anjali kapadni",
+            "empAge": 27,
+            "empGender":"Female",
+            "empDepartment": "Software Developement",
+            "empBasicSalary": "56000",
+            "empPF": "",
+            "empHRA": "",
+            "empTotalSalary": 0,
+            "empPackage": "",
+            "empTax": ""
+        },
+        {
+            "imagePath" : "http://dep-solutions.com/images/avatar.png",
+            "empName":"Sumit Jain",
+            "empAge": 31,
+            "empGender":"Male",
+            "empDepartment": "Android Developement",
+            "empBasicSalary": "68000",
+            "empPF": "",
+            "empHRA": "",
+            "empTotalSalary": 0,
+            "empPackage": "",
+            "empTax": ""
+        }
+    ]
+}

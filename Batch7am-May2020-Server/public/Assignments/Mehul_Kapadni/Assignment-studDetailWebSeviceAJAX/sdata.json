@@ -1,0 +1,37 @@
+{
+    "sData" : [
+        {
+            "name": "Mehul Kapadni",
+            "age" : 29,
+            "gender" : "Male",
+            "location" : "Pune",
+            "mobile" : 9922136231,
+            "imagePath" : "http://dep-solutions.com/images/avatar.png"
+        },
+        {
+            "name": "Swapnali Tupe",
+            "age" : 29,
+            "gender" : "Female",
+            "location" : "Pune",
+            "mobile" : 9922136231,
+            "imagePath" : "https://png.pngtree.com/element_our/png/20181206/female-avatar-vector-icon-png_262142.jpg"
+        },
+        {
+            "name": "Anjali Kapadni",
+            "age" : 29,
+            "gender" : "Female",
+            "location" : "Pune",
+            "mobile" : 9922136231,
+            "imagePath" : "https://png.pngtree.com/element_our/png/20181206/female-avatar-vector-icon-png_262142.jpg"
+        },
+        {
+            "name": "Sumit Jain",
+            "age" : 29,
+            "gender" : "Male",
+            "location" : "Pune",
+            "mobile" : 9922136231,
+            "imagePath" : "http://dep-solutions.com/images/avatar.png"
+        }
+        
+    ]
+}
