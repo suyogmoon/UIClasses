@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Position Sticky
+		</title>
+		<style type="text/css">
+			.container {
+				border: 3px solid;
+				margin: 20px;
+				padding: 20px;
+				height: 350px;
+				width: 400px;
+				overflow: auto;
+			}
+
+			.block {
+				border: 1px solid;
+				text-decoration: underline;
+				text-align: center;
+				height: 130px;
+				width: 130px;
+			}
+
+			.block1 {
+				background: yellow;	
+			}
+
+			.bblock2 {
+				background: grey;
+			}
+
+			.block3 {
+				background: green;
+				left: 100px;
+			}
+
+			.block4 {
+				background: red;
+			}
+
+			.block5 {
+				background: #22dd55;
+				position: sticky;
+				left: 150px;
+				top: 100px;
+				bottom: 10px;
+			}
+
+			.block6 {
+				background: brown;
+			}
+
+			.block7 {
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="block block1">BLOCK!</div>
+			<div class="block block2">BLOCK2</div>
+			<div class="block block3">BLOCK3</div>
+			<div class="block block4">BLOCK4</div>
+			<div class="block block5">BLOCK5</div>
+			<div class="block block6">BLOCK6</div>
+			<div class="block block7">BLOCK7</div>
+		</div>
+
+		<h2>Sticky: It is almost like Position Relative, only difference is it is movable or scrollable within its given boundaries. If we try to move element out of viewpoint, it becomes fixed.</h2>
+	</body>
+</html>
