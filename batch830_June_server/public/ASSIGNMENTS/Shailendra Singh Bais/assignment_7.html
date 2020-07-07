@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment_7 - Tables With Background Image
+		</title>
+		<style type="text/css">
+			.h2 {
+				text-align: center;
+			}
+
+			table, th, td, tr {
+				border-left: 1px solid;
+				border-right: 1px solid;
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				text-align: center;
+			}
+
+					.tablecontainer {
+				background: orange;
+				width: 100%;
+			}
+
+			.imageblock {
+				border: 2px solid;
+				width: 200px;
+				height: 150px;
+				background-image: url("images/image.jpg");
+			}
+
+			.std1 {
+				background-position: 0px -41px;
+			}
+
+			.std2{
+				background-position: 0px -262px;
+			}
+
+			.std3 {
+				background-position: 0px -430px;
+			}
+
+			.std4 {
+				background-position: 0px -584px;
+			}
+
+			.std5 {
+				background-position: 0px -711px;
+			}
+
+			.std6 {
+				background-position: 00px -858px;
+			}
+
+			.std7 {
+				background-position: 00px 620px;
+			}
+
+			.std8{ 
+				background-position: -98px 471px
+			}
+
+			.std9 {
+				background-position: 00px 316px;
+			}
+
+			.std10 {
+				background-position: 00px 155px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h2>Collage Details</h2>
+		<table class="tablecontainer" cellpadding="5" cellspacing="5">
+			<thead>
+				<tr>
+					<th>Serial No.</th>
+					<th>Name</th>
+					<th>Student Image</th>
+					<th>Location</th>
+					<th>Class</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Ajay Rao</td>
+					<td>
+						<div class="imageblock std1" ></div>
+					</td>
+					<td rowspan="2">Hyderabad</td>
+					<td>B. Tech</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>78</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>76</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Pankaj Kar</td>
+					<td>
+						<div class="imageblock std2"></div>
+					</td>
+					<td>B. Engg.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>88</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>85</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td>Maharaja Satish</td>
+					<td>
+						<div class="imageblock std3"></div>
+					</td>
+					<td>Pune</td>
+					<td>B. Sc.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>65</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>85</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Syed</td>
+					<td>
+						<div class="imageblock std4"></div>
+					</td>
+					<td>Chennai</td>
+					<td>M. Tech</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>125</td>
+								<td>50</td>
+								<td>110</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>125</td>
+								<td>50</td>
+								<td>98</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td> Yugendhari Rangaraju</td>
+					<td>
+						<div class="imageblock std5"></div>
+					</td>
+					<td>Cochin</td>
+					<td>B. Sc.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>82</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>96</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>6</td>
+					<td>Pallavi</td>
+					<td>
+						<div class="imageblock std6"></div>
+					</td>
+					<td>Kolkata</td>
+					<td>B. C. A.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>95</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>86</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>7</td>
+					<td>ADV Manoj Kumar Sahoo</td>
+					<td>
+						<div class="imageblock std7"></div>
+					</td>
+					<td>Lucknow</td>
+					<td>L. L. B.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Economics</td>
+								<td>100</td>
+								<td>35</td>
+								<td>78</td>
+							</tr>
+
+							<tr>
+								<td>Constitution</td>
+								<td>100</td>
+								<td>35</td>
+								<td>75</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>8</td>
+					<td>Sai Krishna</td>
+					<td>
+						<div class="imageblock std8"></div>
+					</td>
+					<td>Vizag</td>
+					<td>M. B. A. (HR)</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>B, Laws</td>
+								<td>100</td>
+								<td>35</td>
+								<td>74</td>
+							</tr>
+
+							<tr>
+								<td>Marketing</td>
+								<td>100</td>
+								<td>35</td>
+								<td>67</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>9</td>
+					<td>Vedha Putti</td>
+					<td>
+						<div class="imageblock std9"></div>
+					</td>
+					<td>Hyderabad</td>
+					<td>M. Com</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>69</td>
+							</tr>
+
+							<tr>
+								<td>Accountancy</td>
+								<td>100</td>
+								<td>35</td>
+								<td>95</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				<tr>
+					<td>10</td>
+					<td>Bhanu Prakash Chennupati</td>
+					<td>
+						<div class="imageblock std10"></div>
+					</td>
+					<td>Hyderabad</td>
+					<td>M. Sc.</td>
+					<td>
+						<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Max. Marks</th>
+								<th>Min. Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Maths</td>
+								<td>100</td>
+								<td>35</td>
+								<td>98</td>
+							</tr>
+
+							<tr>
+								<td>Computers</td>
+								<td>100</td>
+								<td>35</td>
+								<td>99</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+				</tr>
+
+				</tbody>
+			</table>
+	</body>
+</html>
