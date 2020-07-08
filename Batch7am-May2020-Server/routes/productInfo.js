@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
   var data = {
     "pdata": [
       {
@@ -47,7 +47,7 @@ router.post('/', function(req, res, next) {
 
   data = JSON.stringify(data);
 
-  data = "parseProductData(" + data + ")";
+  // data = "parseProductData(" + data + ")";
   setTimeout(function(){
     res.send(data);
   }, 5000);
