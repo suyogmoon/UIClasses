@@ -38,7 +38,8 @@ function showProductDetails() {
 }
 
 function getProductDetails() {
-	
+	$(".container").html("");
+	//document.querySelector(".container").innerHTML = "";
 	//document.querySelector(".loadingBlock").style.display = 'block';
 	$(".loadingBlock").show();
 	//.. code which is response of creating a aja req get data from instanceof,,and give it to show prodcut details method

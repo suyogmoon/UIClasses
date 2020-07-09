@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Student Registration Form
+	</title>
+	<style type="text/css">
+		.header{
+			position: absolute;
+			top: 0px;
+			border: solid 1px;
+			height: 20px;
+			width: 100%;
+			text-align: center;
+			margin: 10px;
+			padding: 10px;
+			background-color: #f4c2c2;
+		}
+		.footer{
+			position: absolute;
+			bottom: 0px;
+			border: solid 1px;
+			height: 20px;
+			width: 100%;
+			text-align: center;
+			margin: 10px;
+			padding: 10px;
+			background-color: #f4c2c2;
+		}
+		.accDetails{
+			position: absolute;
+			top: 10px;
+			height: 110px;
+			width:96%;
+			border: solid 1px;
+			margin: 10px;
+			padding: 10px;
+			background-color: #FFFF99;
+			}
+		.outLine{
+			position: absolute;
+			top: 55px;
+			border: solid 1px;
+			height: 480px;
+			width: 100%;
+			margin: 10px;
+			padding: 10px;
+			background-color: #9DB73D;
+			}
+		.captionAcc{
+			position: absolute;
+			top: 10px;
+			left: 40px;
+			height: 25px;
+			width: 120px;
+			border: solid 1px;
+			background-color: #f4c2c2;
+			padding: 2px;
+			text-align: center;
+		}
+		.address{
+			position: absolute;
+			top: 170px;
+			border: solid 1px;
+			height: 110px;
+			width: 96%;
+			margin: 10px;
+			padding: 10px;
+			background-color: #FFFF99;
+		}
+		.addCaption{
+			position: absolute;
+			top: 170px;
+			left: 40px;
+			height: 25px;
+			width: 120px;
+			border: solid 1px;
+			background-color: #f4c2c2;
+			padding: 2px;
+			text-align: center;
+		}
+		.eduDetails{
+			position: absolute;
+			top: 325px;
+			height: 75px;
+			width: 98%;
+			border: solid 1px;
+			margin: 10px;
+			background-color: #FFFF99;
+		}
+		.eduCaption{
+			position: absolute;
+			top: 325px;
+			left: 40px;
+			height: 25px;
+			width: 120px;
+			border: solid 1px;
+			background-color: #f4c2c2;
+			padding: 2px;
+			text-align: center;	
+		}
+		.yourSelfDetails{
+			position: absolute;
+			top: 425px;
+			height: 50px;
+			width: 98%;
+			border: solid 1px;
+			margin: 10px;	
+			background-color: #FFFF99;
+		}
+		.yourSelfCaption{
+			position: absolute;
+			top: 425px;
+			left: 40px;
+			height: 25px;
+			width: 120px;
+			border: solid 1px;
+			background-color: #f4c2c2;
+			padding: 2px;
+			text-align: center;	
+		}
+		.label{
+			position: absolute;
+			top:25px;
+			left: 40px;
+		}
+		.input1{
+			position: absolute;
+			top: 25px;
+			left: 170px;
+			border: solid 1px;
+		}
+		.label2{
+		position: absolute;
+			top:60px;
+			left: 40px;
+		}
+		.input2{
+			position: absolute;
+			top: 60px;
+			left: 171px;
+			border: solid 1px;
+		}
+		.input3{
+			position: absolute;
+			top: 93px;
+			left: 171px;
+		}
+		.label3{
+		position: absolute;
+			top:93px;
+			left: 40px;
+		}
+		.label4{
+			position: absolute;
+			top:25px;
+			left: 750px;
+		}
+		.input4{
+			position: absolute;
+			top: 25px;
+			right: 280px;
+			border: solid 1px;
+		}
+		.label5{
+			position: absolute;
+			top:60px;
+			left: 750px;
+		}
+		.input5{
+			position: absolute;
+			top: 60px;
+			right: 280px;
+			border: solid 1px;
+		}
+		.label6{
+			position: absolute;
+			top:25px;
+			left: 40px;
+		}
+		.input6{
+			position: absolute;
+			top: 25px;
+			left: 170px;
+			border: solid 1px;
+		}
+		.label7{
+		position: absolute;
+			top:60px;
+			left: 40px;
+		}
+		.input7{
+			position: absolute;
+			top: 60px;
+			left: 171px;
+			border: solid 1px;
+		}
+		.input8{
+			position: absolute;
+			top: 93px;
+			left: 171px;
+			border: solid 1px;
+		}
+		.label8{
+		position: absolute;
+			top:93px;
+			left: 40px;
+		}
+		.label9{
+			position: absolute;
+			top:25px;
+			left: 750px;
+		}
+		.input9{
+			position: absolute;
+			top: 25px;
+			right: 280px;
+			
+		}
+		.label10{
+			position: absolute;
+			top:60px;
+			left: 750px;
+		}
+		.input10{
+			position: absolute;
+			top: 60px;
+			right: 280px;
+			
+		}
+		.label11{
+			position: absolute;
+			top:30px;
+			left: 40px;
+		}
+		.input11{
+			position: absolute;
+			top: 25px;
+			left: 170px;
+		}
+		.label12{
+		position: absolute;
+			top:25px;
+			left: 750px;
+		}
+		.input12{
+			position: absolute;
+			top: 25px;
+			right: 280px;
+			
+		}
+		.label13{
+			position: absolute;
+			top:25px;
+			left: 40px;
+		}
+		.input13{
+			position: absolute;
+			top: 12px;
+			left: 250px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		Student Details
+	</div>
+	<div class="outLine">
+		<div class="accDetails">
+			<form>
+				<div class="label">User Account id</div>
+				<div class="input1"> 
+					<input type="text" name="userAccountId" required>
+				</div>
+				<div class="label2">Mail id</div>
+				<div class="input2"> 
+					<input type="text" name="userEmail" required>
+				</div>
+				<div class="label3">Gender</div>
+				<div class="input3"> 
+					<input type="radio" value="Male">Male
+					<input type="radio" value="Female">Female
+				</div>
+				<div class="label4">Password</div>
+				<div class="input4"> 
+					<input type="text" name="userPassword" required>
+				</div>
+				<div class="label5">Re-enter Password</div>
+				<div class="input5"> 
+					<input type="text" name="userPassword" required>
+				</div>
+			</form>
+		</div>
+		<div class="captionAcc">Account Details</div>
+		<div class="address">
+				<form>
+				<div class="label6">Street no</div>
+				<div class="input6"> 
+					<input type="text" name="streetNO">
+				</div>
+				<div class="label7">Door no</div>
+				<div class="input7"> 
+					<input type="text" name="doorNO">
+				</div>
+				<div class="label8">Pin code</div>
+				<div class="input8"> 
+					<input type="text"name="pinCode">
+				</div>
+				<div class="label9">Country</div>
+				<div class="input9"> 
+					<select>
+						<option>India</option>
+						<option>Canada</option>
+						<option>USA</option>
+						<option>UK</option>
+					</select>
+				</div>
+				<div class="label10">State</div>
+				<div class="input10"> 
+					<select>
+						<option>Telangana</option>
+						<option>Andhra Pradesh</option>
+						<option>British Columbia</option>
+						<option>Ontario</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="addCaption">Address</div>
+		<div class="eduDetails">
+			<form>
+				<div class="label11">Languages</div>
+				<div class="input11">
+					<input type="checkbox" name="langT"> Telugu
+					<input type="checkbox" name="lngE"> English
+					<input type="checkbox" name="lngH"> Hindi
+					<input type="checkbox" name="lngU"> Urdu
+				</div>
+				<div class="label12">Qualification</div>
+				<div class="input12"> 
+					<select>
+						<option>B.Tech</option>
+						<option>M.Tech</option>
+						<option>B.Pharm</option>
+						<option>M.Pharm</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="eduCaption">Education</div>
+		<div class="yourSelfDetails">
+			<div class="label13">Few words about yourself</div>
+			<div class="input13">
+				<textarea name="aboutYou"></textarea>
+			</div>
+		</div>
+		<div class="yourSelfCaption">About yourself</div>
+	</div>
+	<div class="footer">@copyright 2020</div>
+</body>
+</html>
