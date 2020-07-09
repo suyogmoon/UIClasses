@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Demonstrating CSS Float Property
+			</title>
+			<style type="text/css">
+				
+				.blockleft,
+				.blockright
+				{
+					width: 120px;
+					height: 120px;
+					text-align: center;
+					text-decoration: underline;
+					border: 2px solid;
+					margin: 20px;
+					padding: 20px;
+				}
+
+				.blockleft{
+					background: yellow;
+					float: left;
+				}
+
+				.blockright{
+					background: pink;
+					float: right;
+				}
+
+				.blockclear{
+					clear: both;
+				}
+
+			</style>
+		</head>
+	<body>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockclear"></div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockright">BLOCK RIGHT</div>
+		<div class="blockclear"></div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockclear"></div>
+		<div class="blockright">BLOCK RIGHT</div>
+		<div class="blockclear"></div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockleft">BLOCK LEFT</div>
+		<div class="blockright">BLOCK RIGHT</div>
+	</body>
+</html>
