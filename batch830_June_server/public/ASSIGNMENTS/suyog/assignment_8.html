@@ -145,15 +145,17 @@
          	margin-top:131px;	
          }
          </style> 
-    </head>
-    <body>
-    <div class= "block">Account details</div>
-    <h2><i>Student registration page</i></h2>
-           <div class="block1">
-               <div class="data">User account id: <input type="text"></div>
-               <div class="data2">Password: <input type="text"></div>
-               <div class="data3">Mail Id: <input type="text"></div>
-               <div class="data4">Renter password : <input type="text"></div>
+  </head>
+     <body>
+         
+               <h2><i>Student registration page</i></h2>
+               <form action="http://testing.com/abc" method="GET">
+               <div class= "block">Account details</div>
+               <div class="block1">
+               <div class="data">User account id: <input type="text"name="uid"></div>
+               <div class="data2">Password: <input type="text"name="passw"></div>
+               <div class="data3">Mail Id: <input type="text"name="mid"></div>
+               <div class="data4">Renter password : <input type="text"name="rpassw"></div>
                <div class="data5">Gender :<input type="radio"name="gender">M
                <input type="radio"name="gender">F</div>
 
@@ -162,8 +164,8 @@
 
            <div class= "block2">Address details</div>
            <div class="block1">
-               <div class="data6">Street no : <input type="text"></div>
-               <div class="data7">Country : <select>
+               <div class="data6">Street no : <input type="text"name="strnm"></div>
+               <div class="data7">Country : <select name="cntry">
                                                     <option>Select</option>
                                                     <option>India</option>
                                                     <option>US</option>
@@ -175,8 +177,8 @@
                                                     <option>Spain</option>
                                              </select></div>
                 
-               <div class="data8">Door no : <input type="text"></div>
-                <div class="data9">State : <select>
+               <div class="data8">Door no : <input type="text"name="Dno."></div>
+                <div class="data9">State : <select name="stat">
                                                     <option>select</option>
                                                     <option>Maharashtra</option>
                                                     <option>Gujrat</option>
@@ -187,17 +189,17 @@
                                                     <option>Manipur</option>
                                                     <option>UP</option>
                                              </select></div>
-               <div class="data10">Pincode : <input type="text"></div>
+               <div class="data10">Pincode : <input type="text"name="pin"></div>
                </div>
 
            <div class= "block3">Education</div>
             <div class="block1">
-               <div class="data11">Language known : English<input type="checkbox">
-               Hindi<input type="checkbox">
-               Telgu<input type="checkbox">
-               Marathi<input type="checkbox">
+               <div class="data11">Language known : English<input type="checkbox"name="lng_e">
+               Hindi<input type="checkbox"name="lng_h">
+               Telgu<input type="checkbox"name="lng_t">
+               Marathi<input type="checkbox"name="lng_m">
                </div>
-               <div class="data12">Qualification : <select>
+               <div class="data12">Qualification : <select name="qua">
                                                     <option>select</option>
                                                     <option>Btech</option>
                                                     <option>BA</option>
@@ -212,9 +214,11 @@
            </div>
            <div class= "block4">About your self</div>
            <div class="block1">
-               <div class="data13">Tell about your self: <textarea></textarea></div>
+               <div class="data13">Tell about your self: <textarea name="yours"></textarea></div>
 
             </div>
-            <div class="reg"><input type="submit"></div>
+            <div class="reg"><input type="submit"value="Register"></div>
+       </div>
+       </form>
     </body>
 </html> 

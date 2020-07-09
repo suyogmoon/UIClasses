@@ -7,8 +7,6 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/productInfo');
-var studentRouter = require('./routes/studentDetails');
-
 
 var app = express();
 
@@ -32,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/data/product/info/details', productRouter);
-app.use("/info/student", studentRouter);
 
 app.listen(8081, function(){
 	console.log("sever is listing at 8081");

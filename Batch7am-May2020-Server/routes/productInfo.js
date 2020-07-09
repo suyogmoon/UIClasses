@@ -35,22 +35,19 @@ router.get('/', function(req, res, next) {
         "price": 120,
         "manu": "Samsung",
         "imagePath": "https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612"
-      },
-      {
-        "name": "PEN",
-        "price": 145,
-        "manu": "Samsung",
-        "imagePath": "https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612"
       }
     ]
   };
 
   data = JSON.stringify(data);
+<<<<<<< HEAD
 
   // data = "parseProductData(" + data + ")";
+=======
+>>>>>>> parent of 92e2bd6... Merge branch 'master' of https://github.com/durgaprasadUI/UIClasses
   setTimeout(function(){
     res.send(data);
-  }, 5000);
+  }, 5000)
   
 });
 
