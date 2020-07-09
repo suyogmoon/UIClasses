@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Product Details.
+		</title>
+		<link rel="stylesheet" type="text/css" href="produtStyles.css">
+		<script src="../../jquery.js"></script>
+		<script src="lib/jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src="productDetailsLoad.js"></script>
+		<style>
+			.oldPrice {
+				text-decoration: line-through;
+			}
+			.loadingBlock {
+				position: absolute;
+				top: 30%;
+				left: 44%;
+				display: none;
+			}
+			.errorBlock {
+				border: 1px solid;
+				color: red;
+				text-align: center;
+				padding: 50px;
+				position: absolute;
+				top: 30%;
+				left: 30%;
+				width: 400px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="errorBlock">
+			<h3>Error while interacting with server...</h3>
+		</div>
+		<div class="loadingBlock">
+			<img src="https://i.pinimg.com/originals/25/ef/28/25ef280441ad6d3a5ccf89960b4e95eb.gif" alt="" />
+		</div>
+		<div class="header">
+			Welcome to online product deals page...
+		</div>
+		<input type="button" value="Load Products" onclick="getProductDetails()">
+		<div class="container">
+			hello every one....
+		</div>	
+		<script id="productDataTmplt" >
+			<div class="details">
+				<ul>
+					<li>
+						<b>Product Name: </b><span data-content="name"></span>
+					</li>
+					<li>
+						Product Price : 
+						<span class="oldPrice" data-content="oldPrice"></span>
+						<span data-content="price"></span>
+					</li>
+					<li>
+						Manufacturer :
+						<span data-content="manu"></span>
+					</li>
+					<li>
+						<img data-src="imagePath" />
+					</li>
+				</ul>
+			</div>
+		</script>	
+		<script id="templt2">
+			<div>
+				<div><span data-content="name"></span> - Name of product</div>
+				<div><span data-content="price"></span> - price of product</div>
+			</div>
+		</script>
+	</body>
+</html>
