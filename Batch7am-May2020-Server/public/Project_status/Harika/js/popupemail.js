@@ -1,7 +1,7 @@
 function readData() {
 	var Data = {};
 
-	Data.mail = document.querySelector("#eMailId").value;
+	Data.mail = $("#eMailId").val();
 
 	try {
 		if (Data.mail == ''){
@@ -20,13 +20,13 @@ function readData() {
 
 
 function closeDialog() {
-	document.querySelector(".popupContainer").style.display = "none";
-	document.querySelector(".maskBlock").style.display = 'none'
+	$(".popupContainer").hide();
+	$(".maskBlock").hide();
 }
 
 function displayDialog(msg) {
-	document.querySelector(".popupContainer").style.display = 'block'
-	document.querySelector(".maskBlock").style.display = 'block'
-	document.querySelector(".DialogContainer").innerText = msg;
+	$(".popupContainer").show();
+	$(".maskBlock").show();
+	$(".DialogContainer").text(msg);
 }
 
