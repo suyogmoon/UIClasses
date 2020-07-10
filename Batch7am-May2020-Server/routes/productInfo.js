@@ -40,11 +40,7 @@ router.get('/', function(req, res, next) {
   };
 
   data = JSON.stringify(data);
-<<<<<<< HEAD
-
-  // data = "parseProductData(" + data + ")";
-=======
->>>>>>> parent of 92e2bd6... Merge branch 'master' of https://github.com/durgaprasadUI/UIClasses
+  // data = "parseProductData(" + data + ")"; // Making JSONP
   setTimeout(function(){
     res.send(data);
   }, 5000)
