@@ -14,8 +14,7 @@ function loadData() {
     });
 }
 
-function displayMatchDetails(type, data) {
-    
+function displayMatchDetails(type, data) {    
     $(".matchInfo_1").loadTemplate($("#matchTemplate"), data);
 }
 

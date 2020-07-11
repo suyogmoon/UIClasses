@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var productRouter = require('./routes/productInfo');
 
 var match1Router = require("./routes/match1");
+var match2Router = require("./routes/match2");
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/users', usersRouter);
 app.use('/data/product/info/details', productRouter);
 
 app.use("/cricinfo/data/match1", match1Router);
+app.use("/cricinfo/match2", match2Router);
 
 app.listen(8081, function(){
 	console.log("sever is listing at 8081");

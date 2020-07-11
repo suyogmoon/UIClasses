@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Jquery Promises
+        </title>
+        <link rel="stylesheet"  href="css/match.css"></link>
+        <script src="../../jquery.js"></script>
+        <script src="lib/jquery.loadTemplate-1.4.4.min.js"></script>
+        <script src="js/loadMatchDetails.js"></script>
+        
+    </head>
+    <body>
+        <div class="loadingBlock">
+            <img src="https://cdn.lowgif.com/full/ba11c4d30b6f2054-loading-gif-transparent-background-to-setup-a-background-of-beach-just-run-it-is-best-do-this.gif" />
+        </div>
+        <h3>
+            Welcome to cricinfo
+        </h3>
+        <div class="matchBlock">
+            <div class="subheading"> Match 1 Details</div>
+            <div class="matchInfo_1"></div>
+        </div>
+        <div class="matchBlock">
+            <div class="subheading"> Match 2 Details</div>
+            <div class="matchInfo_2"></div>
+        </div>
+        <script id="matchTemplate">
+            <ul>
+                <li>
+                    Between: <span data-content="between"></span>
+                </li>
+                <li>
+                    Type: <span data-content="matchType"></span>
+                </li>
+                <li>
+                    Location: <Span data-content="location"></Span>
+                </li>
+                <li>
+                    Date: <span data-content="date"></span>
+                </li>
+            </ul>
+        </script>
+    </body>
+</html>
