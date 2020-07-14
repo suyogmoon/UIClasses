@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            div selectors with remove attr
+        </title>
+        <script src="../jquery.js"></script>
+    </head>
+    <body>
+        <input type="button" onclick="applyChanges()" value="apply">
+        <div id="sample1">ITem1</div>
+        <div id="sample2">ITem 2</div>
+        <div id="sample3">ITem 3</div>
+        <div id="sample4">ITem 4</div>
+        <div id="sample5">ITem 5</div>
+        <script>
+            function applyChanges(){
+                $("div[id=sample3]").removeAttr("id");
+            }
+        </script>
+    </body>
+</html>

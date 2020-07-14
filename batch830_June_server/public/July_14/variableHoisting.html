@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Variable Hoisting
+		</title>
+	</head>
+	<body>
+		<div></div>
+		<script type="text/javascript">
+
+			var a = 90;
+
+			...
+			...
+			var b = 80;
+			...
+			.
+			.
+			.
+			var c = 100;
+			...
+			--------------------------
+			var a, b, c;
+			a = 90;
+
+			...
+			b - undefine
+			...
+			b = 80;
+			...
+			.
+			.
+			.
+			c = 100;
+
+		</script>
+	</body>
+</html>
