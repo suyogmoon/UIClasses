@@ -8,7 +8,7 @@ function loadData() {
     
     var match2Req = $.ajax({
         url: 'http://localhost:8081/cricinfo/match2',
-        dataType: 'JSON',
+        dataType: 'XML',
         data: {},
         method: 'GET'
     }); 

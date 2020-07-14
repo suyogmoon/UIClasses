@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Jquery Methods
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .highlight {
+                background: yellow;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Demonstrating jqery methods</div>
+        <input type="button" value="Apply" onclick="applyChanges()">
+        <table>
+            <tr>
+                <th>snoo</th>
+                <th>name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Raj</td>
+                <td>20</td>
+                <td>MAle</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Neha</td>
+                <td>10</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Krish</td>
+                <td>21</td>
+                <td>Male</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Raj</td>
+                <td>20</td>
+                <td>MAle</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Neha</td>
+                <td>10</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Krish</td>
+                <td>21</td>
+                <td>Male</td>
+
+            </tr>
+        </table>
+        ....
+        <div class="highlight">HELLO every one</div>
+        ...
+        <script>
+            function applyChanges(){
+                //$("tr").css("background", "green");
+                // $("tr:odd").css({"background": "blue", "font-weight": "bold"})
+
+                //$("div").attr("id", "sample")
+                //$("div").removeAttr("class");
+
+                /*var spanTag = $("<span></span>");
+                spanTag.html("hello am frm span")
+                spanTag.css("border", "2px solid");
+                //$("div").after(spanTag); 
+                $("div").appendTo(spanTag); */
+
+                $("<span style='background:red'>Helllo</span>").appendTo('div');
+            }           
+
+            //document.querySelector("div").appendChild()
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            div selectors with remove attr
+        </title>
+        <script src="../jquery.js"></script>
+    </head>
+    <body>
+        <input type="button"  value="apply">
+        <div></div>
+        <script>
+            /*$("input").click(function(event){
+                alert("test");
+            });
+            $("input").mouseover(function(event){
+                console.log("on mouse over got fired");
+            }); */
+
+            var userEvent  ="mouseover";
+
+           /* $("input").on(userEvent, function(){
+                alert("hello")
+            })*/
+
+            $("input").on({
+                "click": function() {console.log("click happend")},
+                "mouseover": function() {console.log("mouse over happend")}
+            });
+        </script>
+    </body>
+</html>
