@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       h3{
+            text-align: center;
+            border: 1px solid;
+            background: linear-gradient(to bottom right, green, blue);
+            color: white;
+            text-transform: uppercase;
+            padding: 20px;
+            width: 500px;
+            align-items: center;
+            position: absolute;
+            z-index: 1000;
+            left: 29%;
+        }
+        .container{
+            position: absolute;
+            left:25%;
+            top: 15%;
+            height: auto;
+            border: 2px dotted black;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+        ul{
+            padding: 20px !important;
+        }
+        li{
+            list-style: none;
+            border: 1px solid;
+            padding: 20px;
+            background-color: #e66465;
+        /* background: linear-gradient(#e66465, #9198e5); */
+            color: white;
+            width: 500px;
+            text-align: center;
+            font-weight: 600;
+
+        }
+        .changes{
+            background-color: cadetblue !important;
+        }
+    </style>
+    <div class="header">
+        <H3>Block Color Change on Click using jquery</H3>
+    </div>
+    <div class="container">
+        <ul>
+            <li >Block 1</li>
+            <li >Block 2</li>
+            <li >Block 3</li>
+            <li >Block 4</li>
+            <li >Block 5</li>
+            <li >Block 6</li>
+            <li >Block 7</li>
+            <li >Block 8</li>
+            <li >Block 9</li>
+            <li >Block 10</li>
+            <li >Block 11</li>
+        </ul>
+    </div>
+    
+    <script>
+    $("li").click(function(){
+        $("li").removeClass("changes");
+        $(this).addClass("changes");
+        $(this).nextAll().addClass("changes");
+    })
+     </script>
+
+</body>
+</html>
