@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Demonstrating Siblings</title>
+        <script src="../jquery.js"></script>
+        <style>
+            .highlight  {
+                background: green;
+
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            li:hover {
+                background-color: #ccc;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Traversing Siblings</h2>
+        <input type="button" value="Apply" onclick="applyChanges()">
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li id="item3">item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li class="Test">item 6</li>
+            <li>item 7</li>
+        </ul>
+        <script>
+            function applyChanges(event) {
+                //$("#item3").siblings().addClass("highlight")
+                $("#item3").nextUntil('.Test').addClass("highlight");
+                $("#item3").addClass("highlight");
+
+                //$("li:nth-child(3)").addClass('highlight');
+                
+            }
+        </script>
+    </body>
+</html>
