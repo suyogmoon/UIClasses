@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating of Pre and Post Increment operator.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = 10;
+			var b = 90;
+			console.log("value of b : " , b);
+			
+			var c = a + b;	// c = 100
+			console.log("Value of c : " , c);
+
+			console.log("value of b : " , b); 
+			c = a + b++;	
+			console.log("value of b : " , b); // b = 90 , c = 100 so u have made wrong regarding b , b = 91
+			console.log("Value of c : " , c);
+
+			console.log("value of b : " , b); //b = 91
+			c = a + ++b;	
+			console.log("value of b : " , b); // b = 92 , c = 102
+			console.log("Value of c : " , c);
+
+		</script>
+
+	</body>
+</html>
