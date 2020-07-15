@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Position Relative
+		</title>
+		<style type="text/css">
+			.block {
+				border:1px solid;
+				width:120px;
+				height:120px;
+				text-decoration: underline;
+				text-align: center;
+			}
+
+			.block1 {
+				background: red;
+			}
+
+			.block2 {
+				background: pink;
+				left:150px;
+				top:120px;
+				position: relative;
+			}
+
+			.block3 {
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block block1">
+			BLOCK1
+		</div>
+
+		<div class="block block2">
+			BLOCK2			
+		</div>
+
+		<div class="block block3">
+			BLOCK3
+		</div>
+
+		<h2>Relative: While moving to a new position it doesn't loose its own default space</h2>
+		
+	</body>
+</html>

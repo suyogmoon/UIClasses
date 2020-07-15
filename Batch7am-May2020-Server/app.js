@@ -8,7 +8,17 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/productInfo');
 
+var match1Router = require("./routes/match1");
+var match2Router = require("./routes/match2");
+
 var app = express();
+
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +34,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/data/product/info/details', productRouter);
 
+app.use("/cricinfo/data/match1", match1Router);
+app.use("/cricinfo/match2", match2Router);
 
 app.listen(8081, function(){
 	console.log("sever is listing at 8081");

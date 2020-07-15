@@ -40,6 +40,7 @@ router.get('/', function(req, res, next) {
   };
 
   data = JSON.stringify(data);
+  // data = "parseProductData(" + data + ")"; // Making JSONP
   setTimeout(function(){
     res.send(data);
   }, 5000)

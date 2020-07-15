@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Tables
+		</title>
+		<style type="text/css">
+			table, th, tr, td {
+				border: 2px solid grey;
+				text-align: center;
+			}
+
+		 	.tablecontainer{
+		 		background: orange;
+		 	}
+		</style>
+	</head>
+	<body>
+		<h2>Employee Details in Table Form</h2>
+		<table class="tablecontainer" cellpadding="10" cellspacing="10">
+			<thead>
+				<tr>
+					<th>Serial No.</th>
+					<th>Employee Name</th>
+					<th>Salary</th>
+					<th>Current Location</th>
+					<th>Permanent Location</th>
+					<th>Department</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>45000</td>
+					<td rowspan="2">Hyderabad</td>
+					<td>Pune</td>
+					<td>Digital Marketing</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Sumeet</td>
+					<td>50000</td>
+					
+					<td>Bengaluru</td>
+					<td>Web Development</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Sachin</td>
+					<td>55000</td>
+					<td>Chennai</td>
+					<td>Vizag</td>
+					<td>Wordpress, PHP</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Sanket</td>
+					<td>55000</td>
+					<td>Bengaluru</td>
+					<td>Cochin</td>
+					<td>Wordpress, PHP</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Girish</td>
+					<td>75000</td>
+					<td>Pune</td>
+					<td>Kolkata</td>
+					<td>Java Developer</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Akshay</td>
+					<td>80000</td>
+					<td>Indore</td>
+					<td>Noida</td>
+					<td>Java Developer</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Praveen</td>
+					<td>85000</td>
+					<td colspan="2">Bengaluru</td>
+					<<td>Human Resource</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

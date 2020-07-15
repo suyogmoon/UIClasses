@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Student Registration page
+		</title>
+		<style type="text/css">
+			h3{
+				width: 100%;
+				text-align: center;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				background: #ccc;
+				text-decoration: underline;
+			}
+			.back_ground{	
+				border-right: 1px solid;
+				border-left: 1px solid;
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+			li{
+				list-style: none;
+			}
+			.fore_ground{
+				border: 1px solid;
+				background: #ccc;
+				margin: 10px;
+				padding: 10px;
+				z-index: 99;
+				position: absolute;
+				height: 20px;
+			}
+			.back_ground{
+				width: 95%;
+				z-index: 1;
+				position: absolute;
+				margin: 30px;
+				padding: 20px;
+				left: -10px;
+				height: 190px;
+			}
+			.bg1,
+			.fg1{
+				top: 50px;
+			}
+
+			.lable_1,
+			.input_cntrl_1{
+				float: left;
+			}
+
+			.lable_2,
+			.input_cntrl_2{
+				float: right;
+			}
+
+			.top{
+				position: absolute;
+			}
+
+
+			.input_cntrl_1{
+				left: 200px;
+			}
+			
+			.lable_2{
+				left: 60%;
+			}
+			.input_cntrl_2{
+				left: 75%;
+			}
+			
+			.top1{
+				top: 50px;
+			}
+			.top2{
+				top: 100px;
+			}
+			.top3{
+				top: 150px;
+			}
+			.fg2,.bg2{
+				top: 330px;
+			}
+
+			.top4{
+				top: 50px;
+			}
+			.top5{
+				top: 100px;
+			}
+			.top6{
+				top: 150px;
+			}
+
+			.fg3,.bg3{
+				top: 610px;
+			}
+
+			.top7{
+				top: 50px;
+			}
+			.top8{
+				top: 100px;
+			}
+			.fg4,.bg4{
+				top: 890px;
+			}
+			.top9{
+				top: 50px;
+			}
+			.footer{
+				left: 7px;
+				width: 97%;
+				top: 1190px;
+				border-right: 1px solid;
+				border-left: 1px solid;
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				position: absolute;
+				text-align: center;
+				background: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Student Registration Page</h3>
+		<form action="http://testingcode.com/abc" method="POST">
+				<ul>
+					<li >
+						<li class="fore_ground fg1">Account Details</li>
+						<li class="back_ground bg1" >
+							
+								<div class="lable_1 top1 top">User Account Id:</div>
+								<div class="input_cntrl_1 top1 top"><input type="text" name="uid"></div>
+
+
+								<div class="lable_2 top1 top">Password:</div>
+								<div class="input_cntrl_2 top1 top"><input type="password" name="upwd"></div>
+
+	
+								<div class="lable_1 top2 top">Mail Id:</div>
+								<div class="input_cntrl_1 top2 top"><input type="text" name="umail"></div>
+
+						
+								<div class="lable_2 top2 top">Re-enter Password:</div>
+								<div class="input_cntrl_2 top2 top"><input type="password" name="urepwd"></div>
+
+
+								<div class="lable_1 top3 top">Gender:
+									<input type="radio"  name="gender" value="male" >M
+									<input type="radio"  name="gender" value="female">F
+								</div>
+
+						</li>
+					</li>
+
+					<li>
+						<li class="fore_ground fg2">Address Details</li>
+						<li class="back_ground bg2">
+
+							 	<div class="lable_1 top4 top">Street No:</div>
+								<div class="input_cntrl_1 top4 top"><input type="text" name="ustreet"></div>
+
+		
+								 <div class="lable_2 top4 top">Country:
+									<select>
+										<option>India</option>
+										<option>Nepal</option>
+										<option>Bangladesh</option>
+										<option>Pak</option>
+									</select>
+								</div>
+
+
+							<div class="lable_1 top5 top">Door No:</div>
+							<div class="input_cntrl_1 top5 top"><input type="text" name="udrno"></div>
+
+							<div class="lable_2 top5 top">State:
+								<select class="input_cntrl_2">
+									<option>Andhra Pradesh</option>
+									<option>Telangana</option>
+									<option>Karnataka</option>
+									<option>Kerala</option>
+									<option>Tamil Nadu</option>
+								</select>
+							</div>
+
+							<div class="lable_1 top6 top">Pincode:</div>
+							<div class="input_cntrl_1 top6 top"><input type="text" name="upincd"></div>
+
+						</li>
+					</li>
+
+					<li >
+						<li class="fore_ground fg3">Education</li>
+						<li class="back_ground bg3" >
+							<div class="lable_1 top7 top">Languages:</div>
+							<div class="input_cntrl_1 top7 top">
+								<input type="checkbox" name="lng_e">English
+								<input type="checkbox" name="lng_u">Urdu
+								<input type="checkbox" name="lng_t">Telugu
+								<input type="checkbox" name="lng_h">Hindi
+							</div>
+
+
+							<div class="lable_1 top8 top">Qualification</div>
+							<div class="input_cntrl_1 top8 top">
+								<select>
+									<option>B.Tech</option>
+									<option>B.Sc</option>
+									<option>B.Com</option>
+									<option>B.Stat</option>
+									<option>C.A</option>
+								</select>
+							</div>
+
+						</li>
+					</li>
+
+					<li>
+						<li class="fore_ground fg4">About Yourself</li>
+						<li class="back_ground bg4" >
+
+							<div class="lable_1 top9 top">Tell Few Words About Yourself:
+								<textarea></textarea>
+							</div>
+
+						</li>
+					</li>
+
+					<li class="footer">
+						@copyrights 2020
+					</li>
+
+
+				</ul>
+
+		</form>
+	</body>
+</html>

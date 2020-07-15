@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Position Fixed Property
+		</title>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				text-align: center;
+				text-decoration: underline;
+				width: 130px;
+				height: 130px;
+			}
+
+			.block1 {
+				background: red;
+			}
+
+			.block2 {
+				background: green;
+			}
+
+			.block3 {
+				background: pink;
+				position: fixed;
+				left: 150px;
+				top: 200px;
+			}
+
+			.block4 {
+				background: blue;
+			}
+
+			.container {
+				border: 3px solid;
+				margin: 20px;
+				padding: 40px;
+				height: 350px;
+				width: 400px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="block block1">BLOCK1</div>			
+			<div class="block block2">BLOCK2</div>
+			<div class="block block3">BLOCK3</div>
+			<div class="block block4">BLOCK4</div>
+			<div class="block block4">BLOCK 5</div>
+			<div class="block block4">BLOCK 6</div>
+		</div>
+
+		<h2>Fixed: Fixed is similar to position absolute. It looses its original position. Difference is element is fixed to a position.</h2>
+		<h2>overflow is a property to add scroll bar. By default it is hidden</h2>
+	</body>
+</html>

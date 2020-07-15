@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details</title>
+</head>
+<body>
+	<div><h1>Student Details</h1></div>
+	<script type="text/javascript">
+		var studentName = prompt("Enter student name: ");
+		var studentAge = prompt("Enter student age: ");
+		var gender = prompt("Enter gender: ");
+		var m1 = prompt("Enter subject 1 marks: ");
+		m1 = parseInt(m1);
+
+		var m2 = prompt("Enter subject 2 marks: ");
+		m2 = parseInt(m2);
+
+		var m3 = prompt("Enter subject 3 marks: ");
+		m3 = parseInt(m3);
+
+		var total = m1 + m2 + m3;
+		var avg = total / 3;
+
+		console.log("Student Details");
+		console.log("Student name " + studentName);
+		console.log("Gender " + gender);
+		console.log("Age " , studentAge);
+		console.log("Total is " + total);
+		console.log("Avg is "  + avg);
+
+		if (avg > 40) 
+		{
+			console.log("student got passed");
+			if (avg > 90) 
+			{
+				console.log("Got Distinction...")
+			} 
+			else if (avg >= 60) 
+			{
+				console.log("got first class");
+			} 
+			else 
+			{
+				console.log("second class");
+			}
+		} 
+		else 
+		{
+			console.log("you have a surprise...")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+   <head>
+
+      <title>
+      employee salary js
+      </title>
+   </head>
+
+   <body>
+
+         <script>
+            var employeeName = prompt("enter employee name"),
+              employeeAge =prompt("enter employee age"),
+              employeeDept =prompt("enter employee deptartment"),
+              gender =prompt("enter employee gender");
+            var basicSalary =prompt("enter employee basic salary");
+              basicSalary = parseInt(basicSalary);
+            var pf = basicSalary*12/100;
+            var hra = basicSalary*25/100;
+            var totalsalary = basicSalary + pf + hra;
+
+              console.log("employee details ");
+              console.log("employee name " + employeeName);
+              console.log("employee age " +employeeAge);
+              console.log("employee dept " +employeeDept);
+              console.log("gender " + gender);
+              console.log("employee basic salary "+basicSalary);
+              console.log("pf " + pf);
+              console.log("hra " + hra);
+              console.log("total salary " + totalsalary);
+        </script>
+
+    </body>
+</html>
+
+
+

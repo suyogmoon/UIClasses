@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Registration Page
+		</title>
+		<style type="text/css">
+			h3{
+				border: 1px solid;
+				text-align: center;
+				text-decoration: underline;
+				margin: 5px;
+				padding: 10px;
+			}
+			li{
+				border: 1px solid;
+				list-style: none;
+				background: #ccc;
+				margin: 10px;
+				padding: 10px;
+				height: 30px;
+			}
+			.lable,.input_cntrl{
+				float: left;
+			}
+			.lable{
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>User Registration Page</h3>
+		<form action="http://testingcode.com/abc" method="POST">
+			<ul>
+				<li>
+					<div class="lable">Enter Username:</div>
+					<div class="input_cntrl"><input type="text" name="uname"></div>
+				</li>
+
+				<li>
+					<div class="lable">Enter Password:</div>
+					<div class="input_cntrl"><input type="password" name="upwd"></div>
+				</li>
+
+				<li>
+					<div class="lable">Enter User Age:</div>
+					<div class="input_cntrl"><input type="text" name="uage"></div>
+				</li>
+
+				<li>
+					Gender:
+					<input type="radio" name="gender" value="male">M
+					<input type="radio" name="gender" value="female">F
+				</li>
+
+				<li>
+					Languages you know:
+					<input type="checkbox" name="lng_t">Telugu
+					<input type="checkbox" name="lng_e">English
+					<input type="checkbox" name="lng_h">Hindi
+				</li>
+
+				<li>
+					Country:
+					<select name="ucountry">
+						<option>India</option>
+						<option>Canada</option>
+						<option>Nepal</option>
+						<option>Bhutan</option>
+					</select>
+				</li>
+
+				<li>
+					Tell about yourself:
+					<textarea name="uabout"></textarea>
+				</li>
+
+				<li>
+					<input type="submit" value="Get Registration ">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
