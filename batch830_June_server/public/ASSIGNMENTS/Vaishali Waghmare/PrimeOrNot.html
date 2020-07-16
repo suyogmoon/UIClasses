@@ -1,0 +1,32 @@
+ <!-- WAP to read a number from the user and check whether it is prime or not. -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Prime or not</title>
+ </head>
+ <body>
+ 	<script type="text/javascript">
+ 		var num, i, j = 0;
+ 		var num = parseInt(prompt("Enter number: "), num);
+
+ 		//check for prime number
+	   for (i = 1; i <= num; i++)
+	   {
+	      if ((num % i) == 0)
+	         {
+	            j++;
+	         }
+	   }
+
+	   if (j == 2)
+	   {
+	   	console.log("Prime number is", num);
+	   }
+	   else
+	   {
+	   	console.log("Not prime number", num);
+	   }
+
+ 	</script>
+ </body>
+ </html>
