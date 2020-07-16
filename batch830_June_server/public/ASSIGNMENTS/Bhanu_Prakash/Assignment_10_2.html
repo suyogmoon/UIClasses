@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			sum of all even numbers and odd numbers.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var starting_range = prompt("enter the starting range");
+			starting_range = parseInt(starting_range);
+
+			var ending_range = prompt("enter ending range");
+			ending_range = parseInt(ending_range);
+
+			var odd_sum=0, even_sum=0;
+
+			for(var i = starting_range ; i <= ending_range ; i++){
+				if(i % 2 != 0){
+				//	console.log("even numbers are " , i);
+					odd_sum = odd_sum + i;
+				} 
+			}
+			console.log("odd numbers sum is : " , odd_sum);
+			
+		</script>
+	</body>
+</html>
