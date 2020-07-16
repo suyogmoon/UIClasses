@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding sum of values between 1 to 100.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sum = 0, counter =0;
+
+			var starting_range = prompt("enter the starting range " , starting_range);
+			starting_range = parseInt(starting_range);
+
+			var ending_range = prompt("enter the ending range " , ending_range);
+			ending_range = parseInt(ending_range);
+
+			if(starting_range < ending_range){
+				for(var i = starting_range; i <= ending_range; i++){
+					sum = sum + i;
+				}
+				console.log(sum);
+				console.log("no of iterations " + i);
+			} else {
+				for(var i = starting_range; i >= ending_range; i--){
+					sum = sum + i;
+					counter++;
+
+				}
+				console.log(sum);
+				console.log("no of iterations " + counter);
+			}
+		</script>
+	</body>
+</html>

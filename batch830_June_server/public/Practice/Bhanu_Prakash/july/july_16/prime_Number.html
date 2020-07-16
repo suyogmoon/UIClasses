@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Printing Prime Numbers from 1 to 100
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var numbr = prompt("enter any number ");
+			numbr = parseInt(numbr);
+			var count=0;
+
+			for(var i = 1 ; i <= numbr ; i++){
+				if(numbr % i == 0){
+					count++;
+				} else if (count > 2){
+					break;
+				}
+			}
+
+			if(count == 2){
+				console.log("number is prime");
+			} else {
+				console.log("number is not prime");
+			}
+		</script>
+	</body>
+</html>
