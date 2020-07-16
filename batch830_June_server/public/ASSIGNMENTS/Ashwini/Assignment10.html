@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 style = "text-align: center;">Sum of even numbers</h1>
+	<script type="text/javascript">
+		var stratPoint = prompt("Enter the starting value");
+		startPoint = parseInt(stratPoint);
+		var endPoint = prompt("Enter the end value");
+		endPoint = parseInt(endPoint);
+		var sum = 0;
+		var i=0; swap = 0;
+		if(endPoint < stratPoint){
+			swap = endPoint;
+			endPoint = stratPoint;
+			stratPoint = swap; 
+		}
+		for (i=stratPoint; i<=endPoint; i++){
+			if (i % 2 === 0) {  
+				sum = i + sum;
+			}
+		}
+		console.log("Sum of even numbers : "+sum);
+	</script>
+</body>
+</html>

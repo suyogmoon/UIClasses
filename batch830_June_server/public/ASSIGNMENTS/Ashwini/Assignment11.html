@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Numbers</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var startNum = prompt("Enter statring number");
+		startNum = parseInt(startNum);
+		var endNum = prompt("Enter end number");
+		endNum = parseInt(endNum);
+		var checkNum = 0, i = 0; count = 0; j = 1;
+		for(checkNum = startNum; checkNum <= endNum; checkNum++){
+			do{
+			if(checkNum % j === 0){
+				count = count + 1;
+			}
+			j++;
+			
+		}while(j<=checkNum)
+		j=1;
+		if(count === 2){
+			console.log(checkNum + " is a prime number");
+		}
+		count=0;
+		}
+	</script>
+</body>
+</html>
