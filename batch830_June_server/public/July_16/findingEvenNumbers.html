@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding even numbers
+		</title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			var startPoint = prompt("enter start range");
+			startPoint = parseInt(startPoint);
+			var endPoint = prompt("enter End range");
+			endPoint = parseInt(endPoint);
+
+			if (endPoint < startPoint) {
+				alert("boss given range is not valid");
+			} else {
+				/*for (var i = 1; i <= 100; i++) {
+					if (i % 2 != 0) {
+						console.log(i);
+					}
+				}*/
+				var count = 0;
+				for (var i = 1; i <= 100; i = i+2) {
+					count++;
+					console.log(i);
+				}
+				console.log(count);
+			}
+		</script>
+	</body>
+</html>
+
