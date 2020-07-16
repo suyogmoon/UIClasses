@@ -1,0 +1,40 @@
+.container{
+    background-color: aquamarine;
+}
+.head{
+    text-align: center;
+}
+.empdetails{
+    text-align: center;
+    list-style: none;
+    border: 1px solid;
+    padding: 20px;
+}
+.empdetails li{
+    padding: 10px;
+    right: 10px;
+}
+
+
+.displayPaySlip li {
+    list-style: none;
+    padding: 10px;
+}
+
+.displayPaySlip{
+    border: 1px solid;
+    text-align: center;
+}
+.displayPaySlip h3{
+    color: red;
+    
+}
+
+.error{
+    color: red;
+}
+
+.empname,.empage,.empgender,.empdept,.salary{
+    display: none;
+}
+

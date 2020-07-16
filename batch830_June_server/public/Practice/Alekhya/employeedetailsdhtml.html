@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="employeedetailsdhtml.css">
+        <script type="text/javascript" src="employeedetailsdhtml.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="head">EMPLOYEE DETAILS</h3>
+            <ul class="empdetails">
+                <li>
+                    EMPLOYEE NAME:
+                    <input type="text" id="emp_name" onkeypress="return validateEmpName(event)">
+                        <div class="empname error">
+                            *required
+                        </div>
+                </li>
+                <li>
+                    EMPLOYEE AGE:
+                    <input type="text" id="emp_age" onkeypress=" return validateAgeSalary(event)">
+                        <div class="empage error">
+                            *required
+                        </div>
+                </li>
+                <li>
+                    <span id="emp_gender">EMPLOYEE GENDER:
+                        MALE
+                        <input type="radio" name="gender" value="male" checked>
+                    
+                        FEMALE
+                        <input type="radio" name="gender" value="female">
+                    </span>
+
+                </li>
+                <li>
+                    EMPLOYEE DEPARTMENT:
+                    <select id="emp_dept">
+                        <option>UI</option>
+                        <option>UX</option>
+                        <option>NETWORKING</option>
+                        <option>TESTING</option>
+                    </select>
+
+                </li>
+                <li>
+                     EMPLOYEE BASIC SALARY:
+                    <input type="text" id="emp_basicsalary" onkeypress="return validateAgeSalary(event)">
+                        <div class="salary error">
+                            *required
+                        </div>
+                </li>
+                <li>
+                    <input type="button" value="Generate pay slip" onclick="readEmployeeDetails()">
+                </li>
+            </ul>
+        
+        <div class="displayPaySlip">
+        </div>
+
+    </div>
+    </body>
+</html>

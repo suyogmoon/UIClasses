@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="registrationform.css">
+        <script type="text/javascript" src="registrationform.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h3 class="header">REGISTRATION FORM</h3>
+            <ul class="registrationform">
+                <li>
+                    <label>USERNAME:</label>
+                        <input type="text" id="username" onkeypress=" return validateUserName(event)">
+                            <div class="error user_name">
+                                *required
+                            </div>
+                </li>
+                <li>
+                    <label>PASSWORD:</label>
+                        <input type="password" id="password" onkeypress="validatePassword(event)">
+                            <div class="error pwd">
+                            *required
+                            </div>
+                </li>
+                <li>
+                    <label>CONFIRMPASSWORD:</label>
+                        <input type="password" id="cnfpassword">
+                            <div class="error cnf_pwd">
+                                *required
+                            </div>
+                    
+                </li>
+                <li>
+                    <label>PHONENUMBER:</label>
+                        <input type="text" id="phoneno">
+                            <div class="error phone_no">
+                                *required
+                            </div>
+                    
+                </li>
+                <li>
+                    <label>EMAILID:</label>
+                        <input type="text" id="emailid">
+                            <div class="error email_id">
+                                *required
+                            </div>
+                    
+                </li>
+                <li>
+                    <input type="button" value="Register" onclick="userRegistraon()">
+                </li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>
