@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment - 9 
+		</title>
+	</head>
+	<body>
+		<h3>Student Details by getting input using PROMPT</h3>
+		<script type="text/javascript">
+			var StdName =  prompt("Enter the Student Name");
+
+			var StdAge = prompt("Enter Student Age");
+			StdAge = parseInt(StdAge);
+
+			var gender = prompt("Enter Gender as M / F");
+			
+			var m1 = prompt("Enter Subject 1 Marks");
+			m1 = parseInt(m1);
+
+			var m2 = prompt("Enter Subject 2 Marks");
+			m2 = parseInt(m2);
+
+			var m3 = prompt("Enter Subject 3 Marks");
+			m3 = parseInt(m3);
+
+			var m4 = prompt("Enter Subject 4 Marks");
+			m4 = parseInt(m4);
+
+			var m5 = prompt("Enter Subject 5 Marks");
+			m5 = parseInt(m5);
+
+			var total = m1 + m2 + m3 + m4 + m5;
+			var avg = total / 5;
+
+			console.log("Student Details");
+
+			console.log("STudent name " + StdName);
+			console.log("Gender " + gender);
+			console.log("Age " , StdAge);
+			console.log("Total is " + total);
+			console.log("Avg is "  + avg);
+
+			//console.log("Name is " + stduentName + " Age is " + studentAge + ' Total is ' + total)
+		</script>
+	</body>
+</html>
