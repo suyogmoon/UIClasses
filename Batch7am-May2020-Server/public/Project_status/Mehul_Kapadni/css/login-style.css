@@ -104,7 +104,7 @@ body{
     
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .signinLogin{
     display: flex;
@@ -113,19 +113,20 @@ body{
 
 .btnSignup button{
     width: 150px;
-    background: url("bg-01.jpg");
+    background-image: linear-gradient(to right, #23bce3 , #6386ec);
 background-position: center;
 }
 .btnLogin button{
     width: 150px;
-    background: url("bg-01.jpg");
+    background-image: linear-gradient(to right, #23bce3 , #6386ec);
     background-position: center;
 }
 
 button{
 text-decoration: none;
 border-radius: 20px;
-background: url("bg-01.jpg");
+/* background: url("bg-01.jpg"); */
+background-image: linear-gradient(to right, #588de9 , #b527e0);
 background-position: top;
 color: white;
 text-transform: uppercase;
@@ -137,6 +138,9 @@ padding: 0 20px;
     height: 50px;
 }
 
+.btn-submit{
+    margin-top: 50px;
+}
 .text-center{
     text-align: center !important;
 }
