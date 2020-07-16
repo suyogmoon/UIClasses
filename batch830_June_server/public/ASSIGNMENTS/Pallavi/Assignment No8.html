@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment no 8.
+	</title>
+	<style type="text/css">
+		h3{
+			border: 1px solid;
+			text-align: center;
+			background-color: pink;
+			}
+		.container{
+			height: 790px;
+			width: 1350px;
+			border: 1px solid;
+			background-color: rgb(100,10,50);
+			overflow: auto;
+
+				}
+		.acdetail{
+			position: absolute;
+			top: 110px;
+			border: 1px solid;
+			left: 40px;
+			bottom: 50px;
+			height: 160px;
+			width: 93%;
+			background-color: rgb(40,200,180);
+
+				}
+		.inputctrl, .label{
+			position: absolute;
+			border: 1px solid;
+			left: 215px;
+			top: 20px;
+
+				}
+		
+		.label{
+			position: absolute;
+			left: 10px;
+			width: 200px;
+			border: none;
+				}
+
+		
+		.inputctrl1{
+			border: 1px solid;
+			position: absolute;
+			top: 20px;
+			right:  330px;
+			border: 1px solid;
+
+				}
+		.inputctrl2{
+			margin: 10px;
+			left: 210px;
+			position: absolute;
+			bottom: 70px;
+			border: 1px solid;
+					}
+		.inputctrl3{
+			position: absolute;
+			right: 324px;
+			top: 61px;
+			border:  1px solid;
+		
+				}
+		.label1{
+			width: 200px;
+			position: absolute;
+			right: 478px;
+			top: 20px;
+			
+				}
+		.label2{
+			position: absolute;
+			left: 10px;
+			top:60px;
+
+				}
+		.label3{
+			position: absolute;
+			top: 60px;
+			right: 560px;
+				}
+		.label4{
+			position: absolute;
+			left: 10px;
+			top: 120px;
+				}
+		.inputctrl4{
+			position: absolute;
+			left: 210px;
+			top: 120px;
+				}
+		.address{
+			border: 1px solid;
+			height: 160px;
+			width: 93%;
+			left: 40px;
+			top: 300px;
+			background-color: rgb(180,220,120);
+			position: absolute;
+				}
+		.captionAcc{
+			position: absolute;
+			top: 94px;
+			left: 90px;
+			height: 25px;
+			width: 120px;
+			border: solid 1px;
+			background-color: #f4c2c2;
+			padding: 2px;
+			text-align: center;
+				}
+		.label5{
+			position: absolute;
+			left: 10px;
+			top:20px;
+				
+				}
+		.inputctrl5{
+			position: absolute;
+			left: 220px;
+			top: 20px;
+			width: 176px;
+			border: 1px solid;
+		}
+		.label6{
+			position: absolute;
+			left: 600px;
+			top: 20px;
+		}
+		.inputctrl6{
+			position: absolute;
+			left: 750px;
+			top: 20px;
+			border: 1px solid;
+		
+			}
+
+		.label7{
+			position: absolute;
+			left: 10px;
+			top: 50px;
+			}
+		.inputctrl7{
+			position: absolute;
+			left: 220px;
+			top:60px;
+			border: 1px solid;
+
+			}
+		.label8{
+			position: absolute;
+			left: 600px;
+			top:50px;
+
+			}
+		.inputctrl8{
+			position: absolute;
+			left: 750px;
+			top:50px;
+			border: 1px solid;
+			}
+		.label9{
+			position: absolute;
+			top:90px;
+			left: 10px;
+			}
+		.inputctrl9{
+			position: absolute;
+			left:220px;
+			top: 90px;
+			border: 1px solid;
+			}
+		.captionAdd{
+			position: absolute;
+			left: 60px;
+			bottom:  135px;
+			height: 25px;
+			width: 120px;
+			border: 1px solid;
+			padding: 4px;
+			text-align: center;
+			background-color: #f23114;
+				}
+		.Education{
+			position: absolute;
+			left: 40px;
+			height: 160px;
+			width: 93%;
+			border: 1px solid;
+			top:490px;
+			background-color: #b45923;
+		}
+		.label10{
+			position: absolute;
+			left: 20px;
+			top: 15px;
+
+		}	
+		.inputctrl10{
+			position: absolute;
+			left: 180px;
+			top: 15px;
+			}
+		.label11{
+			position: absolute;
+			left: 20px;
+			top: 50px;
+		}	
+		.inputctrl11{
+			position: absolute;
+			top: 50px;
+			left: 180px;
+			border: 1px solid;
+		}
+		.eduDeatails{
+			position: absolute;
+			left: 60px;
+			bottom:  143px;
+			height: 25px;
+			width: 120px;
+			padding: 5px;
+			border: 1px solid;
+			text-align: center;
+			background-color: rgb(45,175,80);
+		}
+		.uself{
+			position: absolute;
+			left: 40px;
+			height: 160px;
+			width: 93%;
+			border: 1px solid;
+			top: 680px;
+			background-color:rgb(80,90,120); 
+			
+		}
+		.label12{
+			position: absolute;
+			height: 30px;
+			width: 100px;
+			top: 40px;
+			margin: 10px;
+			
+		}
+		.inputctr12{
+			position: absolute;
+			width: 50px;
+			left: 60px;
+			top: 60px;
+			border: 1px solid;
+			
+		}
+		.self{
+			position: absolute;
+			bottom: 60px;
+			height: 30px;
+			width: 140px;
+			border: solid 1px;
+			right: 170px;	
+			background-color: #FFFF99;
+			text-align: center;
+			padding: 2px;
+
+		}
+		.footer{
+			position: absolute;
+			left: 10px;
+			height: 30px;
+			width: 100%;
+			top: 870px;
+			text-align: center;
+			border: 1px solid;
+			background-color: #84513d;
+			padding: 3px;
+		}
+
+
+	</style>
+		
+</head>
+<body>
+	<h3>Student Registration page</h3>
+		<div class="container">
+			<div class="acdetail">
+				<form>
+					<div class="label">
+						User Account Id:
+					</div>	
+					<div class="inputctrl">
+						<input type="text" name="userAcountId" required>
+					</div>
+							
+					<div class="label1">Password:</div>
+					<div class="inputctrl1">
+						<input type="Password" name="upwd" required>
+					</div>
+							
+					<div class="label2">
+						Email Id:
+					</div>
+					<div class="inputctrl2">
+						<input type="text" name="umail" required>
+					</div>
+
+					<div class="label3">
+						Reenter password:
+					</div>
+					<div class="inputctrl3">
+						<input type="password" name="reenterPwd" required>
+					</div>
+					<div class="label4">Gender:</div>
+						<div class="inputctrl4">
+							<input type="radio" name="gender">male
+							<input type="radio" name="gender">female
+						</div>
+				</form>
+
+			</div>
+			<div class="captionAcc">Account Details</div>
+				
+				<div class="address">
+					<form>
+						<div class="label5">Street no</div>
+						<div class="inputctrl5"><input type="text" name="streenNo"></div>
+						<div class="label6">Country</div>
+						<div class="inputctrl6">
+							<select>
+								<option>India</option>
+								<option>Japan</option>
+								<option>America</option>
+							</select>
+						</div>
+
+						<div class="label7">Door No</div>
+						<div class="inputctrl7"><input type="text" name="doorNo"></div>
+						<div class="label8">State</div>
+						<div class="inputctrl8">
+							<select>
+								<option>Maharastra</option>
+								<option>Andra Pradesh</option>
+								<option>Telangna</option>
+							</select>
+						</div>
+						<div class="label9">Pincode</div>
+						<div class="inputctrl9"><input type="text"  name="pinCode"></div>
+						<div class="captionAdd">Address</div>
+
+					</form>
+				</div>
+				<div class="Education">
+					<form>
+						<div class="label10">Lanuage</div>
+						<div class="inputctrl10">
+							<input type="checkbox" name="lang_M">Marathi
+							<input type="checkbox" name="lang_E">English
+							<input type="checkbox" name="lang_H">Hindi
+							<input type="checkbox" name="lang_S">Sanskrit
+						</div>
+						<div class="label11">Qualification</div>
+						<div class=inputctrl11>
+							<select>
+								<option>Bsc</option>
+								<option>BA</option>
+								<option>BE</option>
+								<option>MBA</option>
+							</select>
+						</div>
+						<div class="eduDeatails">Education</div>
+					</form>
+				</div>
+				<div class="uself">
+				<div class="label12">about ur self:</div>
+				<div class="inputctrl2">
+					<textarea name="urself"></textarea>
+					<div class="self">About ur self</div>
+				</div>
+
+				</div>
+
+				<div class="footer">@copyright 2020</div>
+		
+</body>
+</html>

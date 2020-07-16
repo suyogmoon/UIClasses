@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>
+			Online Shopping Site
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/ProdDetails.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lib/jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/prodApp.js"></script>
+	</head>
+	<body>
+		<div class="errBlock">
+				Oops! Error at Server :(.. Please try after sometime. 
+			</div>
+			<div class="loadingBlock">
+				<img src="images/hy.gif">
+			</div>
+			<div class="title">
+				Product Details..
+				<input type="button" value="Get Product Details" id="btn">
+			</div>
+		<div class="container">
+			<script id="ProdInfoTmplt">
+				<ul class="details">
+					<li>
+						Product Name: <span data-content = "name"></span> 
+					</li>
+
+					<li>
+						Product Price: <span data-content = "price"></span> 
+					</li>
+
+					<li>
+						Product Manufacturer: <span data-content = "manu"></span> 
+					</li>
+
+					<li>
+						Discount: <span data-content = "discount"></span> 
+					</li>
+
+					<li>Seller Details: <span data-content = "sDetails"></span> 
+					</li>
+
+					<li>
+						<img data-src="imgUrl">
+					</li>
+				</ul>
+			</script>
+		</div>
+	</body>
+</html>
