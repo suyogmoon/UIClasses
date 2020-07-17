@@ -4,25 +4,34 @@
 	<title></title>
 </head>
 <body>
-	<h1 style = "text-align: center;">Sum of even numbers</h1>
 	<script type="text/javascript">
-		var stratPoint = prompt("Enter the starting value");
-		startPoint = parseInt(stratPoint);
-		var endPoint = prompt("Enter the end value");
-		endPoint = parseInt(endPoint);
+		var stNum = prompt("Enter start Number");
+		stNum = parseInt(stNum);
+		var enNum = prompt("Enter end Number");
+		enNum = parseInt(enNum);
+		//console.log("Type of start Number :"+ typeof(stNum));
+		//console.log("Type of end Number :"+ typeof(enNum));
+		var i=0; swap=0; 
 		var sum = 0;
-		var i=0; swap = 0;
-		if(endPoint < stratPoint){
-			swap = endPoint;
-			endPoint = stratPoint;
-			stratPoint = swap; 
+		if(enNum < stNum){
+			swap = enNum;
+			enNum = stNum;
+			stNum = swap;
 		}
-		for (i=stratPoint; i<=endPoint; i++){
-			if (i % 2 === 0) {  
-				sum = i + sum;
-			}
+		if(stNum%2 === 0){
+			stNum = stNum;
 		}
-		console.log("Sum of even numbers : "+sum);
+		else{
+			stNum = stNum + 1;
+		}
+		//console.log("Value of :"+stNum);
+		//console.log("Type of i :"+ typeof(i));
+		//console.log("Type of sum :"+ typeof(sum));
+		for(i = stNum; i <= enNum; i=i+2){
+			//console.log("value of i :"+i);
+			sum = sum + i;
+		}
+		console.log("Sum of even numbers :"+sum);
 	</script>
 </body>
 </html>
