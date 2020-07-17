@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucku Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = prompt("Enter the neumber");
+		num = parseInt(num);
+		var sum = 0, rem = 0, fSum = 0;
+		var rem1 = 0;
+		
+		while(num > 0){
+			rem = num % 10;
+			sum = sum + rem;
+			num = num / 10;
+			num = parseInt(num);
+			sum = parseInt(sum);
+			if(num === 0){
+				rem1 = sum / 10;
+				rem1 = parseInt(rem1);
+				if(rem1 > 0){
+					num = sum;
+					sum = 0;
+					rem = 0;
+					rem1 =0;
+				}
+			}
+		}
+		console.log(sum);
+</script>
+</body>
+</html>
