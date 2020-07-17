@@ -1,0 +1,19 @@
+<!-- WAP to find the sum of individual numbers of a given number. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sum of numbers</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var reminder, sum;
+		var num = parseInt(prompt("Please enter any number"), num);
+		for(sum = 0; num > 0; num = num/10)
+		{
+			reminder = num % 10;
+			sum = sum + reminder;
+		}
+		console.log("sum of individual numbers of given number", sum);
+	</script>
+</body>
+</html>

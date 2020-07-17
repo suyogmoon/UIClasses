@@ -1,0 +1,31 @@
+<!-- WAP to check whether given no is palindromes number or not. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var r, sum, temp;
+		var num = parseInt(prompt("Enter a number to reverse"), num);
+
+		sum = 0;
+		temp = num;
+		while(num>0)
+		{
+			r = num%10;
+			sum = sum*10+r;
+			num = Math.floor(num/10);
+		}
+		console.log("Reverse of the number: ", sum);
+		if(temp==sum)
+		{
+			console.log("This is a palindromes", temp);
+		}
+		else
+		{
+			console.log("This is a not palindromes", temp);
+		}
+	</script>
+</body>
+</html>
