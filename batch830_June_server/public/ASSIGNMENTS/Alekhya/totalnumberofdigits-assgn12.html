@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align:center"> Total number of digits in a given number</div>
+        <script>
+            var n = prompt("enter number");
+            n = parseInt(n);
+        
+            var i = 0;;
+            while(n > 0){
+                n = parseInt(n / 10);
+                i = i+ 1;
+            }
+
+            console.log("no.of digits " + i);
+        </script>
+    </body>
+</html>

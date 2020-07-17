@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>Palidrome</div>
+
+        <script>
+            var n = prompt("enter the number");
+            n = parseInt(n);
+            var rem;
+            var rev = 0;
+            var temp = n;
+            while( n > 0){
+                rem = parseInt(n % 10);
+                rev = parseInt(rev * 10 + rem)
+                n = parseInt(n / 10);
+            }
+
+            if(temp == rev)
+            {
+                console.log("number is palidrome:" + rev);
+            }
+            else{
+                console.log(" number is not a palidrome:" + rev);
+            }
+
+        </script>
+    </body>
+</html>

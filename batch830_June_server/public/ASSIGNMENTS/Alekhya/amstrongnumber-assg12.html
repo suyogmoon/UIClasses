@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">Amstrong Number</div>
+        <script>
+            var n = prompt("enter number");
+            n = parseInt(n);
+            var temp = n;
+            var rem;
+            var sum = 0;
+            while(n > 0){
+                rem = parseInt(n % 10);
+                sum = (rem * rem * rem) + sum;
+                n = parseInt(n / 10);
+            }
+            console.log("sum" + sum);
+            if(temp == sum){
+                console.log("number is amstrong:" + sum);
+            }
+            else{
+                console.log("not an amstrong number:" + sum);
+            }
+        </script>
+    </body>
+</html>

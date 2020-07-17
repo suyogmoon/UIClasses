@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">Lucky number</div>
+        <script>
+            var n = prompt("enter the num");
+            n = parseInt(n);
+            var rem;
+            var sum = 0;
+            var temp = 0;
+		
+		    while(n > 0){
+			rem = n % 10;
+			sum = parseInt(sum + rem);
+            n = parseInt(n / 10);
+            if(n === 0){
+				temp = sum / 10;
+				temp = parseInt(temp);
+				if(temp > 0){
+					n = sum;
+					sum = 0;
+					rem = 0;
+					temp =0;
+				}
+			}
+		}
+		console.log("lucky number is:" + sum);
+
+        </script>
+    </body>
+</html>
