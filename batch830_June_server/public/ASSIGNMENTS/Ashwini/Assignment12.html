@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of digits of a given number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = prompt("Enter the number");
+		num = parseInt(num);
+		//console.log("Type of given number "+typeof(num));
+		var rem = 0, sum = 0; 
+		while(num>0){
+			rem = num % 10;
+			sum = sum +rem;
+			num = num / 10;
+			num = parseInt(num);
+		}
+		console.log("Sum of individual numbers of a given number :"+sum);
+	</script>
+</body>
+</html>
