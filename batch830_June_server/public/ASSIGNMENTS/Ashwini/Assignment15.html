@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check given number is palindrome or not</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = prompt("Enter the number");
+		num = parseInt(num);
+		var rem, sum = "";
+		var checkNum = num;
+		//console.log("Type of sum :" +typeof(sum));
+		while(num > 0){
+			rem = num % 10;
+			sum = sum + rem;
+			num = num / 10;
+			num = parseInt(num);
+		}
+		//console.log("Sum :"+sum);
+		sum = parseInt(sum);
+		if(checkNum === sum){
+			console.log("Given number is a palindrome");
+		}else{
+			console.log("Given number is not a palindrome");
+		}
+	</script>
+</body>
+</html>
