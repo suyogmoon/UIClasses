@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			To find the reverse of a given number.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var rem = 0 , temp = 0 , revers = 0;
+			var n = prompt("enter number ");
+			n = parseInt(n);
+			console.log("given number is : " , n);
+			rem = n % 10;
+			rev = temp + rem;
+			temp = rev * 10;
+			while(n > 0){
+				n = n / 10;
+				n = parseInt(n);
+				if(n == 0){
+					break;
+				}
+				rem = n % 10;
+				
+				rev = temp + rem;
+				temp = rev  * 10;
+			//	console.log(rev);
+			}
+			console.log(rev);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			To check whether the given number is armstrong or not.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n = prompt("enter any number");
+			n = parseInt(n);
+			console.log("Entered value is : " , n);
+			var rem = 0, temp = 0, sum = 0;
+			var n1 = n;
+			while(n1 > 0){
+				rem = n1 % 10;
+				temp = rem * rem * rem;
+				sum = sum + temp;
+				n1 = n1 / 10;
+				n1 = parseInt(n1);
+			}
+			console.log("given number armstrong value is : " , sum);
+			if(n === sum){
+				console.log("entered number is armstrong ");
+			} else {
+				console.log("entered value is not armstrong");
+			}
+		</script>
+	</body>
+</html>

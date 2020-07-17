@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			To check whether the given number is palindrome or not.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var rem = 0 , temp = 0 , revers = 0;
+			var n = prompt("enter number ");
+			n = parseInt(n);
+			console.log("given number is : " , n);
+			console.log(typeof(n));
+			var n1 = n;
+			rem = n1 % 10;
+			rev = temp + rem;
+			temp = rev * 10;
+			while(n1 > 0){
+				n1 = n1 / 10;
+				n1 = parseInt(n1);
+				if(n1 == 0){
+					break;
+				}
+				rem = n1 % 10;
+				
+				rev = temp + rem;
+				temp = rev  * 10;
+			}
+
+			console.log("reverse of number is " , rev);
+			console.log(typeof(rev));
+			if(n == rev){
+				console.log("Given number is palindrome");
+			} else {
+				console.log("given number is not palindrome");
+			}
+		</script>
+	</body>
+</html>
