@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding Sum of Individual numbers of the given number.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n = prompt("enter any number");
+			console.log("number is : " , n);
+			console.log(typeof(n)); 
+			n = parseInt(n);
+			console.log(typeof(n)); 
+			var rem = 0, sum = 0;
+			while(n > 0){
+				rem = n % 10;
+				sum = sum + rem;
+				n = n/ 10;
+			//	console.log(n);
+				n = parseInt(n);
+			//	console.log(rem);
+			}
+			console.log("sum of Individual digits : " + sum);
+		</script>
+	</body>
+</html>

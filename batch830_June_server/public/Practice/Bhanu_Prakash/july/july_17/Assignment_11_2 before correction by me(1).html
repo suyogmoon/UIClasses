@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding lucky number of a given number. 
+		</title>
+	</head>
+	<body>
+		<div>
+			i.e Adding of digits after consecutive sum of number, at last there will be one number.
+			912 ----> 9 + 1 + 2 = 12 ,
+			12 -----> 1 + 2     = 3
+		</div>
+		<script type="text/javascript">
+			var n = prompt("enter any number");
+			console.log("number is : " , n);
+			console.log(typeof(n)); 
+			n = parseInt(n);
+			console.log(typeof(n)); 
+			var rem = 0, sum = 0;
+			while(n > 0){
+				rem = n % 10;
+				sum = sum + rem;
+				n = n/ 10;
+				n = parseInt(n);
+			}
+			console.log("sum is : " , sum);
+			if(sum >= 10){	
+				var another_sum = 0;
+				rem = sum % 10;
+				n = sum / 10;
+				n = parseInt(n);
+				another_sum = another_sum + rem;
+
+				while(n > 0){
+					rem = n % 10;
+					another_sum = another_sum + rem;
+					n = n/ 10;
+					n = parseInt(n);
+				}	
+				console.log("sum is : " , another_sum);
+			}
+
+		</script>
+	</body>
+</html>

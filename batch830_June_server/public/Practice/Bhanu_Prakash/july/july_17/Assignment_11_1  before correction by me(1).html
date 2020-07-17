@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			To find the reverse of a given number.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var rem = 0 , temp = 0 , revers = 0;
+			var n = 345;
+			rem = n % 10;
+			rev = temp + rem;
+			temp = rev * 10;
+			while(n > 0){
+				n = n / 10;
+				rem = n % 10;
+				n = parseInt(n);
+				rem = parseInt(rem); // as we didn't convert by parseInt, so it is not getting affected after line 16
+				if(n == 0){
+					break;
+				}
+				rev = temp + rem;
+				temp = rev  * 10;
+				console.log(rev);
+			}
+		</script>
+	</body>
+</html>
