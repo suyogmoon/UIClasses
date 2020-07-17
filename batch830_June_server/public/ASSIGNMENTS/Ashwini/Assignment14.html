@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check weather the given number is amstrong or not</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = prompt("Enter the number :");
+		num = parseInt(num);
+		var rem = 0, sum = 0;
+		var checkNum = num;
+		//console.log("Type of sum :" +typeof(sum));
+		while(num > 0){
+			rem = num % 10;
+			sum = sum + (rem * rem * rem);
+			num = num / 10;
+			num = parseInt(num);
+		}
+		if(sum === checkNum){
+			console.log("Given number is a amstrong number");
+		}else{
+			console.log("Given number is not a amstrong number");
+		}	
+	</script>
+</body>
+</html>
