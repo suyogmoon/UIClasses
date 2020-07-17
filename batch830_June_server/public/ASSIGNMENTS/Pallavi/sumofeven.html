@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sum of even no.
+	</title>
+</head>
+<body>
+	<div>sum of even no.</div>
+	<script type="text/javascript">
+		var sum = 0;
+		var no1, no2;
+		no1 =prompt("1st no" ,no1);
+		no1=parseInt(no1);
+		
+		no2 = prompt("2nd no" ,no2);
+		mo2 = parseInt(no2);
+		console.log("sum of given two nos" ,no1 ,no2);
+
+		while(no1 <= no2)
+		{
+			if(no1 % 2 ==0)
+			{
+				sum=sum+no1;
+			}
+			no1++;
+		}
+		console.log(sum);
+	</script>
+</body>
+</html>

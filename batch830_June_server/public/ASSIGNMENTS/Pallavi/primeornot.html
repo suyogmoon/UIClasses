@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		 given no is prime or not
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n, i, j=0;
+		var n = prompt("enter no");
+		n = parseInt(n);
+		for (i = 1; i <= n; i++){
+			if ((n % i) == 0){
+				j++;
+			}
+		}
+		if (j == 2)
+		{
+			console.log(" This is prime no" ,n);
+
+		}
+		else{
+			console.log(" This is not prime no" ,n);
+		}
+
+	</script>
+</body>
+</html>
