@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demonstrating Employee detail</title>
+</head>
+<body>
+   <div> Employees details </div>
+   <script type="text/javascript">
+   	var empname = prompt ("enter Employee name");
+   	var empage = prompt ("enter employee age");
+    var gender = prompt ("enter employee gender");
+    var department = prompt ("enter employee department");
+    var basicsalary = prompt ("enter basic salary");
+    basicsalary = parseInt(basicsalary);
+
+    var pf = (12/100)*basicsalary;
+    var hra = (25/100)*basicsalary;
+    var totalsalary = basicsalary+hra+pf;
+
+    console.log("Employees details");
+    console.log("Employee_name" + empname);
+    console.log("employee_age" , empage);
+    console.log("employee_gender" + gender);
+    console.log("employee_department" , department);
+
+    console.log("Employee_basicsalary : " + basicsalary);
+    console.log("totalsalary " + totalsalary);
+
+   </script>
+</body>
+</html>
