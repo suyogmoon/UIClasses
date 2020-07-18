@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Case Control Structure
+		</title>
+	</head>
+	<body>
+		<div>
+			Switch Case CS
+		</div>
+		<script type="text/javascript">
+			var fvalue = prompt("enter first value ");
+			fvalue = parseInt(fvalue);
+			var svalue = prompt("enter second value ");
+			svalue = parseInt(svalue);
+
+			console.log("entered first value is : " , fvalue);
+			console.log("entered second value is : " , svalue);
+
+			var result = 0;
+
+			var userSelection = prompt("enter your choice yaar add,sub,mul,div");
+
+			/*
+			if(userSelection == "add"){
+				result = fvalue + svalue;
+				console.log("Sum of two numbers is : " +  result);
+			} else if (userSelection == "sub") {
+				result = fvalue - svalue;
+				console.log("Substraction of two numbers is : " + result);
+			} else if (userSelection == "mul") {
+				result = fvalue * svalue;
+				console.log("Multiplication of two numbers is : " + result);
+			} else if (userSelection == "div") {
+				result = fvalue / svalue;
+				console.log("Division(Quotient) of two numbers is : " + result);
+			} else {
+				console.log("entered choice is not in range");
+			}
+			*/
+
+			switch(userSelection) {
+				case 'add':
+					result = fvalue + svalue;
+					console.log("Sum of two numbers is : " +  result);
+					break;
+
+				case 'mul':
+					result = fvalue * svalue;
+					console.log("Multiplication of two numbers is : " + result);
+					break;
+
+				case 'sub':
+					result = fvalue - svalue;
+					console.log("Substraction of two numbers is : " + result);
+					break;
+
+				case 'div':
+					result = fvalue / svalue;
+					console.log("Division(Quotient) of two numbers is : " + result);
+					break;
+
+				default:
+					console.log("entered choice is not in range");
+			
+			}
+
+		</script>
+	</body>
+</html>
