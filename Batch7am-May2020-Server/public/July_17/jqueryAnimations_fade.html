@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Jquery Animations
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .block {
+                border: 1px solid;
+                background-color: #ccc;
+                width: 300px;
+                height: 300px;
+                text-align: center;
+                margin: 10p;
+                padding: 10px;
+            }
+            .btnContainre {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <H3>Jquery Animations</H3>
+        <div id="thxBlock"></div>
+        <div class="btnContainre">
+            <input type="button" value="Fade In " onclick="applyChanges('in')">
+            <input type="button" value="Fade Out" onclick="applyChanges('out')">
+            <input type="button" value="Toggling" onclick="applyChanges('tog')">
+        </div>
+        <div class="block">BLOCK</div>
+        <script>
+            function applyChanges(type) {
+                $("#thxBlock").html("");
+
+                switch(type) {
+                    case 'in':
+                        $(".block").fadeIn(5000, function(){
+                            $("#thxBlock").html("Thx for using our webpage");
+                        });
+                        break;
+                    case 'out':
+                        $(".block").fadeOut(2000, function(){
+                            
+                        });
+                        break;
+                    case 'tog': 
+                        $(".block").fadeToggle(1000);
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

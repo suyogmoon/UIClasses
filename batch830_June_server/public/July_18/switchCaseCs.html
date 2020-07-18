@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Case Control structure
+		</title>
+	</head>
+	<body>
+		<div>
+			Switch case CS
+		</div>
+		<script type="text/javascript">
+			var fval = prompt("enter first value");
+			fval = parseInt(fval);
+			var sval = prompt("enter Second value");
+			sval = parseInt(sval);
+			var result = 0;
+
+			var userOption = prompt("select add, div, mul, sub");
+
+			/*if (userOption == 'add') {
+				result = fval + sval;
+				console.log("The sum is " + result);
+			} else if (userOption == 'mul') {
+				result = fval * sval;
+				console.log("the multiplication is " + result);
+			} else if (userOption == 'sub') {
+				result = fval - sval;
+				console.log("the substraction is " + result);
+			} else if (userOption == 'div') {
+				result = fval / sval;
+				console.log("the division is " + result);
+			} else {
+				console.log("its wrng selections");
+			} */
+ 
+			switch(userOption) {
+				case 'add':
+					result = fval + sval;
+					console.log("The sum is " + result);
+					break;
+				case 'mul':
+					result = fval * sval;
+					console.log("the multiplication is " + result);
+					break;
+				case 'div':
+					result = fval / sval;
+					console.log("the division is " + result);
+					break;
+				case 'sub':
+					result = fval - sval;
+					console.log("the substraction is " + result);
+					break;
+				default:
+					console.log("user selection is not correct");
+
+			}
+
+
+		</script>
+	</body>
+</html>
