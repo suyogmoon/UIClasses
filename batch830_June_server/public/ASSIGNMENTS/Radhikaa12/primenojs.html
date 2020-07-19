@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var n = prompt("enter no");
+			n = parseInt(n);
+			var counter = 0;
+			for (var i = 1; i <= n; i++) {
+				if (n % i == 0) {
+					counter++;
+				}
+
+				if (counter > 2){
+					break;
+				}
+			}
+			console.log("no of iterations happend " + i);
+			//console.log("Not of times it got divisible " + counter);
+
+			if (counter == 2) {
+				console.log("its primie")
+			} else {
+				console.log("not a prime");
+			}
+
+		</script>
+	</body>
+</html>
