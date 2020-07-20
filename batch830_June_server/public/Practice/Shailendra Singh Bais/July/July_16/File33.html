@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Finding Even Numbers</title>
+	</head>
+	<body>
+		<h3>Finding Even Numbers Between Given Range</h3>
+		<script type="text/javascript">
+		var stpoint = prompt("Enter Start Point");
+		stpoint = parseInt(stpoint);
+		var enpoint = prompt("Enter End Point");
+		enpoint = parseInt(enpoint);
+
+		if (enpoint < stpoint) {
+			console.log("Invalid Input");
+		}
+		else {
+			var counter = 0;
+			for (i = stpoint; i <= enpoint; i++)
+				if(i%2 == 0) {
+					console.log(i);
+					counter++;
+				}
+				console.log("Number of Even Numbers: " + counter);
+		}
+		</script>
+	</body>
+</html>

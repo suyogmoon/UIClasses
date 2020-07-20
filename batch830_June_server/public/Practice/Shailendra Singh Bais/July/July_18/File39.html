@@ -2,28 +2,29 @@
 <html>
 	<head>
 		<title>
-			Finding Lucky Number of a Given Number
+			Finding the Lucky Number of a Given Number
 		</title>
 	</head>
 	<body>
+		<h3>Finding the Lucky Number of a Given Number</h3>
 		<script type="text/javascript">
-			var n = prompt("Enter a value");
+			var n = prompt("Enter the Number to Find its Lucky Number");
 			n = parseInt(n);
-			var sum = 0;
-			var rem;
-			while(n > 0) {
+			sum = 0;
+			while (n > 0) {
 				rem = n % 10;
 				sum = sum + rem;
-				
 				n = n / 10;
 				n = parseInt(n);
 
 				if (sum > 9 && n == 0) {
 					n = sum;
 					sum = 0;
-				}				
+				}
+
+
 			}
-			console.log("Lucky Number is      " + sum);
+			console.log("The Lucky Number of the Given Number is:" + sum);
 		</script>
 	</body>
 </html>

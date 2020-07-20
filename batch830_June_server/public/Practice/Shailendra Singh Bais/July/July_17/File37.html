@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding SUM of Numbers
+		</title>
+		</head>
+		<body>
+			<h3>Finding SUM of Numbers</h3>
+			<script type="text/javascript">
+				var n = prompt("Enter a Number to Find Sum");
+				n = parseInt(n);
+				var sum = 0;
+				var rem;
+
+				while(n > 0) {
+					rem = n % 10;
+					sum = sum + rem;
+
+					n = n / 10;
+					n = parseInt(n);
+				}
+				console.log("The SUM of Given Numbers: " , sum);
+			</script>
+		</body>
+</html>

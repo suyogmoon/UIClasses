@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstrating If, If Else, Nested If, Nested If else, Else if </title>
+	</head>
+	<body>
+		<h3>Demonstrating If, If Else, Nested If, Nested If else, Else if </h3>
+
+		<script type="text/javascript">
+			var StdName = prompt("Enter Student Name");
+			var StdAge = prompt("Enter Student Age");
+			StdAge = parseInt(StdAge);
+			var Gender = prompt("Enter Male / Female");
+
+			var m1 = prompt("Enter Subject 1 Marks");
+			m1 = parseInt(m1);
+
+			var m2 = prompt("Enter Subject 2 Marks");
+			m2 = parseInt(m2);
+
+			var m3 = prompt("enter Subject 3 Marks");
+			m3 = parseInt(m3);
+
+			var Total = m1 + m2 + m3;
+			var Avg = Total / 3;
+
+			console.log("STUDENT DETAILS");
+			console.log("Student Name: " + StdName);
+			console.log("Student Age: " + StdAge);
+			console.log("Gender: " + Gender);
+			console.log("Total is:" + Total);
+			console.log("Average is: " + Avg);
+
+			if (Avg >= 35) {
+				console.log("Student got Passed");
+				if (Avg >= 90) {
+					console.log("Student got Distinction");
+				} else if (Avg >= 60) {
+					console.log("Student got First class");
+				} else {
+					console.log("Student got Second Class");
+				}
+			} else { console.log("You got a Supplementry");
+
+			}
+					
+			
+			
+		</script>
+	</body>
+</html>
