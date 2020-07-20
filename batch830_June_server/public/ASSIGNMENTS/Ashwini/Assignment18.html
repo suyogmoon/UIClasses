@@ -10,17 +10,13 @@
 			var numOfEmp = prompt("Enter number of Employees whose details has to be updated");
 			for(var i = 1; i <= numOfEmp; i++){
 				var empName = prompt("Name of the employee");
-				console.log("Name : "+empName);
 				var empAge = prompt("Age");
-				console.log("Age : "+empAge);
 				var empGendr = prompt("Gender");
-				console.log("Gender : "+empGendr);
 				var empSalary = prompt("Salary");
 				var empSalary = parseInt(empSalary);
-				console.log("Salary : "+empSalary);
 				var tax = taxCalculation(empSalary);
 				var takeHomeSalary = empSalary - tax;
-				display(tax, takeHomeSalary);
+				display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary);
 			}
 		}	
 		function taxCalculation(empSalary){
@@ -32,7 +28,11 @@
 			}
 			return tax;
 		}
-		function display(tax, takeHomeSalary){
+		function display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary){
+			console.log("Name : "+empName);
+			console.log("Age : "+empAge);
+			console.log("Gender : "+empGendr);
+			console.log("Salary : "+empSalary);
 			console.log("Tax deducted from the gross salary : "+tax);
 			console.log("Take home salary : "+takeHomeSalary);
 		}
