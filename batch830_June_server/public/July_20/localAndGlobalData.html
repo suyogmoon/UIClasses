@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var userSal = 10000;
+
+			function displaymsg() {
+				
+				console.log("boss ur sal is " + userSal);
+				calculateTotalTax();
+			}
+
+			function calculateTotalTax() {
+				var tax = 0;
+				if (userSal > 20000) {
+					tax = 100;
+				} else {
+					tax = 50;
+				}
+				console.log("total tax is " + tax);
+			}
+
+			displaymsg();
+
+			
+
+			function insurenceguy() {
+				console.log("am frm insurence block");
+				console.log("hey i got ur sal value" + userSal);
+			}
+			insurenceguy()
+		</script>
+	</body>
+</html>
