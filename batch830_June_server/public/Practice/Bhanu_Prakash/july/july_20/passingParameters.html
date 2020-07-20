@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating about passing Params.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function readValues() {
+				var a , b;
+				a = prompt("enter value of a");
+				a = parseInt(a);
+				b = prompt("enter value of b");
+				b = parseInt(b);
+			/*	var result = addValues(a, b);
+				console.log("the sum is : " + result); */
+
+				var sum = addValues(a, b);
+				console.log("the sum is : " + sum);
+			}
+
+			function addValues(p1, p2) {
+				console.log("about to perform addition");
+				var result = p1 + p2;
+				return result;
+			}
+
+			readValues();
+		</script>
+	</body>
+</html>

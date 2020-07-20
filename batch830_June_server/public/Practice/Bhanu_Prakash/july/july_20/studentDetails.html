@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Student Details
+		</title>
+	</head>
+	<body>
+		<div>Student Details</div>
+		<script type="text/javascript">
+
+		//	var studentName, studentGender, studentAge, m1, m2, m3 , total, avg; 
+
+			function readUserData() {
+
+				var studentName, studentGender, studentAge, m1, m2, m3 , total, avg; 
+
+				studentName = prompt("enter student's name "); 
+				studentGender = prompt("enter student's gender "); 
+				studentAge = prompt("enter student's age");
+
+				m1 = prompt("enter subject 1 marks ");
+				m1 = parseInt(m1);
+
+				m2 = prompt("enter subject 2 marks ");
+				m2 = parseInt(m2);
+
+				m3 = prompt("enter subject 3 marks ");
+				m3 = parseInt(m3);
+
+				displayStdInfo(studentName, studentGender, studentAge, m1, m2, m3);
+			}
+
+			function getTotalAndAvg(m1, m2, m3) {
+
+				var total = m1 +  m2 +  m3;
+				var avg = total/3;
+				return avg;
+			}
+
+			function displayStdInfo(name, gender, age, m1, m2, m3) {
+
+				var avg = getTotalAndAvg(m1, m2, m3);
+				
+				console.log("Student Details");
+				console.log("studentName " + name);
+				console.log("studentAge " , age);
+				console.log("studentGender " + gender);
+
+				console.log("Student marks of subject1 is " + m1);
+				console.log("Student marks of subject2 is " + m2);
+				console.log("Student marks of subject3 is " + m3);
+
+				getGrade(avg);
+
+		//		console.log("total marks " , total); //because we cannot return two values, as only one value returned.
+				console.log("avg " + avg);
+			}
+
+			function getGrade(avg) {
+				if (avg > 40) {
+					console.log("student has passed the exam");
+					if (avg > 90) {
+						console.log("Got Distinction");
+					} else if (avg >= 60) {
+						console.log("Got first class");
+					} else{
+						console.log("Got second class");
+					}
+				} 
+				else {
+					console.log("student has failed the exam");
+				}
+			}
+
+			readUserData();
+		
+		</script>
+	</body>
+</html>

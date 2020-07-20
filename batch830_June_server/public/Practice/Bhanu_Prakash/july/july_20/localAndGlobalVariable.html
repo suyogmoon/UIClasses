@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Local and Global Variables.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		//	var userSalary = 20000;
+
+			function displayMsg(){
+				var userSalary = 20000;
+				console.log("hey User Salary is : " ,  userSalary);
+				totalTaxCalc();
+			}
+
+			displayMsg();
+			function totalTaxCalc(){
+				var tax = 0;
+				if (userSalary > 25000){
+					tax = 100;
+				} else {
+					tax = 50;
+				}
+				console.log("Total tax is : " , tax);
+			}
+
+			function insuranceThirdParty(){
+				console.log("I am insurance guy");
+				console.log(" Hey Customer i am taking salary before u receive : " + userSalary);
+			}
+
+			insuranceThirdParty();
+		</script>
+	</body>
+</html>
