@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment 12: Arrange Employee Details as functions
+		</title>
+	</head>
+	<body>
+		<div>Employee Details</div>
+		<script type="text/javascript">
+
+		//	var employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray, pf, hra, totalSalary;
+
+			function readEmpData() {
+
+				var employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray, pf, hra, totalSalary;
+
+				employeeName = prompt("Enter employee Name : "); 
+				employeeGender = prompt("Enter employee Gender : "); 
+				employeeAge = prompt("Enter employee Age : ");
+				employeeDepartment = prompt("enter employee Department : ");
+
+				basicSalaray = prompt("Enter employee basic salary");
+				basicSalaray = parseInt(basicSalaray);
+				displayEmpInfo(employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray);
+			}
+
+			function empSalCalc(basicSalaray) {
+				var pf = (12/100)*basicSalaray;
+				var hra = (25/100)*basicSalaray;
+				var totalSalary = basicSalaray + hra + pf;
+				return totalSalary;
+			}
+
+			function displayEmpInfo(ename, gender, age, dept, bsal) {
+				var totalSalary = empSalCalc(totalSalary);
+				console.log("Employee Details");
+				console.log("employeeName " + ename);
+				console.log("employeeAge " , age);
+				console.log("employeeGender " + gender);
+				console.log("employeeDepartment " , dept);
+				displayEmpSal(totalSalary);
+			}
+
+			function displayEmpSal(totalSalary) {
+			//	console.log("Employee's Basic Salary : " + basicSalaray);
+				console.log("totalSalary " + totalSalary);
+			}
+
+			readEmpData();
+
+		</script>
+	</body>
+</html>
