@@ -27,9 +27,8 @@
 			}
 
 			function getTotalAndAvg(m1, m2, m3){
-
-				total = m1 + m2 + m3;
-				avg = total / 3;
+				var total = m1 + m2 + m3;
+				var avg = total / 3;
 				return avg;
 			}
 
@@ -45,7 +44,8 @@
 				getGrade(avg);
 			}
 
-			function getGrade() {
+			function getGrade(avg) {
+				alert(avg);
 				if (avg > 40) {
 					console.log("student got passed");
 					if (avg > 90) {
