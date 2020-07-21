@@ -13,6 +13,9 @@
 				m = parseInt(m);
 				var n = prompt("Enter end point");
 				n = parseInt(n);
+				if(m === 1){
+					m = m + 1;
+				}
 				for(var i = m; i <= n; i++){
 					num[j] = i;
 					var count = checkPrimeNumber(num[j]);
