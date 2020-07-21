@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Arrays
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var name = "Raj";
+			var age = 20;
+			var gender = "MAle";
+			var marks = [];
+
+			for (var i = 0; i < 7; i++) {
+				marks[i] = prompt("enter value for subject " + (i+1))
+				marks[i] = parseInt(marks[i]);
+			}
+
+
+			console.log(marks.length);
+			var userDetails = [45, true, "Raj", 45, 67, 89]
+
+			// var total = marks[0] + marks[1]  + marks[2]  + marks[3] ;
+			var total = 0;
+			for (var i = 0 ; i < 7; i++) {
+				total = total + marks[i];
+			}
+
+			console.log(total)
+		</script>
+	</body>
+</html>
