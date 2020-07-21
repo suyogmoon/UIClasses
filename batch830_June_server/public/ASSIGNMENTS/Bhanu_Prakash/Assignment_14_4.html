@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			List out Palindrome numbers in it.
+		</title>
+	</head>
+	<body>
+		<div>
+			Read values Dynamically
+		</div>
+		<script type="text/javascript">
+			var r = prompt("enter the range of input :");
+			r = parseInt(r);
+			var inp = []
+			for(var i = 0 ; i < r ; i++ ){
+				inp[i] = prompt("enter the value " + [i+1]);
+				inp[i] = parseInt(inp[i]);
+			}
+			for(var i = 0 ;i < r ; i++){
+				console.log("entered values are : " , inp[i]);
+			}
+	/*		var n = 543;
+			n = parseInt(n); */
+	//		var rem = 0 , rev = 0 , temp =0;
+			for(var i = 0 ; i < inp.length ; i++){
+				var rem = 0 , rev = 0 , temp =0;
+				rem = inp[i] % 10 ;
+				temp = rem + temp;
+				rev = temp * 10;
+				while(inp[i] > 0){
+					inp[i] = inp[i] / 10;
+					inp[i] = parseInt(inp[i]);
+					if(inp[i]==0){
+						break;
+					}
+					rem = inp[i] % 10;
+					temp = rem + rev;
+					rev = temp * 10;
+				}
+				console.log("reverse of number is : " , temp);
+			}
+		</script>
+	</body>
+</html>

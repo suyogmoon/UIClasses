@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			List Out all the Prime Numbers
+		</title>
+	</head>
+	<body>
+		<div>
+			Input values Dynamcally.
+		</div>
+		<script type="text/javascript">
+			var inp = [];
+			var range = prompt("enter the range of values : ");
+			range = parseInt(range);
+			for(var i = 0 ; i < range ; i++ ){
+				inp[i] = prompt("enter the value " + [i+1]);
+				inp[i] = parseInt(inp[i]);
+			}
+			for(var i = 0 ; i < inp.length ; i++){
+				console.log("input values are : " , inp[i]);
+			}
+		//	var count = 0;	//misplaced here
+			for(var i = 0; i < inp.length ; i++){
+				var count = 0;		//this step forgotten
+				for(var j = 1 ; j < inp[i] ; j++){
+					if(inp[i] % j == 0){
+						count++;
+						console.log("checking for prime");
+						if(count > 2){
+							break;
+						} 
+					}
+
+				}
+				if(count<=2){			//this condition forgotten
+					console.log("prime number is : " + inp[i]);	
+				}
+			}
+		</script>
+	</body>
+</html>

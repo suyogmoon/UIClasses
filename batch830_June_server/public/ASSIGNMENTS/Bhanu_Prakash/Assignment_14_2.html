@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Find sum of all the values.
+		</title>
+	</head>
+	<body>
+		<div>
+			Read Values in an array within given range.
+		</div>
+		<script type="text/javascript">
+			var n = prompt("enter the required range of an array :");
+			n = parseInt(n);
+			var inp = [];
+			console.log("u r range is : " , n);
+			for(var i = 0 ; i < n ; i++){
+				inp[i] = prompt("enter the input value of " + [i+1]);
+				inp[i] = parseInt(inp[i]);
+			}
+			console.log(inp);
+			var sum = 0; 
+			for(var i = 0; i < inp.length ; i++){
+			//	console.log("input is printing");
+				sum = sum + inp[i];
+			}
+			console.log("Sum of the given range is : " + sum);
+		</script>
+	</body>
+</html>

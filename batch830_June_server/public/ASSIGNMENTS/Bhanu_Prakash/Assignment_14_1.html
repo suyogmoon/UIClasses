@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			List out even numbers in it.
+		</title>
+	</head>
+	<body>
+		<div>
+			Declare an array with hard code values : 
+		</div>
+		<script type="text/javascript">
+		//	var i ;
+			var marks = [45, 68, 71, 65, 80];
+
+			for(var i = 0 ; i < marks.length ; i++){
+				marks[i] = parseInt(marks[i]);
+			}
+
+			console.log(marks.length);
+			console.log(marks);
+			
+			for(var i = 0 ; i < marks.length ; i++){
+
+				if(marks[i] % 2 == 0){
+					console.log("even number is : " , marks[i]);
+				}
+		
+			}
+		</script>
+	</body>
+</html>
