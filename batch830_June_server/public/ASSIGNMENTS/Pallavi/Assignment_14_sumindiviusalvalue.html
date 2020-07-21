@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Finding sum of numbers
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var rem, sum;
+		var num = prompt("enter the no");
+		num = parseInt(num);
+		for (sum = 0; num > 0; num = num/10){
+			rem = num % 10 ;
+			sum = sum + rem;
+		}
+		console.log("the sum of indiviuasl no" ,sum);
+	</script>
+</body>
+</html>
