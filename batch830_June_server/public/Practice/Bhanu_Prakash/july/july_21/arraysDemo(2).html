@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating arrays.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var name = 'Bhanu';
+			var age = 25;
+			var gender = 'male';
+			var marks = [];
+
+			for(var i = 0 ; i < 5 ; i++){
+				marks[i] = prompt("enter values of marks of subject : ");
+				marks[i] = parseInt(marks[i]);
+			}
+
+			var userDetails = [45,'Bhanu','male',true,56,89,63,77];
+			for(var i = 0 ; i < 7 ; i++){
+				console.log(userDetails[i]);
+				console.log(typeof(userDetails[i]));
+			}
+		</script>
+	</body>
+</html>
