@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Check Prime Numbers</h1>
+		<script type="text/javascript">
+			function inputElements(){
+				var num = [];
+				var j = 0;
+				var m = prompt("Enter the range of numbers to check weather number is prime numbers or not (starting point)");
+				m = parseInt(m);
+				var n = prompt("Enter end point");
+				n = parseInt(n);
+				for(var i = m; i <= n; i++){
+					num[j] = i;
+					var count = checkPrimeNumber(num[j]);
+					display(count, num[j]);
+					j++;
+				}
+			}
+			function checkPrimeNumber(a){
+				var count = 0;
+				for(var i = 1; i <= a; i++){
+					if(a % i === 0){
+						count = count + 1;
+					}
+				}
+				return count;
+			}
+			function display(count, a){
+				if(count <= 2){
+					console.log(a+" is a prime number");
+				}
+			}
+			inputElements();
+		</script>
+	</body>
+</html>

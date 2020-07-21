@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function inputElements(){
+				var num = [];
+				var j = 0;
+				var m = prompt("Enter the range of numbers to check weather number is palindrome or not (starting point)");
+				m = parseInt(m);
+				var n = prompt("Enter end point");
+				n = parseInt(n);
+				for(var i = m; i <= n; i++){
+					num[j] = i;
+					var checkNum = checkPalindromeNumber(num[j]);
+					display(checkNum, num[j]);
+					j++;
+				}
+			}
+			function checkPalindromeNumber(a){
+				var rem = 0; sum = "";
+				while(a > 0){
+					rem = a % 10;
+					sum = sum + rem;
+					a = a / 10;
+					a = parseInt(a);
+				}
+				sum = parseInt(sum);
+				return sum;
+			}
+			function display(checkNum, a){
+				if(checkNum == a && a > 10){
+					console.log(a+" is a palindrome");
+				}
+			}
+			inputElements();
+		</script>
+	</body>
+</html>
