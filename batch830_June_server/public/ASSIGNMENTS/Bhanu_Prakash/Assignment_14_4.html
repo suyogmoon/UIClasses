@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 			var r = prompt("enter the range of input :");
 			r = parseInt(r);
-			var inp = []
+			var inp = [] , inpp = [];
 			for(var i = 0 ; i < r ; i++ ){
 				inp[i] = prompt("enter the value " + [i+1]);
 				inp[i] = parseInt(inp[i]);
@@ -28,7 +28,9 @@
 				rem = inp[i] % 10 ;
 				temp = rem + temp;
 				rev = temp * 10;
+				inpp[i] = inp[i];
 				while(inp[i] > 0){
+					
 					inp[i] = inp[i] / 10;
 					inp[i] = parseInt(inp[i]);
 					if(inp[i]==0){
@@ -38,7 +40,10 @@
 					temp = rem + rev;
 					rev = temp * 10;
 				}
-				console.log("reverse of number is : " , temp);
+			//	console.log("reverse of number is : " , temp);
+				if(inpp[i] == temp){
+					console.log("palindrome number is : " + inpp[i]);
+				}
 			}
 		</script>
 	</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Asking for User Defined Dates.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var date = new Date();
+			console.log(date);
+
+			var days = ["Sunday", "Monday" ,"Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+			var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var mm = ["01", "02", "03", "04", "05", "06", "07", "08", "09", 10, 11, 12];
+			
+			var selection = prompt("1.mm/dd/yy_____2.mm/dd/yyyy_____3.day,month,year_____4.month-day-year_____5.mm/dd/yy mm:ss_____6.mm/dd/yyyy hh:mm:ss_____7.day,date month year " , selection);
+			selection = parseInt(selection);
+
+			switch(selection){
+				case 1:
+							var formatDate = mm[date.getMonth()] + '/' + date.getDate() + '/' + date.getFullYear();
+							console.log(formatDate);
+							break;
+				case 2:
+							var formatDate = mm[date.getMonth()] + '/' + date.getDate() + '/' + date.getFullYear();
+							console.log(formatDate);
+							break;
+				case 3:
+							var formatDate = date.getDate() + ' ' + month[date.getMonth()] + ' ' + date.getFullYear();
+							console.log(formatDate);
+							break;
+			}
+		</script>
+	</body>
+</html>
