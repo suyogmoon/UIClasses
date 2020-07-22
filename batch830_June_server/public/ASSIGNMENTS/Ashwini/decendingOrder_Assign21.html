@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Decending Order Using Arrays</title>
+	</head>
+	<body>
+		<h1>Decending Order Using Arrays</h1>
+		<script type="text/javascript">
+			function inputElements(){
+				var num = [];
+				var n = prompt("Number of input element");
+				n = parseInt(n);
+				for(i = 0; i < n; i++){
+					num[i] = prompt("Number to be entered at "+ i +" position");
+					num[i] = parseInt(num[i]);
+				}
+				var a = [];
+				a = decendingOrder(num);
+				console.log("Decending Order : " + a);
+			}
+			function decendingOrder(num){
+				var j = 0, count = 1, k = 1, checkNum = 0;
+				for(var i = 1; i < num.length;){
+					if(num[j] < num[i]){
+						checkNum = num[i];  
+						num[i] = num[j];
+						num[j] = checkNum;
+					}
+					i = i + 1;
+					count = count + 1;
+					if(count === num.length){
+						k = k + 1;      
+						i = k;          
+						count = i;  
+						j = j + 1;
+					}
+				}
+				return num;
+			}
+			inputElements();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comparison of Arrays</title>
+	</head>
+	<body>
+		<h1>Comparision of Arrays with respect to position</h1>
+		<script type="text/javascript">
+			function inputElements(){
+				var a = [];
+				var b = [];
+				var m = prompt("Number of elements to be entered into first array");
+				m = parseInt(m);
+				for(var i = 0; i < m; i++)
+				{
+					a[i] = prompt("Enter value to be stored at position "+ i);
+					a[i] = parseInt(a[i]);
+				}
+				var n = prompt("Number of elements to be entered into second array");
+				n = parseInt(n);
+				for(var j = 0; j < n; j++)
+				{
+					b[j] = prompt("Enter value to be stored at position "+ j);
+					b[j] = parseInt(b[j]);
+				}
+				console.log(a);
+				console.log(b);
+				var result = comparision(a,b,m,n);
+				if (result === false){
+					console.log("Arrays are not simillar");
+				}else{
+					console.log("Arrays are simillar");	
+				}
+			}
+			function comparision(a,b,m,n){
+				if(m !== n){
+					return false;
+				}else{
+					for(var i = 0; i < m; i++){
+						if(a[i] !== b[i]){
+							return false;
+						}
+					}
+				}
+				return true;
+			}
+			inputElements();
+		</script>
+	</body>
+</html>
