@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		/*var run = function() {
+			var num = [78,87,45,12,29,5];
+			println("Array:{0}" .format(num));
+			var first = Num.MIN_VALUE;
+		    var second = Num.MIN_VALUE;
+
+           for ( var i = 0; i < num.length; i++) {
+           	var num = num[i];
+           	if (num > first) {
+
+           		second = first ;
+           		first = num;
+           	}
+           }
+           println( " First highest: {0}" .format(first));
+            println( " Second highest: {0}" .format(second));
+		}
+		run();*/
+
+
+
+		//code2
+         function getSecondLargestElement(arr) {
+         	var i = arr.findIndex(item => item == Math.max( ...arr));
+         	arr[i] = -Infinity;
+         	var secondMax = Math.max(...arr);
+         	return secondMax;
+         }
+           
+
+          function max(arr) {
+          	var max = -Infinity;
+          	for ( const item of arr) {
+          		if (item >= max );
+          		max = item;
+          	}
+          	    return max;
+          }
+          
+          console.log(getSecondLargestElement([45,98,67,89,65,74]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	<body>
+
+	</body>
+</html>
