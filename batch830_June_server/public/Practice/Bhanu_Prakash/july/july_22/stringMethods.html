@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JS string methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var msg = "hello world this is bhanu, Happy is the key to be in Hell. ";
+			console.log(msg);
+
+			console.log(msg.length);
+
+			console.log(msg.charAt(6));
+
+			console.log(msg.charCodeAt(6));
+
+			var msg1 = "Bhanu";
+			var msg2 = " Prakash";
+			console.log(msg1.concat(msg2));
+
+			var msg3 = "  hello world this is bhanu, Happy is the key to be in Hell. ";
+			console.log(msg3.includes("abz"));
+			console.log(msg3.includes("ab"));
+			console.log(msg3.includes("bha"));
+
+			console.log(msg3.replace("bhanu","prakash"));
+			console.log(msg3.replace("Hell","heaven"));
+
+			console.log(msg3.substr(2,10));//here from 2nd postion, number 0f 10 positions is counted
+			console.log(msg3.slice(2,10));//here from 2nd postion to 10 position i.e..,8 positions(i.e upto before 10 means upto 9th is displayed)
+
+			console.log(msg3.split('e'));
+
+			console.log(msg3.toUpperCase());
+
+			console.log(msg3.toLowerCase());
+
+			console.log(msg3.trim());
+			console.log(msg);
+
+			var msg4 = "                   hai world this is bhanu, Happy is the key to be in Hello. ";
+			console.log(msg4);
+			console.log(msg4.trim());
+			console.log(msg);
+
+			msg = msg.replace(/\e/,'*');	//regular expressions  .          to be changed is find with back slash "\".
+			console.log(msg);	//here only initial 'e' is replaced for all we need to give '' g'' means(global) after forwars slash
+
+			msg = msg.replace(/\e/g,'*');
+			console.log(msg);	//irrespective of case means "i" should be given before global
+
+			msg = msg.replace(/\h/g,'$');
+			console.log(msg);
+
+			msg = msg.replace(/\h/ig,'$');
+			console.log(msg);
+
+		</script>
+	</body>
+</html>

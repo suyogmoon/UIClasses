@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Date Object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var date = new Date();
+
+			var days = ["Sun", "Mon", "Tues", "Wednesday", "Thu", "Fri", "Sat"];
+
+			console.log(date);
+
+		/*	var date = new Date("May 17 1995");
+			console.log(date);						*/
+
+			console.log(date.getDate());
+			console.log(date.getMonth());
+			console.log(date.getDay());
+
+			var dayindex = date.getDay();
+			console.log(days[dayindex]);
+		</script>
+	</body>
+</html>

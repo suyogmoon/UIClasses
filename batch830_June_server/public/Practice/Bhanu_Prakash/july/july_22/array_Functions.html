@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating array functions
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var data =  [34, 47, 58, 63, 77, 89];
+
+			console.log(data);
+
+			console.log(data.length);
+
+			data.push(100);
+
+			console.log(data);
+
+			data.pop();
+
+			console.log(data);
+
+			data.unshift(110);
+
+			console.log(data);
+
+			data.shift();
+
+			console.log(data);
+
+			console.log(data.indexOf(58));
+
+		//	console.log(data.reverse());
+
+		/*	data.splice(2,3);	//(2, 3)  here 2 means from position '2'[0, 1, 2, 3, .....] and 3 denotes 3 positions from 2 
+
+			console.log(data);//as only two parameters given and third parameter is empty so deletion done 							*/
+
+			data.splice(2, 0);	//2 ---->from 2nd position and 0 means 0 positions . as only two parameters are given third parameter is absent 0(zero) number of positions are deleted.       aslo by splice any where can be deleted and to anywhere data is inserted.
+
+			console.log(data);
+
+	/*		data.splice(2, 1, 121, 123, 130, 133);	//so here from 2nd position 1 postion is deleted and values are inserted if no values are to be removed see in next step.
+
+			console.log(data);					*/
+	/*
+			data.splice(2, 0, 121, 123, 130, 133);
+
+			console.log(data);					*/
+
+			console.log(data.join("$"));		//returns combined string
+
+			console.log(data.join(","));
+
+
+		</script>
+	</body>
+</html>

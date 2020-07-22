@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating how to return multiple values
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function showData(){
+				console.log("student Details");
+				var marks = [36, 75, 57, 63, 49];//if this data to be accessed by other module(here function) then pass by parameters 
+		//		var details = getTotalAvg();//so instead of this step, pass by arguments ----> as we wrote in braces i.e sending data .see it is written in next step 
+				var details = getTotalAvg(marks);	
+				var avg = details[1];
+				var total = details[0];
+				console.log("value of total : " + total);
+				console.log("value of avg : " + avg);
+			}
+
+			function getTotalAvg(marks){			//need to catch the data ------------> so catch by same/different variable(argument)
+//as marks are not available in this module and but accessed in this module so those must be passed by arguments[thrown,catched]
+				var total = 0;
+				var avg;
+				for(var i = 0; i < marks.length ; i++){
+					total = total + marks[i];
+
+				}
+				avg = total / marks.length;
+				
+				return [total, avg];
+			}
+			showData();
+		</script>
+	</body>
+</html>

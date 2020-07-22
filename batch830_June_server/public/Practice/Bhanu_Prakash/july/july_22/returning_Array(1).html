@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating how to return single value
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function showData(){
+				console.log("student Details");
+				var total = getTotalAvg();
+				console.log("value of total : " + total);
+			}
+
+			function getTotalAvg(){
+				var marks = [36, 75, 57, 63, 49];
+				var total = 0;
+				var avg;
+				for(var i = 0; i < marks.length ; i++){
+					total = total + marks[i];
+
+				}
+				avg = total / marks.length;
+				return total;
+			}
+			showData();
+		</script>
+	</body>
+</html>
