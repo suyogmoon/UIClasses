@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Returning multiple values from a funtion
+		</title>
+	</head>
+	<body>
+			<script type="text/javascript">
+
+				
+				function showData() {
+					console.log("student details");
+					var marks = [34, 56, 78, 90];
+					var details = getTotalAndAvg(marks);
+					var avg = details[1];
+					var total = details[0];
+
+					console.log("value fo total is " + total);
+					console.log("avg si " + avg);
+				}
+
+				function getTotalAndAvg(marks) {
+					
+					var total = 0;
+					var avg;
+					for (var i = 0 ; i < marks.length; i++) {
+						total += marks[i];
+					}
+					avg = total / marks.length;
+
+					return [total, avg];
+				}
+
+				showData();
+			</script>
+	</body>
+</html>

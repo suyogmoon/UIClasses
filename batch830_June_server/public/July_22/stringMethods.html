@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Javascript string methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var msg = "hello every one hope every Hello one is in safe place Hello";
+			console.log(msg);
+			/*console.log(msg.length);
+
+			console.log(msg.charAt(2));
+			console.log(msg.charCodeAt(2));
+
+			var msg1 = "Hello";
+			var msg2 = " Bye all";
+
+			console.log(msg1.concat(msg2)); 
+
+			console.log(msg.substr(2, 10));
+			console.log(msg.slice(2, 10));
+
+			console.log(msg.split('l'));
+
+			console.log(msg.includes('pdr'));
+
+			console.log(msg.trim()); */
+			//msg = msg.replace(/\s/g, "$");
+			msg = msg.replace(/Hello/ig, "%%")
+			console.log(msg);
+		</script>
+	</body>
+</html>

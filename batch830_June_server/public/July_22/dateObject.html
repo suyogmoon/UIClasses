@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			demonstrating Date object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var date = new Date();
+
+			var days = ["Sun", "Mon", "Tue", "WEd", "Thur", "Fri"];
+
+			
+			/*console.log(date);
+
+			console.log(date.getDate());
+			console.log(date.getMonth());
+			console.log(date.getDay())
+
+			var dayIndex = date.getDay();
+			console.log(days[dayIndex]);*/
+
+			// mm/ddd//yyyy
+
+			var formatedDate = days[date.getDay()] + ', ' + date.getMonth() + '/' + date.getDate() + '/' + date.getFullYear();
+			console.log(formatedDate)
+		</script>
+	</body>
+</html>
