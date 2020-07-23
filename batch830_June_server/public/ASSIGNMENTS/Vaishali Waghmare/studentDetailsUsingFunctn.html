@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating student details..
+		</title>
+	</head>
+	<body>
+		<DIV>Studen details</DIV>
+		<script type="text/javascript">
+			
+			function readUserData() {
+					var stduentName, studentAge, m1, m2, m3, total, avg, gender;
+					stduentName = prompt("enter s name");
+					studentAge = prompt("Enter user age"), gender = prompt("enter user gender");
+					m1 = prompt("enter sub1 marks");
+					m1 = parseInt(m1);
+
+					m2 = prompt("enter sub1 marks");
+					m2 = parseInt(m2);
+
+					m3 = prompt("enter sub1 marks");
+					m3 = parseInt(m3);
+					displayStdInfo(stduentName, studentAge, gender, m1, m2, m3);
+				}
+
+				function getTotalAndAvg(m1, m2, m3){
+					var total = m1 + m2 + m3;
+					var avg = total / 3;
+					return avg;
+				}
+
+				function displayStdInfo(name, age, gender, m1, m2, m3){
+					
+					var avg = getTotalAndAvg(m1, m2, m3);
+
+					console.log("Student Details");
+					console.log("STudent name " + name);
+					console.log("Gender " + gender);
+					console.log("Age " , age);
+					console.log("Avg is "  + avg);
+					getGrade(avg);
+				}
+
+				function getGrade(avg) {
+					alert(avg);
+					if (avg > 40) {
+						console.log("student got passed");
+						if (avg > 90) {
+							console.log("Got Distinction...");
+						} else if (avg >= 60) {
+							console.log("got first class");
+						} else {
+							console.log("second class");
+						}
+					} else {
+						console.log("you have a surprise...");
+					}
+				}
+				readUserData();
+			
+		</script>
+	</body>
+</html>

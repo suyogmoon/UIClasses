@@ -1,0 +1,39 @@
+<!-- WAP to read values in an array within the range and find the sum of all the values -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var num = [10, 20, 30, 40, 50, 10];
+		// var sum = 0;
+		// var min = parseInt(prompt("Enter first range"), min);
+		// var max = parseInt(prompt("Enter second range"), max); 
+
+		// for(var i = 0; i<num.lenght; i++)
+		// {
+		// 	if(num[i] > min && num[i]<max)
+		// 	{
+		// 		sum = sum + num[i];
+		// 	}
+		// }
+		// console.log(sum);
+
+		var arr = [10, 20, 30, 40, 50, 10];
+		var i, n, sum = 0;
+		var n = parseInt(prompt("Enter the size of the array"),n);
+		console.log(n);
+
+		n = prompt("Enter elements in the array");
+		for(i=0; i<n.lenght; i++)
+		{
+			console.log(arr[i]);
+			sum += arr[i];
+		}
+
+    	console.log("Sum of all elements of array", sum);
+    	
+	</script>
+</body>
+</html>
