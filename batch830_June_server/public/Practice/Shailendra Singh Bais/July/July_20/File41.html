@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Passing Parameters in Functions</title>
+	</head>
+	<body>
+		<h3>Passing Parameters in Functions</h3>
+		<script type="text/javascript">
+			function ReadValues() {
+
+			
+			var a = prompt("Enter First Value");
+			a = parseInt(a);
+			var b = prompt("Enter Second Value");
+			b = parseInt(b);
+			var result = AddValues(a, b);
+			console.log("The Sum of Given Numbers is: " + result);
+			}
+
+			function AddValues(p, q) {
+				console.log("Here Function AddValues is performing addition")
+				var result = p + q;
+				return result;
+			}
+			ReadValues();
+		</script>
+	</body>
+</html>

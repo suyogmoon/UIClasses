@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Switch Case
+		</title>
+	</head>
+	<body>
+		<h3>Demonstrating Switch Case</h3>
+		<script type="text/javascript">
+			var fval = prompt("Enter First Value");
+			fval  = parseInt(fval);
+			var sval = prompt("Enter Second Value");
+			sval = parseInt(sval);
+			var result = 0;
+
+			var useroption = prompt("add, sub, mul, div");
+
+			switch (useroption) {
+				case 'add' : 
+					result = fval + sval;
+					console.log("The Sum is: " + result);
+					break;
+
+				case 'sub' :
+					result = fval - sval;
+					console.log("The Difference is:" , result);
+					break;
+				case 'mul' :
+					result = fval * sval;
+					console.log("The Product is:" + result);
+					break;
+				case 'div' :
+					result = fval / sval;
+					console.log("The Quotient is:" , result);
+					break;
+				default :
+					console.log("Invalid Input, Try Again");
+			}
+		</script>
+	</body>
+</html>
