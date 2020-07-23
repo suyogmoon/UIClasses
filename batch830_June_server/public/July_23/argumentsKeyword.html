@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating arguments keyword
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function sample() {
+				console.log(arguments);
+
+			}
+
+			function addValues() {
+				console.log(arguments);
+				var result = 0;
+				for (var i = 0; i < arguments.length; i++) {
+					result += arguments[i];
+				}
+				
+				return result;
+			}
+
+			var sum = addValues(23, 56);
+			console.log("the sum is " + sum);
+			sample()
+		</script>
+	</body>
+</html>

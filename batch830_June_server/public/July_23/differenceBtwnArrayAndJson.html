@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empname = "PRasad";
+			var sal = 9000;
+			var stdData = [10, 'male', [34, 56, 78], 0, 0,"Raj"];
+			
+			for(var i = 0 ; i < stdData[3].length; i++) {
+				// total = total + marks[i];
+				stdData[4] += stdData[3][i];
+			}
+			stdData[5] = stdData[4] / stdData[3].length;
+			console.log("name  is " + stdData[0]);
+			console.log("total " + stdData[4]);
+			console.log("GEnder " + stdData[2]);
+			console.log("AVg " + stdData[5]);
+
+		</script>
+ 	</body>
+</html>

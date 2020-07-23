@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			demonstrating timeout and interval methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var a = 90;
+			var b = 78;
+			console.log("page started");
+
+			function displayWelcomeMsg() {
+				console.log("thanks for using out web page");
+				console.log("Plz to revisit");
+			}
+
+			// displayWelcomeMsg();
+
+			// setTimeout(displayWelcomeMsg,  5000);
+
+			/*setTimeout(function(){
+				addValues(a, b);
+				console.log("thanks for using out web page");
+				console.log("Plz to revisit");
+			}, 4000); */
+			var count = 0;
+			/*var myinteravl = setInterval(function(){
+				count++;
+				console.log("thanks for using out web page " + count);
+				console.log("Plz to revisit");
+				if(count == 4) {
+					clearInterval(myinteravl);
+				}
+			}, 4000);*/
+
+			for (var i = 0 ; i < 5; i++) {
+				count++;
+				console.log("thanks for using out web page " + count);
+				console.log("Plz to revisit");
+			}
+			console.log("its done");
+
+			setTimeout(function(){
+				console.log("hi");
+			}, 3000);
+		</script>
+	</body>
+</html>
