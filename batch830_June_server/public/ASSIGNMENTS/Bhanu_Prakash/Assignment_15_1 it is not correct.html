@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating how to sort arrays in ascending order.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+	//		var a = [45, 78, 23, 39, 97];
+			var a = [67, 54, 33, 98, 27, 69, 72, 12, 359, 3];
+			console.log("before arrangement");
+
+			for(var i = 0 ; i < a.length ; i++){
+				console.log(a[i]);
+			}
+
+			var n = prompt("Enter 1 to sort ");
+			n = parseInt(n);
+			
+			while(n > 0){
+				for(var i = 0 ; i < a.length ; i++){
+					var temp1 = a[i];
+					var temp2 = a[i+1];
+					if(temp1 < temp2){
+						temp1 = a[i];
+						a[i] = a[i+1];
+						a[i+1] = temp1;
+					} 
+				}
+				console.log("after arrangement");
+
+				for(var i = 0 ; i < a.length ; i++){
+					console.log(a[i]);
+				}
+
+				var n = prompt("Enter 1 to continue sorting or 0 to stop");
+				n = parseInt(n);
+
+			}
+		</script>
+	</body>
+</html>
