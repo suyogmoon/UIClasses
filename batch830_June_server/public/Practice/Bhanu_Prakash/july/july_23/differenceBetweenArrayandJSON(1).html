@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Understand The difference between Array and JSON.
+		</title>
+	</head>
+	<body>
+		<div>
+			Know the limitations of array.
+		</div>
+		<div>
+			Function is grouping of relevant set of  instructions whereas array is grouping of heterogeneous Data.
+			But there are some limitations for Arrays where its accessing/handling brings confusion. 
+
+			But limitation is not adding multiple students or other its reading by unknown users is difficult.
+		</div>
+		<script type="text/javascript">
+			
+			var empName = "Bhanu";
+			var salary = 10000;
+
+			var name = "Badri";
+			var age = 25;
+			var gender = "male";
+			var marks = [34, 48, 71];
+			var total = 0;
+			var avg = 0;
+										
+			for(var i = 0; i < marks.length; i++){
+				total += marks[i] ;
+			}
+
+			avg = total / marks.length;
+
+			console.log("name is : " + name);
+			console.log("age is : " + age);
+			console.log("gender is : " + gender);
+			console.log("total is : " + total);
+			console.log("avg is : " + avg);
+
+		</script>
+	</body>
+</html>

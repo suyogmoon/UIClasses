@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating setTimeout and setInterval methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			console.log("execution started");
+
+			function displayWelcomeMsg(){
+				console.log("Thank you for using Our Webpage.");
+				console.log("Please Re-Visit");
+			}
+
+			//	displayWelcomeMsg();
+
+			setTimeout(displayWelcomeMsg, 5000);	/*as we are giving as function[displayWelcomemsg()] it is same as calling in zero time.
+
+			
+										now it is as variable-------------->If we want to display this function[displayWelcomeMsg] after some delay it should be as variable	*/
+
+			console.log("It is done");	//in above step 5000milli seconds ------> 5 seconds i.e..,it is displayed after 5 seconds
+
+
+			//Now why wasting memory by creating another variable, we define and call in same place.
+
+		</script>
+	</body>
+</html>

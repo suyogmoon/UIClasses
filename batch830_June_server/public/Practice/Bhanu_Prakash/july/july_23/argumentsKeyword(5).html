@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating argument keyword.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			function sample(){
+				console.log(arguments);//line 16(addValues_module arguments) and this module arguments are different
+			}
+
+			function addValues(){
+				console.log(arguments);
+				var result = 0;
+				for(var i = 0; i < arguments.length; i++){
+				//	result = result + arguments[i];
+					result += arguments[i];
+				}
+				return result;
+			}
+			
+			var sum = addValues(58, 29, 38, 98, 87, 114);	
+			console.log("sum is : " + sum);
+
+			sample();//and these arguments are empty
+
+		</script>
+	</body>
+</html>

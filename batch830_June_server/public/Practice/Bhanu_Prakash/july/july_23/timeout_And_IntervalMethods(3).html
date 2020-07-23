@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating setTimeout and setInterval methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			console.log("execution started");
+
+			function displayWelcomeMsg(){
+				console.log("Thank you for using Our Webpage.");
+				console.log("Please Re-Visit");
+			}
+
+			//	displayWelcomeMsg();
+
+			//	setTimeout(displayWelcomeMsg, 5000);
+
+			setTimeout(function(){
+
+				console.log("Thank you for using Our Webpage.");
+				console.log("Please Re-Visit");
+
+			}, 5000);
+
+			console.log("It is done");	
+
+			//Now why wasting memory by creating another variable, we define as function it comes after interval 
+
+		</script>
+	</body>
+</html>

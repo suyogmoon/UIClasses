@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating setTimeout and setInterval methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var a = 78;
+			var b = 99;
+
+			console.log("execution started");
+
+			function displayWelcomeMsg(){
+				console.log("Thank you for using Our Webpage.");
+				console.log("Please Re-Visit");
+			}
+
+			//	displayWelcomeMsg();
+
+			//	setTimeout(displayWelcomeMsg, 5000);
+
+			/*setTimeout(function(){		//for function if i want to pass as parameters
+				addValues(a, b);
+				console.log("Thank you for using Our Webpage.");
+				console.log("Please Re-Visit");	
+
+			}, 5000);		*/
+
+			var count = 0;
+			var my_intervall = setInterval(function(){//here after 4 seconds it's repetitive --> so to kill this we've to follow two steps 
+				count++;
+				console.log("Thank you for using Our Webpage : " , count);
+				console.log("Please Re-Visit");
+
+			}, 4000)					//  1st step : assign a variable to this "setInterval_method"		2nd step:stop that method by passing variable(as object).
+
+			console.log("It is done");	
+
+			
+
+		</script>
+	</body>
+</html>

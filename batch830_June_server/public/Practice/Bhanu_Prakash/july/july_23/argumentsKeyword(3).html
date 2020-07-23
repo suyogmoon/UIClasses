@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating argument keyword.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function addValues(a, b, c){
+				console.log(arguments);//all the values are taken as arguments 58, 29, 38, 98, 87, 114
+				var result;
+				result = a + b + c;	//as only sum of a, b, c is specified ------------->a+b+c is only given
+				return result;
+			}
+			var sum = addValues(58, 29, 38, 98, 87, 114);	//equal number of arguments are passed, even though here extra arguments are declared no error is thrown. but the problem if input numbers keep on increasing ,multiple time input given and adding to logic is a headache.so we go for ---------------->arguments keyword.
+			console.log("sum is : " + sum);
+		</script>
+	</body>
+</html>

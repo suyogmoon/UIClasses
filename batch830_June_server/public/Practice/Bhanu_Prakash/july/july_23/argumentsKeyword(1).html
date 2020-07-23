@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating argument keyword.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function addValues(a, b, c){
+				var result;
+				result = a + b + c;
+				return result;
+			}
+			var sum = addValues(58, 29, 38);	//equal number of arguments are passed, even though here extra arguments are declared no error is thrown(see in next program)
+			console.log("sum is : " + sum);
+		</script>
+	</body>
+</html>
