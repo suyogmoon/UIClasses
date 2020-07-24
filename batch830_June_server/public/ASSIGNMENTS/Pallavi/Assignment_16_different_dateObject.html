@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Demo of date object
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+		var days = ["sun", "Mon", "Tue", "Thurs", "Frid", "Sat"];
+		// var hr = [10/55/20];
+
+		// console.log(date);
+		// console.log(date.getDate());
+		// console.log(date.getMonth());
+		// console.log(date.getFullYear());
+		// // console.log(date.getTime());
+		// var dayIndex = date.getDay();
+		// console.log(days[dayIndex]);
+		// console.log(hr.getHours());
+
+			// MM/DD/YY
+		var formatedDate = days[date.getDay()] + ', ' + date.getMonth() + '/' + date.getDate() + '/' + date.getFullYear();
+		console.log(formatedDate)
+
+			
+			// YYYY/MM/DD
+		var formatedDate = date.getFullYear() + '/' + date.getMonth() +'/' + date.getDate();
+		console.log(formatedDate);
+
+			
+			// DD/MM/YYYY
+		var formatedDate = date.getDate() + ' ' + date.getMonth() + ' ' + date.getFullYear();
+		console.log(formatedDate);
+			
+			// MM/DD/YYYY hh:mm:ss
+		var formatedDate1 = date.getMonth() + '/' + date.getDate() + '/' + date.getFullYear() + '   ' + date.getHours() + ':'   + date.getMinutes() + ':' + date.getSeconds();
+		console.log(formatedDate1);
+	</script>
+</body>
+</html>
