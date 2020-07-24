@@ -1,0 +1,49 @@
+<html>
+    <head></head>
+    <body>
+
+        <div style="text-align: center;">Prime Numbers in Array</div>
+
+        <script>
+
+            function readArrayValues (){
+                var n = [];
+                var range = prompt("enter the range:")
+                range = parseInt(range);
+                for(var i = 0; i < range; i++){
+                    n[i] = prompt("enter the values:"+ (i + 1));
+                    n[i] = parseInt(n[i]);
+                }
+                console.log("array values:" + n);
+                findPrime(n);
+               
+            }
+
+            function findPrime(num){
+                
+                 for(var i = 0; i < num.length; i++){
+                     var count = 0;
+
+                     for(var j = 1; j <= num[i] ; j++){
+                          if(num[i ] % j == 0){
+                              count++;
+                              if(count > 2){
+                                  break;
+                              }
+                          }
+                     }
+
+                     if(count == 2){
+                        console.log("prime number:" + num[i]);
+                     }
+
+                 }
+
+            }
+
+            readArrayValues();
+             
+    </script>
+
+</body>
+</html>

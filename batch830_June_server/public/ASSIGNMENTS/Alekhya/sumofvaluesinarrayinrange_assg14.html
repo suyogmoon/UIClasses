@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">Sum of values in an array within given range</div>
+        <script>
+
+            function readArrayValues() {
+                var n = [];
+                
+                for(var i = 0; i < 5; i++){
+                    n[i] = prompt("enter array values:" + (i + 1));
+                    n[i] = parseInt(n[i]);
+                }
+
+                console.log("values:" + n);
+                sumOfValues(n);
+                
+            }
+
+            function sumOfValues(num) {
+                var length = prompt("enter the range");
+                length = parseInt(length);
+                console.log("range is:" + length);
+                var total =  0;
+                for(var i = 0; i < length ; i++)
+                {
+                    total = total + num[i];
+                }
+                
+                console.log("sum is:" + total);
+            }
+
+            readArrayValues();
+        </script>
+    </body>
+</html>

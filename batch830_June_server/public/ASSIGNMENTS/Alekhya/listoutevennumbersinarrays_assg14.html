@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">Even Numbers in an Array</div>
+
+        <script>
+            function readNumbers() {
+                var n = [];
+                var range = prompt("enter the range:")
+                range = parseInt(range);
+                for(var i = 0; i < range; i++){
+                    n[i] = prompt("enter the arrya values:" + (i+1));
+                    n[i] = parseInt(n[i]);
+                }
+
+                console.log("array values:" + n);
+                evenNumbersInArray(n);
+            }
+
+            function evenNumbersInArray(num) {
+                for(var i = 0; i <num.length; i++)
+                {
+                    if(num[i] % 2 == 0)
+                    {
+                        console.log("even number:" + num[i]);
+                    }
+                }
+            }
+
+            readNumbers();
+        </script>
+    </body>
+</html>

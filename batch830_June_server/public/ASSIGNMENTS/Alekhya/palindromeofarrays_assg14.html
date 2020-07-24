@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">Palindrome numbers in an array</div>
+
+        <script>
+              
+              function readArrayValues() {
+                   var n = [];
+                   var range = prompt("enter the range:")
+                   range = parseInt(range);
+                   for(var i = 0; i < range; i++){
+                       n[i] = prompt("enter the numbers:" + (i+1));
+                       n[i] = parseInt(n[i]);
+                   }
+
+                   console.log("numbers in array:" + n);
+                   PalindromeOfNumber(n);
+              }
+
+              function PalindromeOfNumber(num){
+                    for(var i = 0; i < num.length ; i++){
+                            var rem;
+                            var rev = 0;
+                            var temp= [];
+                            var temp1=[];
+                            temp[i] = num[i];
+                            while(num[i] > 0){
+                                rem = parseInt(num[i] % 10);
+                                rev = (rev * 10 + rem);
+                                temp1[i] = rev;
+                                num[i]= parseInt(num[i] / 10);
+                            }
+                            
+                            if(temp[i] == temp1[i]){
+                            console.log("number is palidrome:" + temp1[i]);
+                            }
+                    }
+                   
+              }
+
+        readArrayValues();
+        </script>
+    </body>
+</html>
