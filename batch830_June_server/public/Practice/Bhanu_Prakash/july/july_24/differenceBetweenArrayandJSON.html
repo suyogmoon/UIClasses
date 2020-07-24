@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Understand The difference between Array and JSON.
+		</title>
+	</head>
+	<body>
+
+		</div>
+		<script type="text/javascript">
+
+			var empName = "Bhanu";
+			var salary = 10000;
+
+			//	var stdData = [25, 'male', [34, 48, 71], 0, 0, "Badri"];	
+
+			var stdData = {
+				"name" : "Badari Prasad",	//keys are strings and their values can be any datatype of javascript.---->key1 is string "name"
+				age : 25,
+				"marks" : [34, 48, 71],
+				gender : "male",
+				total : 0,
+				avg : 0
+			}
+
+			for(var i = 0; i < stdData.marks.length; i++){
+				stdData.total += stdData.marks[i] ;
+			}
+
+			stdData.avg = stdData.total / stdData.marks.length;
+
+			console.log("name is : " + stdData.name);	//key is accessed by .(dot)delimeter
+			console.log("age is : " + stdData.age);
+			console.log("gender is : " + stdData.gender);
+			console.log("total is : " + stdData.total);
+			console.log("avg is : " + stdData.avg);
+			 //see if array one value is disturbed, data confuses and not appropriate(for correction also).  *****observe output****
+			 //limitation is array(only it has index) it cannot store nothing with data but in JSON we have keys.
+
+		</script>
+	</body>
+</html>
