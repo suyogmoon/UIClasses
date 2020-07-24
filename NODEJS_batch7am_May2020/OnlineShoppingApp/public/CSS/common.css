@@ -1,0 +1,19 @@
+.pageHeader {
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.pageContainer {
+    background: #ccc;
+}
+
+.pageFooter {
+    position: absolute;
+    bottom: 5px;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    left: 5px;
+    right: 5px ;
+}
