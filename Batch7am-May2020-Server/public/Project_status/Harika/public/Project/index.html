@@ -6,8 +6,8 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/loginApp.css">
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="js/loginData.js"></script>
 	</head>
 	<body>
 		<div class="Header">
@@ -23,10 +23,10 @@
 			<img src="images/avatar.png" class="avatar">
 				<h2>Login Here</h2>
 			<div>
-				<p>User name</p>
-				<input type="text" placeholder="Enter Username" id="uname" onkeypress="return validateUname(event)">
+				<p>User ID</p>
+				<input type="text" placeholder="Enter UserId" id="uname" onkeypress="return validateUname(event)">
 				<div class="unameError error">
-					*User name is mandatory
+					*User id is mandatory
 				</div>
 
 				<p>Password</p>
@@ -37,7 +37,7 @@
 				</div>
 
 				<div>
-				<input type="submit" value="Login" onclick="readData()">
+				<input type="submit" value="Login" onclick="readLoginData()">
 				</div>
 
 				<a href="" style="margin-left: 100px">Sign Up</a> <br>

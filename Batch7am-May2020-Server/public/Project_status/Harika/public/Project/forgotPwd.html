@@ -5,8 +5,7 @@
 			Forgot Pwd Page
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/Fpwd.css">
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lib/jquery.js"></script>
 		<script type="text/javascript" src="js/popupemail.js"></script>
 	</head>
 	<body>
@@ -34,10 +33,10 @@
 				</div>
 			</div>
 			<div>
-				Email ID:<input type="text" id="eMailId" name="myform" value="" onkeypress="return validateEmail(event)">
+				Email ID:<input type="text" id="eMailId"  value="">
 				<div class="error" id="mailerror"></div>
 
-				<input type="submit"value="Done" onclick="readData()">
+				<input type="submit"value="Done" onclick="readFpwdData()">
 			</div>
 		</div>
 

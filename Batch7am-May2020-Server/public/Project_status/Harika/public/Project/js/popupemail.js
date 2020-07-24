@@ -1,21 +1,33 @@
-function readData() {
-	var Data = {};
+function readFpwdData() {
+	var uData = {};
 
-	Data.mail = $("#eMailId").val();
+	uData.mail = $("#eMailId").val();
+
+	var pattern = /^[A-Za-z0-9._]{3,}@[a-z]{5}[.]{1}[a-z]{2,3}$/;
 
 	try {
-		if (Data.mail == ''){
-			//exception
+		if (uData.mail == ''){
+			//exception1
 			throw "email error";
+		}
+		if (uData.mail.match(pattern)){
+			//exception2
+			throw "pattern error";
 		}
 	} catch(error) {
 		if (error = "email error"){
 			msg = "email is mandatory field";
 			displayDialog(msg)
+		} else if (error = "pattern error"){
+			msg = "valid email iD";
+			displayDialog(msg)
+		} else {
+			msg = "Invalid email id";
+			displayDialog(msg)
 		}
 	}
 
-	console.log(Data);
+	console.log(uData);
 }
 
 
@@ -29,4 +41,5 @@ function displayDialog(msg) {
 	$(".maskBlock").show();
 	$(".DialogContainer").text(msg);
 }
+
 
