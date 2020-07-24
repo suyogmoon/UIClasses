@@ -42,8 +42,8 @@ function readSignUpData () {
 
 //------Email Validation----//
 
-	if (uData.pwd.length < 8) {
-		$("#pwdvalid").html("**Password length must be 8 char");
+	if (uData.pwd.length < 10) {
+		$("#pwdvalid").html("**Password length must be 10 char");
 		$("#pwdvalid").css({"color":"red", "margin-top":"-15px", "font-size":"15px"});
 	} else if (uData.pwd.search(/[0-9]/) == -1) {
 		$("#pwdvalid").html("**Atleast 1 numeric value must enter");
@@ -78,7 +78,7 @@ function readSignUpData () {
 		$("#emailcheck").css({"color":"red", "margin-top":"-15px", "font-size":"15px"});
 	}
 
-//----MobileNo. Validation----//
+//----MobileNo. Validation using regx----//
 
 	var numbrPattern = /^[6-9]\d{9}$/;
 
@@ -137,4 +137,31 @@ function validateUname(event) {
 	}
 }
 
+//----MobileNo. Validation----//
+
+function validateNumbr(event) {
+	console.log(event.charCode);
+	console.log("user typed a key");
+	var isLengthValid = false;
+	var isValidChar = false;
+
+	var value = event.target.value;
+	if(value.length >= 10) {
+		isLengthValid = false;
+	} else{
+		isLengthValid = true;
+	}
+
+	if ((event.charCode >= 48 && event.charCode <= 57 )) {
+		isValidChar = true;
+	} else {
+		isValidChar = false;
+	}
+
+	if (isLengthValid && isValidChar) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
