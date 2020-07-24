@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+
+            function readEmployeeDetails() {
+                var employeedetails ={
+                 "emp_name" : prompt("enter employee name"),
+                 "emp_age" : prompt("enetr employee age"),
+                 "emp_gender" : prompt("enter employee gender"),
+                 "emp_dep" : prompt("enter employee department"),
+                 "emp_basicsalary" : prompt("enter employee basic salray")
+                }
+                employeedetails.emp_basicsalary = parseInt(employeedetails.emp_basicsalary);
+
+                caliculatePfHraTsal(employeedetails);
+
+            }
+
+            function caliculatePfHraTsal(employeedetails){
+                var pf = (12 / 100) * employeedetails.emp_basicsalary;
+                var hra = (25 /  100) * employeedetails.emp_basicsalary;
+                var totalsal = employeedetails.emp_basicsalary + pf + hra;
+
+                displayEmployeeDetails(employeedetails,pf,hra,totalsal);
+
+            }
+
+            function displayEmployeeDetails(employeedetails,pf,hra,totalsal,){
+                console.log("Employee Name:" + employeedetails.emp_name);
+                console.log("Employee Age:" + employeedetails.emp_age);
+                console.log("Employee Gender:" + employeedetails.emp_gender);
+                console.log("Employee Department:" + employeedetails.emp_dep);
+                console.log("Employee Basicsalary:" + employeedetails.emp_basicsalary);
+                console.log("Employee Pf:" + pf);
+                console.log("Employee Hra:" + hra);
+                console.log("Employee Totalsalary:" + totalsal);
+            }
+
+
+
+            readEmployeeDetails();
+        </script>
+    </body>
+</html>
