@@ -15,6 +15,7 @@
 
 				var employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray, pf, hra, totalSalary;
 				var eDetails = {
+					
 					employeeName : prompt("Enter employee Name : "),
 					employeeGender : prompt("Enter employee Gender : "), 
 					employeeAge : prompt("Enter employee Age : "),
@@ -23,7 +24,7 @@
 					
 				}
 				basicSalaray = parseInt(basicSalaray);
-				displayEmpInfo(employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray);
+				displayEmpInfo(eDetails.employeeName, eDetails.employeeGender, eDetails.employeeAge, eDetails.employeeDepartment, eDetails.basicSalaray);
 			}
 
 			function empSalCalc(basicSalaray) {
