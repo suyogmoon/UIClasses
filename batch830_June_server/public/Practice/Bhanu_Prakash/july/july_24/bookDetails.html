@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Arranage Book details in the form of Json Object.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var bookDetails = {
+				"bookName" : "Welcome Good Days",
+				bookPrice : 500,
+				authorNames : ["Yash", "Bhanu", "Prakash"],
+				publisherName : "Navodaya Book House",
+				noOfPages : 500,
+				discount : "11%"
+			}
+
+			console.log("Book Name is : " , bookDetails.bookName);
+			console.log("Book Price is : " , bookDetails.bookPrice);
+
+			for(var i = 0; i < bookDetails.authorNames.length ; i++ ){
+				console.log("authors Names are : " , bookDetails.authorNames[i]);
+			}
+			
+			console.log("Book Publisher's Name is : " , bookDetails.publisherName);
+			console.log("Book's No of Pages : " , bookDetails.noOfPages);
+			console.log("Discount on Book is : " , bookDetails.discount);
+		</script>
+	</body>
+</html>

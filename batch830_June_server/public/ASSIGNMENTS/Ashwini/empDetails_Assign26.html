@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee details</title>
+	</head>
+	<body>
+		<h1>Employee Details Using Functions</h1>
+		<script type="text/javascript">
+		function empDetails() {
+			numOfEmp = prompt("Enter number of Employees whose details has to be updated");
+			for(var i = 1; i <= numOfEmp; i++){
+				var emDetails = {
+					empName : prompt("Name of the employee"),
+					empAge : prompt("Age"),
+					empGendr : prompt("Gender"),
+					empSalary : prompt("Salary"),
+				}
+				empSalary = parseInt(emDetails.empSalary)
+				tax = taxCalculation(emDetails.empSalary);
+				takeHomeSalary = emDetails.empSalary - tax;
+				display(emDetails.empName, emDetails.empAge, emDetails.empGendr, emDetails.empSalary, tax, takeHomeSalary);	
+				}
+		}
+			
+		function taxCalculation(empSalary){
+			var tax;
+			if(empSalary >= 20000){
+				tax = empSalary * 0.20;
+			}else{
+				tax = empSalary * 0.05;
+			}
+			return tax;
+		}
+		function display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary){
+			console.log("Name : "+empName);
+			console.log("Age : "+empAge);
+			console.log("Gender : "+empGendr);
+			console.log("Salary : "+empSalary);
+			console.log("Tax deducted from the gross salary : "+tax);
+			console.log("Take home salary : "+takeHomeSalary);
+		}
+		empDetails();
+		</script>
+	</body>
+</html>

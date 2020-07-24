@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Finding second largest number</title>
+		<title>Second Largest Number</title>
 	</head>
 	<body>
-		<h1>Finding second largest number</h1>
+		<h1>Second Largest Number</h1>
 		<script type="text/javascript">
 			function inputElements(){
 				var num = [];
@@ -15,11 +15,11 @@
 					num[i] = parseInt(num[i]);
 				}
 				var a = [];
-				a = decendingOrder(num);
+				a = secondLargestNumber(num);
 				console.log(a);
-				console.log("Second largest number :" + a[1]);
+				console.log("second Largest Number : " + a[1]);
 			}
-			function decendingOrder(num){
+			function secondLargestNumber(num){
 				var j = 0, count = 1, k = 1, checkNum = 0;
 				for(var i = 1; i < num.length;){
 					if(num[j] < num[i]){
@@ -41,4 +41,4 @@
 			inputElements();
 		</script>
 	</body>
-</html>
+</html
