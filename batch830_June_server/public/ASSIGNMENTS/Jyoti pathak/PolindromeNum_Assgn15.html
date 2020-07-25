@@ -1,0 +1,31 @@
+<!-- WAP to check whether given no is palindromes number or not.-->
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>polindome number</title>
+	</head>
+	<body>
+	     <script type="text/javascript">
+	     	var n, sum, r;
+    	var num = parseInt(prompt("enter a number"), num);
+
+    	sum = 0;
+    	r = num;
+    	while (num!=0)
+    	      {
+    		      n = num % 10;
+    		      sum = sum*10+n;
+    		      num = Math.floor(num/10);
+    	      }
+    	                console.log("reverse number is:", sum);
+    	                  if (r==sum)
+    	                 {
+    	   	              console.log("polindome number", r);
+                         }
+                         else
+                         {
+                         	console.log("Not polindome number", r);
+                         }
+	     </script>
+	</body>
+	</html>

@@ -1,0 +1,31 @@
+<!-- WAP to wheather given number is Armstrong or not. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Armstrong number</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	var n, sum, r;
+    	var num = parseInt(prompt("enter a number"), num);
+
+    	sum = 0;
+    	r = num;
+    	while (num!=0)
+    	      {
+    		      n = num % 10;
+    		      sum += (n*n*n);
+    		      num = Math.floor(num/10);
+    	      }
+    	                  if (r==sum)
+    	                 {
+    	   	              console.log("Armstrong number", r);
+                         }
+                         else
+                         {
+                         	console.log("Not an Armstrong number", r);
+                         }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--Employee details by using function-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee details</title>
+</head>
+<body>
+	  <div>Employee deatails</div>
+      <script type="text/javascript">
+      	var empname, empage, empgender, empdepart, empsalary, pf, hra, totalsalary;
+      	function readUser(){
+      		empname = prompt("enetr Employee name");
+      		empage = prompt("enter Employee age");
+      		empgender = prompt("enter Employee gender");
+      		empdepart = prompt("enter Employee department");
+      	}
+             function salarypf(){
+             	basicsalary = parseInt(prompt("emp basicsalary"), empsalary);
+
+             	pf = parseInt(prompt("Employee pf"), pf);
+
+             }
+
+                 function totalhra(){
+                      hra = parseInt(prompt("enter hra"), hra);
+
+                      pf = 12 * basicsalary / 100;
+                      hra = 25 * basicsalary / 100;
+                      totalsalary = basicsalary + pf + hra;
+                 }
+
+                       function Display(){
+                       	console.log("enter emp name: " + empname);
+                       	console.log("enter emp age: " + empage);
+                       	console.log("enter emp gender: " + empgender);
+                       	console.log("enter emp department: " + empdepart);
+                       	console.log("enter emp salary: " + empsalary);
+                       	console.log("enter emp pf: " + pf);
+                       	console.log("enter emp hra: " + hra);
+                       	console.log("enter emp totalsalary: " + totalsalary);
+
+                       }
+                       readUser();
+                       salarypf();
+                       totalhra();
+                       Display();
+
+      </script>
+</body>
+</html>

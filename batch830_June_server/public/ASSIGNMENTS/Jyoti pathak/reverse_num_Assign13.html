@@ -1,0 +1,24 @@
+<!-- WAP to find the reverse of a given number -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse num</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	var a, sum;
+     	var num = parseInt(prompt("enter reverse no:"), num);
+
+     	sum = 0;
+     	while (num>0)
+
+     	{
+     		a = num % 10;
+     		sum = sum * 10 + a;
+     		num = Math.floor(num/10); 		
+     	}
+
+     	console.log("reverse number is:", sum);
+     </script>
+</body>
+</html>
