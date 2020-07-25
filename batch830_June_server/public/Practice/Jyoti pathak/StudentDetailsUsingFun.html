@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating student details..
+		</title>
+	</head>
+	<body>
+		<Div>Studen details</Div>
+		<script type="text/javascript">
+
+			var stduentName, studentAge, m1, m2, m3, total, avg, gender;
+
+			function readUserData() {
+				stduentName = prompt("enter s name");
+				studentAge = prompt("Enter user age"), gender = prompt("enter user gender");
+				m1 = prompt("enter sub1 marks");
+				m1 = parseInt(m1);
+
+				m2 = prompt("enter sub2 marks");
+				m2 = parseInt(m2);
+
+				m3 = prompt("enter sub3 marks");
+				m3 = parseInt(m3);
+			}
+
+			function getTotalAndAvg(){
+
+				total = m1 + m2 + m3;
+				avg = total / 3;
+			}
+
+			function displayStdInfo(){
+				console.log("Student Details");
+				console.log("STudent name " + stduentName);
+				console.log("Gender " + gender);
+				console.log("Age " , studentAge);
+				console.log("Total is " + total);
+				console.log("Avg is "  + avg);
+			}
+
+			function getGrade() {
+				if (avg > 40) {
+					console.log("student got passed");
+					if (avg > 90) {
+						console.log("Got Distinction...");
+					} else if (avg >= 60) {
+						console.log("got first class");
+					} else {
+						console.log("second class");
+					}
+				} else {
+					console.log("you have a surprise...");
+				}
+			}
+
+			readUserData();
+			getTotalAndAvg();
+			displayStdInfo();
+			getGrade();
+		</script>
+	</body>
+</html>
