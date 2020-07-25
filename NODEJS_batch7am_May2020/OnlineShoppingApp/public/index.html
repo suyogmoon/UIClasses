@@ -4,8 +4,10 @@
             Online shopping APP
         </title>
         <script src="js/lib/jquery.js" ></script>
+        <script type="text/javascript" src="js/common.js"></script>
         <link href="css/login.css" rel="stylesheet" type="text/css">
         <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
         <script src="js/login.js"></script>
     </head>
     <body>
@@ -13,10 +15,57 @@
             Welcome to online shopping appliaiton
         </div>
         <div class="pageContainer">
-            content
+            
         </div>
         <div class="pageFooter">
             @copyrights 2020
         </div>
+
+        <script id="fgpwdTmplt">
+            <div  id="forgotPwd">
+                <ul>
+                    <li>
+                        Enter user id <input type="text" id="uid"> 
+                    </li>
+                    <li>
+                        Account Password <input type="Password" id="password">
+                    </li>
+                    <li>
+                        ReEnter password <input type="password" id="rpwd">
+                    </li>
+                    <li>
+                        Mail id <input type="text" id="mailId">
+                    </li>
+                    <li>
+                        <input type="button" value="Register" onclick="registerDetails()">
+                        <span class="link gotoLogin" onclick="loadTemplate('login');">Go To Login Page</span>
+                    </li>
+                </ul>
+            </div>
+        </script>
+
+        <script id="loginTmplt">
+            <div id="loginBlock">
+                <ul>
+                    <li>
+                        <div class="profilePic"></div>
+                    </li>
+                    <li>
+                        Account Id: <input type="text" id="uid">
+                    </li>
+                    <li>
+                        Password : <input type="Password" id="upwd">
+                    </li>
+                    <li>
+                        <input type="button" value="Login" onclick="readLoginDetails()">
+                        <span id="errMsg"></span>
+                    </li>
+                    <li>
+                        <span class="link" onclick="loadTemplate('fgpwd');">New Signup </span>
+                        <span class="link">Forgot Pwd</span>
+                    </li>
+                </ul>
+            </div>
+        </script>
     </body>
 </html>

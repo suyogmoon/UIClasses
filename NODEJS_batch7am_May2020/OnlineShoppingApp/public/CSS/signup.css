@@ -1,0 +1,20 @@
+#forgotPwd {
+	border: 1px solid;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background: #fff;
+}
+
+li {
+	list-style: none;
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+}
+
+.gotoLogin {
+	display: none;
+}

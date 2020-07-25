@@ -11,9 +11,9 @@
 			
 			var stdData = {
 				name: 'RAj',
-				"age": 10,
 				'gender': 'Male',
 				marks: [34, 56, 78],
+				"age": 10,
 				total: 0,
 				"avg": 0
 			}
@@ -23,7 +23,7 @@
 				stdData.total += stdData.marks[i];
 			}
 			stdData.avg = stdData.total / stdData.marks.length;
-			console.log("name  is " + stdData.name);
+			console.log("name  is " + stdData['name']);
 			console.log("total " + stdData.total);
 			console.log("GEnder " + stdData.gender);
 			console.log("AVg " + stdData.avg);

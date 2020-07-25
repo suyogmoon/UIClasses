@@ -22,3 +22,42 @@ li {
     text-decoration: underline;
     color: green;
 }
+
+#loginBlock {
+    border: 1px solid;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background: #fff;
+}
+
+.profilePic {
+    margin: 5px auto;
+    border: 1px solid;
+    border-radius: 50% 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+}
+.link:hover {
+    text-decoration: underline;
+
+}
+
+#loginBlock li {
+    margin: 10px;
+    padding: 10px;
+    background: #ccc;
+}
+
+#errMsg {
+    color: red;
+}

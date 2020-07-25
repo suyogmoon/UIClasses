@@ -6,6 +6,12 @@
 
 .pageContainer {
     background: #ccc;
+    position: absolute;
+    top: 45px;
+    bottom: 45px;
+    left: 5px;
+    right: 5px;
+    overflow: auto;
 }
 
 .pageFooter {
