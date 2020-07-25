@@ -1,0 +1,30 @@
+<!-- WAP to findout lucky number of given number-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lucky number</title>
+</head>
+<body>
+     <<script type="text/javascript">
+     	var num, sum, rem;
+     	var num = parseInt(prompt ("enter a value"), num);
+     	sum = 0;
+
+     	while (num>0)
+     	    {
+              rem = num % 10;
+              sum = sum + rem;
+
+              num = num/10;
+              num = parseInt(num);
+
+              if (sum > 9 && num == 0)
+                   {
+                       num = sum;
+                       sum = 0;
+                   }
+     	    } 
+     	    console.log("lucky number is: " + sum);
+     </script>
+</body>
+</html>
