@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function inputElement() {
+			var empDetails = {
+				bloodGroup : "O+ve",
+				profilePicture : 'images\Capture3.png',
+				name : {
+					firstName : "Ashwini",
+					SecondName : "Kotla"
+				},
+				phoneNumber : {
+					office : "0870-2555939",
+					personalNum : [12345, 15648]
+				},
+				emergencyContact : [1234,123654],
+				address : {
+					personal : {
+						doorNo : "1/2/1",
+						city : "Hyderabad",
+						country : "India",
+						pinCode : "5081145"
+					},
+					office : {
+						buildingNumber : 3,
+						country : "Canada"
+					},
+				},
+				email : {
+					personal : "ashwiniuppala@gmail.com",
+					office : "ashwinikotla@pnk.com"
+				},
+				socialMedia : {
+					twitter : "ashu@xyz",
+					facebook : "asbf.com",
+					linkdin : "adfe.com"
+				}
+			}
+			display(empDetails);
+		}
+		function display(empDetails){
+			console.log("Employee Details :");
+			console.log("Picture : " + empDetails.profilePicture);
+			console.log("Name : " + empDetails.name.firstName + empDetails.name.SecondName);
+			console.log("Blood Group : " + empDetails.bloodGroup);
+			console.log("Office contact number : " + empDetails.phoneNumber.office);
+			console.log("Personal contact numbers : " + empDetails.phoneNumber.personalNum[0] + empDetails.phoneNumber.personalNum[1]);
+			console.log("Personal address : ");
+			console.log("door no : " + empDetails.address.personal.doorNo);
+			console.log("city : " + empDetails.address.personal.city);
+			console.log("country : " + empDetails.address.personal.country);
+			console.log("Office address : ");
+			console.log("bulding number : " + empDetails.address.buildingNumber);
+			console.log("country : " + empDetails.address.office.country);
+			console.log("personal email id : " + empDetails.email.personal);
+			console.log("office email id : " + empDetails.email.office);
+			console.log("Social media ID : ");
+			console.log("Twitter : " + empDetails.socialMedia.twitter);
+			console.log("Facebook : " + empDetails.socialMedia.facebook);
+			console.log("Linkdin : " + empDetails.socialMedia.linkdin);
+		}
+		inputElement();
+	</script>
+</body>
+</html>
