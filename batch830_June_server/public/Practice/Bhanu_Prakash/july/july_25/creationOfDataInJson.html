@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			creation of data in JSON.
+		</title>
+	</head>
+	<body>
+		<div>
+			Json Block Arrangement
+		</div>
+		<script type="text/javascript">
+			var contactDetails = {
+				"profilePic" : "my_pic.jpeg",
+				"bGroup" : "B +ve",
+				"name" : {	//as we want to access fname and sname we need keys
+							"firstName" : "Bhanu Prakash",
+							"lastName" : "Ch"
+				},
+				"phoneNumber" : {
+									"office" : "040 - 256398",
+									"personal" : [987456, 589632, 58749],	//its enough to view no need to access particularly
+									"emergencyContact" : 789456
+				},
+				"address" : {
+								"personal" : {		//as given specifically; dno,city so we need to give keys 
+													"drNo" : "5-24-21B",
+													"city" : "Tenali",
+													"country" : "India",
+													"pinCode" : "522201"
+								},		
+								"office" : {
+												"country" : "Canada",
+												"buildingNo" :221 ,
+												"pinCode" : 401253
+								}
+				},
+				"email" : {
+								"personal" : ["bhanuprakash001@gmail.com", "prakash123@yahoo.com"],
+								"office" : "bhanuprakash21@workplace.com"
+				},
+				"socialMediaID" : {
+										"twitterId" : "bhanuprakash001@twitter.com",
+										"fbId" : "bhanuprakash001@fb.com",
+										"linkdienId" : "bhanuprakash001@linkdien.com"
+				},
+	//			"dateofBirth" : [17, "may", 1995], wrong bcause they asked specifically for date,month,year
+				"dateofBirth" : {
+									"date" : 7,
+									"month" : "November",
+									"year" : 1995
+				}
+				"nationality" : "Indian",
+				"ringTone" : "myFav.mp3"
+
+				/*how to access them see following
+				1)profile Pic:
+								contactDetails.profilePic  or  contactDetails[profilePic]
+				2)blood group:
+								contactDetails.bGroup
+				3)name:("firstName")
+								contactDetails.name.firstName or contactDetails.name[firstName] (x) -----> contactDetails.name["firstName"] (correct)
+				4)name:("firstName")
+								contactDetails.name.lastName
+				5)phone number(o):
+								contactDetails.phoneNumber.office
+				6)phone number(pers):
+								contactDetails.phoneNumber.personal[0]
+								contactDetails.phoneNumber.personal[1]
+								contactDetails.phoneNumber.personal[2]
+				7)phone number(emerg):
+								contactDetails.phoneNumber.emergencyContact
+				8)personal address:
+								contactDetails.address.personal.drNo
+								contactDetails.address.personal.city
+								contactDetails.address.personal.country
+								contactDetails.address.personal.pinCode
+				9)office address:
+								contactDetails.address.office.country
+								contactDetails.address.office.buildingNo
+								contactDetails.address.office.pinCode
+				10)personal email:
+								contactDetails.email[personal][0] (wrong)-------->contactDetails.email["personal"][0]
+								contactDetails.email[personal][1]				  contactDetails.email["personal"][1]
+				11)office email:
+								contactDetails.email[office]
+				12)socialMediaID:
+								contactDetails.socialMediaID[twitterId]  (wrong)--->contactDetails.socialMediaID["twitterId"]
+								contactDetails.socialMediaID[fbId]					contactDetails.socialMediaID["fbId"]
+								contactDetails.socialMediaID[linkdienId]			contactDetails.socialMediaID["linkdienId"]
+				13)date of birth:
+								contactDetails.dateofBirth.date
+								contactDetails.dateofBirth.month
+								contactDetails.dateofBirth.year
+				14)nationality:
+								contactDetails.nationality
+				15)ringtone:
+								contactDetails.ringTone
+								*/
+
+			}
+		</script>
+	</body>
+</html>
