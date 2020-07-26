@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Demo: JavaScript Date formats</h1>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	<p id="p7"></p>
+	<p id="p8"></p>
+	<p id="p9"></p>
+	<p id="p10"></p>
+		
+	<script>
+		var date = new Date('2015-02-10T10:12:50.5000z');
+
+		document.getElementById("p1").innerHTML = 'Default format:' + date;
+		document.getElementById("p2").innerHTML = 'toDateString: '+ date.toDateString();
+		document.getElementById("p3").innerHTML = 'toLocaleDateString: ' + date.toLocaleDateString();
+		document.getElementById("p4").innerHTML = 'toGMTString: ' + date.toGMTString();
+		document.getElementById("p5").innerHTML = 'toISOString: ' + date.toISOString();
+		document.getElementById("p6").innerHTML = 'toLocaleString: ' + date.toLocaleString();
+		document.getElementById("p7").innerHTML = 'toLocaleTimeString: ' + date.toLocaleTimeString();
+		document.getElementById("p8").innerHTML = 'toString: ' + date.toString('YYYY-MM-dd');
+		document.getElementById("p9").innerHTML = 'toTimeString: ' + date.toTimeString();
+		document.getElementById("p10").innerHTML = 'toUTCString: ' + date.toUTCString();
+    </script>
+</body>
+</html>
