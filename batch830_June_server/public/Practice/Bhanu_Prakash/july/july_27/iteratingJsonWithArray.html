@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			iterating json Object containing an Array
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var details = {
+				"name" : "bhanu",
+				"age" : 20,
+				"gender" : "male",
+				"location" : "Tenali",
+				"contactNumbers" : [98567, 25789, 236589],	//array is also object
+				"address" : {
+					"drNo" : "53B",
+					"streetName" : "Golconda street"
+				},
+				"pinCode" : 522201
+			};
+
+			for(var key in details){
+				console.log(key);
+				console.log(details[key]);
+				console.log(typeof(details[key]));
+				if(typeof(details[key]) == "object" && details[key].length){	//it is an object array
+					for(var i = 0 ; i < details[key].length ; i++){
+						console.log(details[key][i]);	//to print key
+					}
+				} else if (typeof(details[key]) == "object") {	//only Json object
+					for(var temp2 in details[key]){
+						//console.log(details[key]);---->wrong
+						console.log(temp2);
+						console.log(details[key][temp2]);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

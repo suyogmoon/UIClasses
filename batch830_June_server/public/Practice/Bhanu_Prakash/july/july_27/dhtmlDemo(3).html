@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			Demonstrating DHTML
+		</div>
+		<span>
+			the value of sum is
+		</span>
+		<p id="containerId" >
+			
+		</p>
+		<script type="text/javascript">
+			var divElement = document.createElement("div");
+			divElement.setAttribute("id", "pqr");	//in this way we can set attributes i.e here we are giving id(name_specifying) = pqr
+			divElement.setAttribute("name", "containerBhanu");//i.e we are giving mutliple attributes to div tag here
+			divElement.setAttribute("class", "classFirstPrio");
+			divElement.style.color = 'blue';		//adding css property i.e i need background color
+			divElement.style.border = "2px solid";
+			divElement.innerHTML = "hello every one";	//under this div i want say hello everyone
+			console.log(divElement);	
+			//now we need to identify the required location( or dom element) and bind it 
+
+		</script>
+
+	</body>
+</html>

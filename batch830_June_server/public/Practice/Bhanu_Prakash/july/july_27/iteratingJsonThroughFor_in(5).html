@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Iterating complex Json structure through "For in " control structure.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var details = {		
+				"name" : "bhanu",
+				"age" : 25,
+				"gender" : "male",
+				"city" : "guntur",
+				"image" : "http://myWebPage.com/bhanu/my_image.jpeg",
+				"address" : {
+								"drNo" : "5-23B",
+								"streetName" : "Gajuwaka",
+								"permanentAddress" : {		//if we go for complex object we need to go for recursive function
+														"pDrNo" : "1-101-21B",
+														"pStreetName" : "Bbc_street"
+								},
+								test: {
+											hello: 'testing',
+											sample:'abc',
+											pqr: {
+													abc: 'TEST',
+													sample:'JEY'
+											}
+								},
+				},
+				"pincode" : 522201
+			};		
+
+			function showData(details){		
+				for (var temp in details){
+					if(typeof(details[temp]) == "object"){
+						/*for(var temp2 in details[temp]){		//so instead of giving nested for in loop we go for recursive function 	                                          i.e..,again calling same function.
+							//	console.log(details[temp]);	----->wrong
+							console.log(temp2);
+							console.log(details[temp][temp2]);
+						}*/
+						//	showData(details);      //input to be changed i.e we giving present module input to get recursive function
+						showData(details[temp]);
+					} else {
+						console.log(temp);
+						console.log(details[temp]);
+					}
+				}
+			}
+
+			showData(details);
+
+		</script>
+	</body>
+</html>

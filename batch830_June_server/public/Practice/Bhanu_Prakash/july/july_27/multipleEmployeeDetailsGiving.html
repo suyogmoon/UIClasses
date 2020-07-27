@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Adding mutliple employee details and retrieving it
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empDetails = [
+				{
+					"empName" : "Bhanu",
+					"empAge" : 25,
+					"empGender" : "male"
+				},
+				{
+					"empName" : "Prakash",
+					"empAge" : 28,
+					"empGender" : "male"
+				},
+				{
+					"empName" : "Sita",
+					"empAge" : 23,
+					"empGender" : "Female"
+				},
+				{
+					"empName" : "cr7",
+					"empAge" : 30,
+					"empGender" : "male"
+				}
+			];
+
+			for(var i = 0 ; i < empDetails.length ; i++){
+				for(var temp in empDetails[i]){
+					//console.log(empDetails[i].temp); //it is checking for temp 12 times
+					//console.log(temp);	//it is showing keys only
+					console.log(temp + " is	" + empDetails[i][temp]);
+
+				}
+			}
+		</script>
+	</body>
+</html>
