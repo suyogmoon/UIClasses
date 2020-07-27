@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function readContactDeatils(){
+
+		var contactdetails = {
+			"profile_picture" : prompt("enter the pic"),
+			
+			"name" : {
+					"first_name" : prompt("enter the f name"),
+					"last_name" : prompt("enter the l name")
+					},
+			
+			"phone_number" : {
+					"office_number" :prompt("enter the office number"),
+					"personal_number":[]
+							},
+			
+			"emergency_number":[],
+
+			"address": {
+					"personal_address": {
+						"doorno" :prompt("enter the door number"),
+						"city" : prompt("enter city name"),
+						"country" :prompt("enter the country")
+
+										},
+					"office_address": {
+						"country": prompt("enter the country"),
+						"building": prompt("enter the building"),
+						"pincode": prompt("enter the pincode")
+										}
+						},
+			"email" : {
+					"personal_email" : [],
+					"office_email" : prompt("enter the office email id")
+
+						},
+			"socialMediaids" : {
+						"Twitter" : prompt("enter the twitter id"),
+						"facebook" : prompt("enter the facebook id")
+							},
+			"bloodGroup" : prompt("enter the blood group")
+		}
+			for (var i = 0; i < 4; i++) {
+				contactdetails.phone_number.personal_number[i] =  prompt("enter the personal number" +(i+1));
+				contactdetails.phone_number.personal_number[i] = parseInt(contactdetails.phone_number.personal_number);
+										}
+
+			
+			for (var j = 0; j < 4; j++) {
+				contactdetails.emergency_number[j] = prompt("enter the emergency number" +(j+1));
+				contactdetails.emergency_number[j] = parseInt(contactdetails.emergency_number);
+										}
+
+			for (var k = 0; k < 3; k++) {
+				contactdetails.email.personal_email[k] = prompt("enter wemail id" +(k+1));
+			}
+			console.log(contactdetails);
+
+		}
+		readContactDeatils();
+	</script>
+</body>
+</html>

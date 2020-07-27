@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Employee Dartails
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function readEmployeeDetails() {
+		var employeeDeatils = {
+			"emp_name" : prompt("Enter u r Name"),
+			"emp_age" : prompt("Enter u r Age"),
+			"emp_gender" :prompt("Enter u r Gender"),
+			"emp_dep" : prompt("Enter u r Department"),
+			"emp_BasicSalary" : prompt("Enter u r Basic Salary")
+
+			}
+		employeeDeatils.emp_BasicSalary = parseInt(employeeDeatils.emp_BasicSalary);
+		
+		calculatepfhratotsal(employeeDeatils);
+		}
+		
+		function calculatepfhratotsal(employeeDeatils){
+			var pf = (12 / 100) * employeeDeatils.emp_BasicSalary;
+			var hra = (25 / 100) * employeeDeatils.emp_BasicSalary;
+			var totalsalary = employeeDeatils.emp_BasicSalary + pf + hra;
+
+			displayEmployeeDetails(employeeDeatils, pf, hra, totalsalary);
+		}
+
+		function displayEmployeeDetails(employeeDeatils, pf, hra, totalsalary) {
+			console.log("Employee name " +employeeDeatils.emp_name);
+			console.log("Employee age " +employeeDeatils.emp_age);
+			console.log("employee gender " +employeeDeatils.emp_gender);
+			console.log("Employee department " +employeeDeatils.emp_dep);
+			console.log("Employee basis salary " +employeeDeatils.emp_BasicSalary);
+			console.log("Employee pf " +pf);
+			console.log("Employee hra " +hra);
+			console.log("Employee totalsalay " +totalsalary);
+
+		}
+		readEmployeeDetails();
+
+
+
+	</script>
+
+</body>
+</html>
