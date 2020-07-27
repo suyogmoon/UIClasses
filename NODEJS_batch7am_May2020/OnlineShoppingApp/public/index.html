@@ -4,23 +4,23 @@
             Online shopping APP
         </title>
         <script src="js/lib/jquery.js" ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
         <link href="css/login.css" rel="stylesheet" type="text/css">
         <link href="css/common.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/signup.css">
+
         <script src="js/login.js"></script>
+        <script src="js/productDetails.js"></script>
     </head>
     <body>
         <div class="pageHeader">
             Welcome to online shopping appliaiton
         </div>
-        <div class="pageContainer">
-            
-        </div>
+        <div class="pageContainer"></div>
         <div class="pageFooter">
             @copyrights 2020
         </div>
-
         <script id="fgpwdTmplt">
             <div  id="forgotPwd">
                 <ul>
@@ -67,5 +67,15 @@
                 </ul>
             </div>
         </script>
+        <script id="pDetailsTmplt">
+            <ul class="pDetailsBlock">
+                <li>Product Name: {{name}}</li>
+                <li>Price: {{price}}</li>
+                <li>Manufacturer: {{manu}}</li>
+                <li>Discount: {{discount}}</li>
+                <li><img src="{{image}}"></li>
+            </ul>
+        </script>
+
     </body>
 </html>

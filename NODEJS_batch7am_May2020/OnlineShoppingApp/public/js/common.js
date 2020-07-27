@@ -8,6 +8,9 @@ function loadTemplate(type) {
 			var fgpwdTemplate = $("#fgpwdTmplt").html();
 			$(".pageContainer").html(fgpwdTemplate);
 			break;
+		case 'pDetails':
+			$(".pageContainer").html('');
+			break;
 	}
 }
 

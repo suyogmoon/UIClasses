@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			
+			var data = {
+				name: 'Prasad',
+				age: 80,
+				gender: 'Male',
+				contactno: [232342423, 2342342342344525, 364256575],
+				address: {
+					dno: '234-A',
+					pin: 23423
+				}
+			};
+
+			for (var key in data) {
+				console.log(key);
+				console.log(data[key]);
+				console.log(typeof(data[key]))
+				if (typeof(data[key]) == 'object' && data[key].length) { //its an Object array
+					for (var i = 0 ; i < data[key].length; i++) {
+						console.log(data[key][i]);
+					}
+				} else if (typeof(data[key]) == 'object' ){ //only json object
+					for (var temp2 in data[key]) {
+						console.log(temp2);
+						console.log(data[key][temp2])
+					}
+				}
+			}
+
+			console.log(data.address.length);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Iterating For In Looping CS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			/* var empDetails = [
+				{
+					name: "prasad",
+					age: 60,
+					gender: 'male'
+				},
+				{
+					name: "teENA",
+					age: 30,
+					gender: 'female'
+				},
+				{
+					name: "TEst",
+					age: 20,
+					gender: 'male'
+				}
+			];
+
+			for (var i = 0 ; i < empDetails.length; i++) {
+				for (var temp in empDetails[i]) {
+					console.log(temp + ' is ' + empDetails[i][temp])
+				} 
+			} */
+
+
+			/*var details = [
+				'raj',
+				30,
+				"male",
+				"hydeabad",
+				5678
+			];
+
+
+			for (var i = 0; i < details.length; i++) {
+				console.log(details[i]);
+			} */
+
+			var data = {
+				name: 'Raj',
+				age: 20,
+				gender: 'Male',
+				'location': 'Hyderabad',
+				image: "http://sample.com/abc/pic.jpg",
+				address: {
+					dno: 34,
+					streetname: 'abc road',
+					prmntAddress: {
+						pDno: 'test',
+						pstreetNo: 'abc',
+						test: {
+							hello: 'testing',
+							sample:'abc',
+							pqr: {
+								abc: 'TEST',
+								sample:'JEY'
+							}
+						}
+					}
+				},
+				pin: 343434
+			};
+
+			function showData(data) {
+				for (var temp in data) {
+					if (typeof(data[temp]) == 'object'){
+						showData(data[temp]);
+					} else {
+						console.log(temp);
+						console.log(data[temp]);
+					}
+				}
+			}
+			//showData(data);
+
+		</script>
+	</body>
+</html>

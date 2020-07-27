@@ -6,7 +6,7 @@
 	<body>
 		<h1>Employee Details Using Functions</h1>
 		<script type="text/javascript">
-		function empDetails() {
+		function processEmployeeDetails() {
 			numOfEmp = prompt("Enter number of Employees whose details has to be updated");
 			for(var i = 1; i <= numOfEmp; i++){
 				var emDetails = {
@@ -15,10 +15,10 @@
 					empGendr : prompt("Gender"),
 					empSalary : prompt("Salary"),
 				}
-				empSalary = parseInt(emDetails.empSalary)
-				tax = taxCalculation(emDetails.empSalary);
-				takeHomeSalary = emDetails.empSalary - tax;
-				display(emDetails.empName, emDetails.empAge, emDetails.empGendr, emDetails.empSalary, tax, takeHomeSalary);	
+				empSalary = parseInt(empDetails.empSalary)
+				empDetails.tax = taxCalculation(empDetails.empSalary);
+				empDetails.takeHomeSalary = empDetails.empSalary - empDetails.tax;
+				display(empDetails);	
 				}
 		}
 			
@@ -31,15 +31,15 @@
 			}
 			return tax;
 		}
-		function display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary){
-			console.log("Name : "+empName);
-			console.log("Age : "+empAge);
-			console.log("Gender : "+empGendr);
-			console.log("Salary : "+empSalary);
-			console.log("Tax deducted from the gross salary : "+tax);
-			console.log("Take home salary : "+takeHomeSalary);
+		function display(empDetails){
+			console.log("Name : " + empDetails.empName);
+			console.log("Age : " + empDetails.empAge);
+			console.log("Gender : " + empDetails.empGendr);
+			console.log("Salary : " + empDetails.empSalary);
+			console.log("Tax deducted from the gross salary : " + empDetails.tax);
+			console.log("Take home salary : " + empDetails.takeHomeSalary);
 		}
-		empDetails();
+		processEmployeeDetails();
 		</script>
 	</body>
 </html>

@@ -13,7 +13,6 @@
 
 			function readEmpData() {
 
-				var employeeName, employeeGender, employeeAge, employeeDepartment, basicSalaray, pf, hra, totalSalary;
 				var eDetails = {
 					
 					employeeName : prompt("Enter employee Name : "),
@@ -23,8 +22,8 @@
 					basicSalaray : prompt("Enter employee basic salary")
 					
 				}
-				basicSalaray = parseInt(basicSalaray);
-				displayEmpInfo(eDetails.employeeName, eDetails.employeeGender, eDetails.employeeAge, eDetails.employeeDepartment, eDetails.basicSalaray);
+				eDetails.basicSalaray = parseInt(eDetails.basicSalaray);
+				displayEmpInfo(eDetails);
 			}
 
 			function empSalCalc(basicSalaray) {
@@ -34,13 +33,14 @@
 				return totalSalary;
 			}
 
-			function displayEmpInfo(ename, gender, age, dept, bsal) {
+			function displayEmpInfo(eDetails) {
 				var totalSalary = empSalCalc(bsal);
 				console.log("Employee Details");
 				console.log("employeeName " + ename);
 				console.log("employeeAge " , age);
 				console.log("employeeGender " + gender);
 				console.log("employeeDepartment " , dept);
+				
 				displayEmpSal(totalSalary);
 			}
 

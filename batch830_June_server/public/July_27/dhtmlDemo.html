@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>Demonstrating dhtml</div>
+		<span>The sum is  </span>
+		<UL>
+			<LI>
+				
+			</LI>
+		</UL>
+		<p id="container"></p>
+		<p></p>
+		<img src="">
+		<script type="text/javascript">
+			var divElement = document.createElement('div');
+			divElement.setAttribute("id", "sample");
+			divElement.setAttribute("class", "test");
+			divElement.setAttribute("name", "pqr");
+			divElement.style.color = 'blue';
+			divElement.style.border = '2px solid';
+			divElement.innerHTML = 'Hello every one';
+			console.log(divElement);
+
+			document.getElementById('container').append(divElement);
+
+
+
+		</script>
+	</body>
+</html>
