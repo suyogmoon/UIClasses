@@ -1,0 +1,49 @@
+<!-- WAP to read values into two individual array and two separate arrays and check equalities of array. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equalities of array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i, n;
+		var arr1 = [];
+		var n = prompt("Enter number of elements you want in array1");
+		n = parseInt(n);
+
+		for(i = 0; i < n; ++i)
+		{
+			arr1[i] = prompt("Enter the number of elements:", i+1);
+			arr1[i] = parseInt(arr1[i]);
+			
+		}
+
+		var arr2 = [];
+				var n = prompt("Enter number of elements you want in array2");
+				n = parseInt(n);
+
+		if(arr1.length==arr2.length)
+		{
+		
+			console.log("Both have same elements");
+
+		  for(i=0;i<arr1.length;i++)
+		  {
+
+		     if( arr1[i]!=arr2[i])
+		      {
+		         break;
+		      }
+		   }
+		
+			console.log("Lenght equal but all elements are not equal");
+
+		}
+		else
+		{
+		  console.log("Not equal");
+		}
+
+	</script>
+</body>
+</html>

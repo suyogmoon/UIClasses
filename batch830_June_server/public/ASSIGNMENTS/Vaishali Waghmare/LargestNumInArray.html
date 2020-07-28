@@ -1,0 +1,32 @@
+<!-- WAP to read dynamic values to an array and find the largest value in it. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Largest Value in Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i, n;
+		var arr = [];
+		var n = prompt("Enter number of elements you want in array");
+		n = parseInt(n);
+
+		for(i = 0; i < n; ++i)
+		{
+			arr[i] = prompt("Enter the number of elements:", i+1);
+			arr[i] = parseInt(arr[i]);
+			console.log(arr[i]);
+		}
+
+		// storing the largest number to arr[0]
+		for (i = 1; i < n; ++i)
+		{
+			if (arr[0] < arr[i])
+            arr[0] = arr[i];
+		}
+
+		console.log("Largest element: ", arr[0]);
+
+	</script>
+</body>
+</html>

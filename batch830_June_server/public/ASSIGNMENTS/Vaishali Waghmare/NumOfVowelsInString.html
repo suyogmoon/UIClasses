@@ -1,0 +1,25 @@
+<!-- WAP to find out number of vowels in given string -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number of vowels</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	  	var str = [];
+	  	var i, count = 0;
+	  	str = prompt("Enter a string");
+		
+		for(i = 0; str[i]; i++)
+			
+		  	if(str[i]=='a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' || str[i] == 'i' || str[i] == 'I' || str[i] =='o' || str[i]=='O' || str[i] == 'u' || str[i] == 'U')
+		  	{
+		  		count++;
+		  	}
+	  	
+	  	console.log("Number of vowels in the string:", count);
+
+	</script>
+</body>
+</html>
