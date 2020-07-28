@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var samplerouter = require('./routes/sample');
 var loginRouter = require("./routes/loginValidation");
-var loadProductDataRouter = require("./routes/loadPoductData.js");
+var loadProductDataRouter = require("./routes/loadPoductData");
 
 var app = express();
 

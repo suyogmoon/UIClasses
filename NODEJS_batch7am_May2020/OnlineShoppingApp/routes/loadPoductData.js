@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
+	console.log("am frm load product data");
 	var data = [
 		{name:'Laptop', price: '$3000', manu: 'Sony', discount: '12%', image:'https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png'},
 		{name:'Mobile', price: '$200', manu: 'Iphone', discount: '6%', image:'https://images-na.ssl-images-amazon.com/images/I/71YC1181G3L._SL1200_.jpg'},

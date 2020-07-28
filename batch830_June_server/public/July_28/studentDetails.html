@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Studnet details with json and DHTML
+		</title>
+		<link rel="stylesheet" type="text/css" href="sdetails.css">
+		<script type="text/javascript" src="sDetails.js"></script>
+	</head>
+	<body>
+		
+		<div class="userDetails">
+			<ul>
+				<li>
+					Enter Student name: <input type="text" id="s_name">
+				</li>
+				<li>
+					Enter Student Age: <input type="text" id="s_age">
+				</li>
+				<li>
+					Languages:
+					<input type="checkbox" name=""> English
+					<input type="checkbox" name=""> Hindi
+					<input type="checkbox" name=""> Marati
+					<input type="checkbox" name=""> Urdu
+				</li>
+				<li>
+					Gender: <input type="radio" name="gender" value="male"> M
+							<input type="radio" name="gender" value="female"> F
+				</li>
+				<li>
+					Class: 
+					<select id="s_class">
+						<option>Class 1</option>
+						<option>Class 2</option>
+						<option>Class 3</option>
+						<option>Class 4</option>
+						<option>Class 5</option>
+					</select>
+				</li>
+				<li>
+					Enter Marks: 
+					<input type="text" id="m1">
+					<input type="text" id="m2">
+					<input type="text" id="m3">
+					<input type="text" id="m4">
+					<input type="text" id="m5">
+				</li>
+				<li>
+					<input type="button" value="Generate Progress Card" onclick="readStudentData()">
+				</li>
+
+			</ul>
+		</div>
+		<div class="progressCardBlock">
+			<ul>
+				<li>
+					STudent Name: <span id="sname">.....</span>
+				</li>
+				<li>
+					Age: <span id="sage"></span>
+				</li>
+				<li>
+					Gender: <span id="sgender"></span>
+				</li>
+				<li>
+					Class: <span id="sclass"></span>
+				</li>
+				<li>
+					Total Marks: <span id="stotal"> </span>
+				</li>
+				<li>
+					Avg marks <span id="savg"></span>
+				</li>
+				<li>
+					Grade : <span id="sgrade"></span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
