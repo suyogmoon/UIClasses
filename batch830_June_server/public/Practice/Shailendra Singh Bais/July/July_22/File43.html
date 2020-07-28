@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstrating Array Functions</title>
+	</head>
+	<body>
+		<h3>Demonstrating Array Functions</h3>
+		<script type="text/javascript">
+			var data = [34, 45, 66, 74, 89, 92, 106];
+
+			console.log(data);
+
+			console.log(data.length);
+
+			data.push(100); /* Adds a value to right */
+
+			console.log(data);
+
+			data.pop();
+
+			console.log(data); /* Deletes a value from right */
+
+			data.unshift(25);
+
+			console.log(data); /* To insert a data from left side */
+
+			data.shift(); /*Deletes a data from left */
+
+			console.log(data);
+
+			data.splice(2, 0, 101, 201, 301, 445); // 2-> Index Number, 0 -> Number of values to be deleted, Values to be inserted 
+			console.log(data);
+
+			console.log(data.reverse()); // Reverses poeition of values in an array
+
+			console.log(data.join("")); // Combines to make a string
+
+			console.log(data.indexOf(45));
+		</script>
+	</body>
+</html>

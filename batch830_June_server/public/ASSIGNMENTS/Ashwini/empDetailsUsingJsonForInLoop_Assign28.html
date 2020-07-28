@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Details Using JSON Object and for in loop</title>
+</head>
+<body>
+	<h1>Employee Details Using JSON Object and for in loop</h1>
+	<script type="text/javascript">
+		function inputElements() {
+			var n = prompt("Enter number of employees");
+			n = parseInt(n);
+			for(var i = 0; i < n; i++){
+				var empDetails = {
+					name : {
+						firstName : prompt("First Name"),
+						lastName : prompt("Last Name")
+					},
+					phoneNum : {
+						officeNum : prompt("Enter office number"),
+						personalNum : [],
+						emergencyContact : []
+					},
+					address : {
+						personal : {
+							doorNo : prompt("Door Number"),
+							city : prompt("City"),
+							country : prompt("country"),
+							pinCode : prompt("pin code")
+						},
+						office : {
+							buldingNum : prompt("Building Number"),
+							country : prompt("Country")
+						}
+					},
+					email : {
+						personal : prompt("personal email id"),
+						official : prompt("official email id")
+					},
+					bloodGroup : prompt("Blood Group")
+				}
+				var m = prompt("Number of persnal numbers to be entered");
+				m = parseInt(m);
+				for(var j = 0; j < m; j++){
+					personalNum = prompt("Enter mobile number");
+				}
+				var l = prompt("Number of emergency contact numbers to be entered");
+				l = parseInt(l);
+				for(var k = 0; k < l; k++){
+					emergencyContact = prompt("Enter mobile number");
+				}
+				display(empDetails);
+			} 
+		}	
+			function display(empDetails) {
+				for (var key in empDetails) {
+					console.log(key);
+					console.log(empDetails[key]);
+					console.log(typeof(empDetails[key]));
+					if (typeof(empDetails[key]) == 'object' && empDetails[key].length) { //its an Object array
+						for (var i = 0 ; i < empDetails[key].length; i++) {
+							console.log(empDetails[key][i]);
+						}
+					} else if (typeof(empDetails[key]) == 'object' ){ //only json object
+						for (var temp2 in empDetails[key]) {
+							console.log(temp2);
+							console.log(empDetails[key][temp2])
+						}
+					}
+				}
+			}
+			inputElements();
+		
+	</script>
+</body>
+</html>

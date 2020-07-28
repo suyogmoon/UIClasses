@@ -1,0 +1,26 @@
+<!-- find out total number of character within a string without using .length property. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Total number of string</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function strLength(s)
+		{
+			var length = 0;
+
+			while (s[length] !== undefined)
+				length ++;
+			return length;
+		}
+
+		var str = [];
+		str = prompt("Enter a string");
+		
+		console.log(strLength(str));
+
+	</script>
+</body>
+</html>

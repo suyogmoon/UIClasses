@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Iterating complex Json structure through "For in " control structure.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var details = {		
+				"name" : "bhanu",
+				"age" : 25,
+				"gender" : "male",
+				"city" : "guntur",
+				"pincode" : 522201
+			};		
+			//if its a Json objectit is difficult without knowing keys so we use For in(i.e..,  need to know keys or which data inside it)
+
+			function showData(details){		//passing through parameters
+				for (var temp in details){
+						console.log(temp);	//we are getting only keys so we try with "details.temp"
+					//	console.log(details.temp);	//undefined bcause it is searching for key "temp" and it is same with details["temp"]
+					console.log(details[temp]);
+
+				}
+			}
+
+			//showData();	//we can not see output bcause everytime, we need to see data we need to give input to function
+			showData(details);
+
+		</script>
+	</body>
+</html>

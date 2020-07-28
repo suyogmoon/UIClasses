@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript String Methods</title>
+	</head>
+	<body>
+		<h3>Javascript String Methods</h3>
+		<script type="text/javascript">
+			
+			var msg = "Hello Everyone, Everyone is in Safe Place in COVID Time?  ";
+			console.log(msg);
+
+			console.log(msg.length); // To find length
+
+			console.log(msg.charAt(2)); // Returns particular character which is at a particular position
+
+			console.log(msg.charCodeAt(33));
+
+			var msg1 = "Hello ";
+			var msg2 = "Bye all";
+
+			console.log(msg1.concat(msg2)); // Adds both Strings
+
+			console.log(msg.substr(6, 10)); // Cuts off Sub-String. Position, Number of Characters
+
+			console.log(msg.slice(1, 10)); // Cuts from Given Position to Mentioned Number of Places
+
+			console.log(msg.split('10')); //  Used to Split a string into an Array of Substrings, and Returns the New Array.
+
+			console.log(msg.includes('Hello')); // Checks if given String is present or not;
+
+			console.log(msg.trim()); // Removes White Spaces At Both Ends
+
+			msg = msg.replace(/Hello/ig, "%%") // Removes Mentioned Message with Given Message
+
+			console.log(msg); 
+
+
+
+
+
+
+
+
+		</script>
+	</body>
+</html>
